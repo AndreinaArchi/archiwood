@@ -6,7 +6,7 @@ const Maintenance = () => {
         <img src='/maintenanceImg/logo_maintenance.webp' />
       </div>
       <div className='maintenance__message'>
-        <h1>HOLA MUNDO</h1>
+        <h1>Website Under Maintenance</h1>
         <div>
           <p>We are currently performing scheduled maintenance.</p>
           <p>Please check back later.</p>
