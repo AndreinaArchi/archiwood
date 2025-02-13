@@ -1,0 +1,14 @@
+.nav__container {
+  padding: 20px;
+}
+.nav__container ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav__link-active {
+  border-bottom: 2px solid rgb(190, 102, 1);
+  transition: all 0.3s ease-in-out;
+  padding: 0 10px;
+}

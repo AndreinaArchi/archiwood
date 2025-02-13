@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import '../../locales/config/i18n'
+import './Locales.css'
 
 const Locales = () => {
   const { i18n } = useTranslation()

@@ -13,18 +13,34 @@
 }
 
 @font-face {
-  font-family: 'CustomFont';
-  src: url('./fonts/Diagramm-Regular.ttf') format('truetype'),
-    url('./fonts/Spartan-VariableFont_wght.ttf') format('truetype'),
-    url('./fonts/tt0003m_.ttf') format('truetype'),
-    url('./fonts/tt0005m_.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Diagramm-Regular';
+  src: url('./fonts/Diagramm-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spartan-Variable';
+  src: url('./fonts/Spartan-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TT0003M';
+  src: url('./fonts/tt0003m_.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TT0005M';
+  src: url('./fonts/tt0005m_.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   scroll-behavior: smooth;
+  font-family: 'Spartan-Variable', sans-serif;
 }
 
 html,
@@ -35,14 +51,8 @@ img {
   -ms-user-select: none;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'CustomFont', sans-serif;
+img {
+  pointer-events: none; /* Evita interacciones innecesarias si las imágenes son decorativas */
 }
 
 h1,
