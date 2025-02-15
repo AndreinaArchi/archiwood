@@ -6,12 +6,12 @@ const Locales = () => {
   const { i18n } = useTranslation()
 
   const languages = [
-    { name: 'En', code: 'en', title: 'English' },
-    { name: 'Es', code: 'es', title: 'Español' }
+    { name: 'EN', code: 'en', title: 'English' },
+    { name: 'ES', code: 'es', title: 'Español' }
   ]
 
   return (
-    <div>
+    <div className='locales__container'>
       {languages.map((opt, index) => (
         <button
           key={index}

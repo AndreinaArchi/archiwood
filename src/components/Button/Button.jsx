@@ -5,9 +5,11 @@ const Button = ({
   action = () => {},
   bgColor = '#007bff',
   txtColor = '#fff',
+  fs = '16px',
   w = 'auto',
   h = 'auto',
   p = '10px 20px',
+  br = '5px',
   className = ''
 }) => {
   return (
@@ -19,9 +21,8 @@ const Button = ({
         width: w,
         height: h,
         padding: p,
-        border: 'none',
-        cursor: 'pointer',
-        borderRadius: '5px'
+        borderRadius: br,
+        fontSize: fs
       }}
       onClick={action}
       aria-label={value}

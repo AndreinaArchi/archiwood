@@ -1,0 +1,14 @@
+.locales__container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.locales__container button {
+  background-color: transparent;
+  border: none;
+  font-family: 'TT0005M', sans-serif;
+  font-size: 16px;
+  color: rgb(124, 122, 122);
+  cursor: pointer;
+}
