@@ -1,8 +1,8 @@
 .nav__container {
+  background-color: rgb(255, 178, 164);
   position: fixed;
   width: 100%;
-  padding: 20px;
-  background-color: bisque;
+  padding: 40px;
   display: flex;
   margin-top: -150px;
 }

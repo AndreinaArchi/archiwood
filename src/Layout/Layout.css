@@ -1,3 +1,21 @@
-.layout__section {
+.layout__container {
+  width:100%;
+}
+
+.layout__hr {
   margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+}
+
+.layout__hr > hr {
+  width:100%;
+  transform: translateY(-30px);
+  border: 0.5px solid black;
+}
+
+.layout__section {
+
 }
