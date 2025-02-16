@@ -1,19 +1,14 @@
+import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Locales from '../Locales/Locales'
-import Img from '../Img/Img'
-import logo from '/logo.webp'
 import './Nav.css'
-//import { useTranslation } from 'react-i18next'
+import logo from '/logo.webp'
+import useTranslate  from './translate'
+
+const Locales = React.lazy(() => import('../Locales/Locales'))
+const Img = React.lazy(() => import('../Img/Img'))
 
 const Nav = () => {
-  //const { t } = useTranslation()
-  const navLinks = [
-    { name: 'Inicio', path: '/' },
-    { name: 'Sobre Nosotros', path: '/about-us' },
-    { name: 'Productos', path: '/products' },
-    { name: 'Studios', path: '/studies' },
-    { name: 'Contacto', path: '/contact' }
-  ]
+  const navLinks = useTranslate ()
 
   return (
     <>

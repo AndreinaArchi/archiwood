@@ -1,4 +1,16 @@
 {
-  "welcome": "Welcome to my app",
-  "description": "This is a sample application"
+  "navbar": {
+    "home": "Home",
+    "about": "About us",
+    "products": "Products",
+    "studies": "Estudies",
+    "contact": "Contact"
+  },
+  "home": {
+    "title_1": "Specialists in Custom Carpentry!",
+    "title_2": "Make your project a reality!",
+    "text_1": "We offer tailored solutions with quality",
+    "text_2": "and design to transform your home",
+    "buttonText": "Discover our services"
+  }
 }

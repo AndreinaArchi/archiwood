@@ -1,23 +1,43 @@
-import Carousel from '../../components/Carousel/Carousel'
+import React from 'react'
+import useSlider from './Slider'
+import Button from '../../components/Button/Button'
+import useTranslate from './translate'
+import './Home.css'
+
+const Carousel = React.lazy(() => import('../../components/Carousel/Carousel'))
 
 const Home = () => {
-  const arrayImgs = [
-    {
-      src: '/images/close-up-illuminated-lamp-table-against-wall.webp',
-      alt: 'Image 1'
-    },
-    {
-      src: '/images/freepik__retouch__4429.webp',
-      alt: 'Image 2'
-    },
-    {
-      src: '/images/modern-living-room-interior-design.webp',
-      alt: 'Image 3'
-    }
-  ]
+  const textContent = useTranslate()
+
   return (
     <div>
-      <Carousel images={arrayImgs} />
+      <Carousel images={useSlider}>
+        <div className='carousel__content'>
+          <div>
+            <h1>{textContent.title_1}</h1>
+          </div>
+          <div>
+            {textContent.text.map((text, index) => (
+              <p key={index}>{text}</p>
+            ))}
+          </div>
+          <div>
+            <h2>{textContent.title_2}</h2>
+          </div>
+          <div className='carousel__content__button'>
+            <Button
+              value={textContent.buttonText}
+              action={() => alert('Action')}
+              bgColor='black'
+              txtColor='white'
+              p='10px 20px'
+              br='20px'
+              fs='16px'
+              className='btn-large'
+            />
+          </div>
+        </div>
+      </Carousel>
     </div>
   )
 }

@@ -89,9 +89,9 @@
 .carousel__button {
   position: absolute;
   margin: 150px 150px 0 110px;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
+  background: none;
+  color: var(--aw-bg-secondary);
+  border: 2px solid var(--aw-bg-secondary);
   cursor: pointer;
   border-radius: 50%;
   font-size: 20px;
@@ -109,16 +109,4 @@
 
 .carousel__button.right {
   right: 10px;
-}
-
-.carousel__content {
-  position: absolute;
-  margin-top: -250px;
-  width:100%;
-  padding: 0 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  gap:20px;
 }

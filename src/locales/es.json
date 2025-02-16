@@ -1,4 +1,16 @@
 {
-  "welcome": "Bienvenido a mi aplicación",
-  "description": "Esta es una aplicación de ejemplo"
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre nosotros",
+    "products": "Productos",
+    "studies": "Estudios",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title_1": "¡Especialistas en Carpintería personalizada!",
+    "title_2": "¡Haz tu proyecto realidad!",
+    "text_1": "Ofrecemos soluciones a medida con calidad",
+    "text_2": "y diseño para transformar tu hogar",
+    "buttonText": "Descubre nuestros servicios"
+  }
 }
