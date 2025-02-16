@@ -4,6 +4,7 @@
   padding: 55px 120px;
   z-index:100;
   display: flex;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav__content-links {
@@ -52,8 +53,29 @@
   justify-content: center;
   align-items: center;
   padding:0 120px;
+  transition: all 0.3s ease-in-out;
 }
 .nav__separate hr {
   border: 1px solid rgba(199, 199, 199, 0.685);
   width:100%;
+}
+
+@media (max-width: 936px) {
+  .nav__container {
+    padding: 30px 70px;
+  }
+  .nav__separate {
+    margin-top: 130px;
+    padding:0 70px;
+  }
+}
+
+@media (max-width: 546px) {
+  .nav__container {
+    padding: 30px 30px;
+  }
+  .nav__separate {
+    margin-top: 135px;
+    padding:0 30px;
+  }
 }

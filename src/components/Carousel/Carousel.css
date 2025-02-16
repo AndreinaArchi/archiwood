@@ -1,6 +1,5 @@
 .carousel__container {
   display: flex;
-  align-items: center;
   justify-content: center;
   position: relative;
   z-index: 9;
@@ -54,7 +53,7 @@
 .carousel__image-wrapper {
   position: relative;
   width: 100%;
-  height: 150svh;
+  height: 750px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -88,7 +87,7 @@
 
 .carousel__button {
   position: absolute;
-  margin: 150px 150px 0 110px;
+  margin: 550px 110px 0 110px;
   background: none;
   color: var(--aw-bg-secondary);
   border: 2px solid var(--aw-bg-secondary);
@@ -109,4 +108,16 @@
 
 .carousel__button.right {
   right: 10px;
+}
+
+@media (max-width: 936px) {
+  .carousel__button {
+    margin: 500px 70px 0 70px;
+  }
+}
+
+@media (max-width: 546px) {
+  .carousel__button {
+    margin: 550px 30px 0 30px;
+  }
 }

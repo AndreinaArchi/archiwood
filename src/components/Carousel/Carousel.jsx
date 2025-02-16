@@ -34,6 +34,7 @@ const Carousel = ({ children, images }) => {
             src={images[prevIndex].src}
             alt='prev-carousel'
             className={`carousel__image slide-out-${slideDirection}`}
+            loading='lazy'
           />
         )}
         <img
@@ -41,6 +42,7 @@ const Carousel = ({ children, images }) => {
           src={images[currentIndex].src}
           alt='carousel'
           className={`carousel__image slide-in-${slideDirection}`}
+          loading='lazy'
         />
       </div>
       <button className='carousel__button right' onClick={nextSlide}>

@@ -19,6 +19,7 @@ const Img = ({
         borderRadius: br
       }}
       onClick={action}
+      loading='lazy'
     />
   )
 }

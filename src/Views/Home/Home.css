@@ -1,6 +1,6 @@
 .carousel__content {
   position: absolute;
-  margin-top: -250px;
+  margin-top: 260px;
   width:100%;
   padding: 0 120px;
   display: flex;
@@ -8,8 +8,22 @@
   justify-content: start;
   align-items: start;
   gap:20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .carousel__content__button {
   margin-top: 20px;;
+}
+
+@media (max-width: 936px) {
+  .carousel__content {
+    margin-top: 200px;
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: 546px) {
+  .carousel__content {
+    padding: 30px 30px;
+  }
 }
