@@ -1,22 +1,23 @@
-import Button from '../../components/Button/Button'
-import { useTranslation } from 'react-i18next'
+import Carousel from '../../components/Carousel/Carousel'
 
 const Home = () => {
-  const { t } = useTranslation()
+  const arrayImgs = [
+    {
+      src: '/images/close-up-illuminated-lamp-table-against-wall.webp',
+      alt: 'Image 1'
+    },
+    {
+      src: '/images/freepik__retouch__4429.webp',
+      alt: 'Image 2'
+    },
+    {
+      src: '/images/modern-living-room-interior-design.webp',
+      alt: 'Image 3'
+    }
+  ]
   return (
     <div>
-      <p>{t('welcome')}</p>
-      <p>{t('description')}</p>
-      <Button
-        value='Descubre nuestros servicios'
-        action={() => alert('Action')}
-        bgColor='black'
-        txtColor='white'
-        p='5px 20px'
-        br='20px'
-        fs='24px'
-        className='btn-large'
-      />
+      <Carousel images={arrayImgs} />
     </div>
   )
 }

@@ -1,0 +1,124 @@
+.carousel__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  margin: auto;
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutToRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.carousel__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 150svh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__image.slide-in-left {
+  animation: slideInFromLeft 0.5s ease-in-out;
+}
+
+.carousel__image.slide-in-right {
+  animation: slideInFromRight 0.5s ease-in-out;
+}
+
+.carousel__image.slide-out-left {
+  animation: slideOutToLeft 0.5s ease-in-out;
+}
+
+.carousel__image.slide-out-right {
+  animation: slideOutToRight 0.5s ease-in-out;
+}
+
+.carousel__button {
+  position: absolute;
+  margin: 150px 150px 0 110px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.carousel__button.left {
+  left: 10px;
+}
+
+.carousel__button.right {
+  right: 10px;
+}
+
+.carousel__content {
+  position: absolute;
+  margin-top: -250px;
+  width:100%;
+  padding: 0 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap:20px;
+}

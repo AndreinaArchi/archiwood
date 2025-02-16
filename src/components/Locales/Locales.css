@@ -9,6 +9,6 @@
   border: none;
   font-family: 'TT0005M', sans-serif;
   font-size: 16px;
-  color: rgb(124, 122, 122);
+  color: var(--aw-text-primary);
   cursor: pointer;
 }

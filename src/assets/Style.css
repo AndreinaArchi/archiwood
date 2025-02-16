@@ -1,15 +1,19 @@
 :root {
   /* Background Colors */
-  --aw-bg-primary: #ffffff;
+  --aw-bg-primary: #999999;
 
   /* Text Colors */
-  --aw-text-primary: #000000;
+  --aw-text-primary: #383838;
 
   /*SPACING AND ROUNDED*/
   --aw-spacing-xs: 8px;
 
   /*FONT SIZE*/
   --aw-font-size-xs: 12px;
+  --aw-font-size-s: 14px;
+  --aw-font-size-l: 18px;
+  --aw-font-size-xl: 20px;
+  --aw-font-size-xxl: 32px;
 }
 
 @font-face {
@@ -41,6 +45,7 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Spartan-Variable', sans-serif;
+  background-color: var(--aw-bg-primary)
 }
 
 html,
@@ -51,8 +56,16 @@ img {
   -ms-user-select: none;
 }
 
-h1,
-h2,
+h1{
+  font-size: var(--aw-font-size-xxl);
+  font-family: 'TT0005M', sans-serif;
+}
+
+h2{
+  font-size: var(--aw-font-size-xl);
+  font-family: 'TT0005M', sans-serif;
+}
+
 h3,
 h4,
 h5 {
@@ -60,9 +73,9 @@ h5 {
 }
 
 p,
-li,
-a {
-  font-size: var(--p-font-size-m);
+li {
+  font-family: 'TT0003M', sans-serif;
+  font-size: var(--aw-font-size-l);
 }
 
 a {
@@ -100,6 +113,12 @@ button:hover {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(5px);
   background-color: #ffffffcc;
+}
+
+.filter {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: var(--rb-bg-light);
 }
 
 ::-webkit-scrollbar {
