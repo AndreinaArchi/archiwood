@@ -1,9 +1,5 @@
 const useSlider = [
   {
-    src: '/images/close-up-illuminated-lamp-table-against-wall.webp',
-    alt: 'Image 1'
-  },
-  {
     src: '/images/freepik__retouch__4429.webp',
     alt: 'Image 2'
   },
@@ -17,4 +13,15 @@ const useSlider = [
   }
 ]
 
-export default useSlider
+const useSliderMobile = [
+  {
+    src: '/images/1_home.webp',
+    alt: 'Image 1'
+  },
+  {
+    src: '/images/2_home.webp',
+    alt: 'Image 2'
+  }
+]
+
+export { useSlider, useSliderMobile }

@@ -1,17 +1,19 @@
 import React from 'react'
-import useSlider from './Slider'
+import { useSlider, useSliderMobile } from './Slider'
 import Button from '../../components/Button/Button'
 import useTranslate from './translate'
 import './Home.css'
+import useWidth from '../../hooks/useWidth'
 
 const Carousel = React.lazy(() => import('../../components/Carousel/Carousel'))
 
 const Home = () => {
   const textContent = useTranslate()
+  const width = useWidth()
 
   return (
     <div>
-      <Carousel images={useSlider}>
+      <Carousel images={width > 546 ? useSlider : useSliderMobile}>
         <div className='carousel__content'>
           <div>
             <h1>{textContent.title_1}</h1>

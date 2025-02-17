@@ -4,11 +4,49 @@
   gap: 10px;
 }
 
-.locales__container button {
+.locales__container > button {
   background-color: transparent;
   border: none;
   font-family: 'TT0005M', sans-serif;
   font-size: 16px;
   color: var(--aw-text-primary);
   cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.locales__container-menu {
+  position: relative;
+  width: 25px;
+  height: 15px;
+  margin-left:7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+  cursor: pointer;
+}
+
+.locales__container-menu > div {
+  z-index: 2000000;
+  width: 100%;
+  height: 3px;
+  background-color: var(--aw-bg-secondary);
+  border-radius: 2px;
+  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+  z-index:101;
+}
+
+.active-menu > div:first-child {
+  transform: rotate(45deg) translateY(6.5px);
+}
+
+.active-menu > div:nth-child(2) {
+  opacity: 0;
+}
+
+.active-menu > div:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
 }
