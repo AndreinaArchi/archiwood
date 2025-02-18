@@ -39,9 +39,9 @@ const Nav = () => {
           <Locales showMenu={showMenu} setShowMenu={setShowMenu} />
         </div>
       </nav>
-      <div className='nav__separate'>
+{/*       <div className='nav__separate'>
         <hr />
-      </div>
+      </div> */}
 
       <div
         className={`nav__container-menu ${
