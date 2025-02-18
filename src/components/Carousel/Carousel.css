@@ -85,39 +85,22 @@
   animation: slideOutToRight 0.5s ease-in-out;
 }
 
-.carousel__button {
+.carousel__buttons {
   position: absolute;
-  margin: 550px 110px 0 110px;
-  background: none;
-  color: var(--aw-bg-secondary);
-  border: 2px solid var(--aw-bg-secondary);
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  gap:40px;
+}
+
+.carousel__button {
   width: 40px;
   height: 40px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   z-index: 10;
-}
-
-.carousel__button.left {
-  left: 10px;
-}
-
-.carousel__button.right {
-  right: 10px;
-}
-
-@media (max-width: 936px) {
-  .carousel__button {
-    margin: 500px 70px 0 70px;
-  }
-}
-
-@media (max-width: 546px) {
-  .carousel__button {
-    margin: 550px 30px 0 30px;
-  }
 }
