@@ -12,8 +12,8 @@
   /*FONT SIZE*/
   --aw-font-size-xs: 12px;
   --aw-font-size-s: 14px;
-  --aw-font-size-l: 18px;
-  --aw-font-size-xl: 20px;
+  --aw-font-size-l: 20px;
+  --aw-font-size-xl: 24px;
   --aw-font-size-xxl: 32px;
 }
 
@@ -81,6 +81,7 @@ li {
 
 a {
   text-decoration: none;
+  font-family: 'TT0003M', sans-serif;
   color: var(--aw-text-primary);
 }
 
@@ -117,14 +118,8 @@ button:hover {
 
 .filter {
   -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(5px);
-  background-color: #d1d1d115;
-}
-
-.filter {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(20px);
-  /*   background-color: rgba(202, 202, 202, 0.411); */
+  backdrop-filter: blur(10px);
+  background-color: #c8c2ba8f;
 }
 
 ::-webkit-scrollbar {

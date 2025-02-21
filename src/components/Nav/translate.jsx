@@ -7,7 +7,7 @@ const useTranslate  = () => {
     { name: t('navbar.home'), path: '/' },
     { name: t('navbar.about'), path: '/about-us' },
     { name: t('navbar.products'), path: '/products' },
-    { name: t('navbar.studies'), path: '/studies' },
+    { name: t('navbar.proyects'), path: '/studies' },
     { name: t('navbar.contact'), path: '/contact' }
   ]
 }

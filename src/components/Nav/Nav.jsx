@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import useWidth from '../../hooks/useWidth'
 import useTranslate from './translate'
@@ -13,14 +13,45 @@ const Img = React.lazy(() => import('../Img/Img'))
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false)
+  const [isHidden, setIsHidden] = useState(false)
+  const [hasFilter, setHasFilter] = useState(false)
   const navLinks = useTranslate()
   const width = useWidth()
 
+  useEffect(() => {
+    let lastScrollY = window.scrollY
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsHidden(true)
+      } else {
+        setIsHidden(false)
+      }
+
+      setHasFilter(currentScrollY >= 30)
+
+      lastScrollY = currentScrollY
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [width])
+
   return (
     <>
-      <nav className='nav__container filter'>
+      <nav
+        className={`nav__container ${isHidden && !showMenu ? 'nav--hidden' : ''} ${
+          hasFilter ? 'filter' : ''
+        }`}
+      >
         <div className='nav__content-links'>
-          <Img img={logo} w={width <= 936 ? '90px' : '110px'} action={() => alert('action')} />
+          <Img
+            img={logo}
+            w={width <= 936 ? '90px' : '110px'}
+            action={() => alert('action')}
+          />
           {width > 936 && (
             <ul className={width > 936 ? 'nav__content-ul-desktop' : ''}>
               {navLinks.map((link, index) => (
@@ -55,6 +86,7 @@ const Nav = () => {
         className={`nav__container-menu ${
           showMenu && width <= 936 ? 'active' : ''
         }`}
+        onClick={() => setShowMenu(false)}
       >
         {width <= 936 && (
           <div className='nav__content-menu'>
