@@ -46,7 +46,6 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Spartan-Variable', sans-serif;
-  background-color: var(--aw-bg-primary);
 }
 
 html,
