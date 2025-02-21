@@ -1,7 +1,9 @@
 .locales__container {
   display: flex;
-  align-items: center;
   gap: 10px;
+  border-right: 1px solid black;
+  padding: 3px 15px;
+  margin-right: 15px;
 }
 
 .locales__container > button {
@@ -16,37 +18,6 @@
   align-items: center;
 }
 
-.locales__container-menu {
-  position: relative;
-  width: 25px;
-  height: 25px;
-  margin-left:7px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 3px;
-  cursor: pointer;
-}
-
-.locales__container-menu > div {
-  z-index: 2000000;
-  width: 100%;
-  height: 3px;
-  background-color: var(--aw-bg-secondary);
-  border-radius: 2px;
-  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
-  z-index:101;
-}
-
-.active-menu > div:first-child {
-  transform: rotate(45deg) translateY(6.5px);
-}
-
-.active-menu > div:nth-child(2) {
-  opacity: 0;
-}
-
-.active-menu > div:nth-child(3) {
-  transform: rotate(-45deg) translateY(-8px);
+.locales__container > button.active_lng {
+  border-bottom: 2px solid var(--aw-bg-secondary);
 }

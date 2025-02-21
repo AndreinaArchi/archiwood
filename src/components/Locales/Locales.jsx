@@ -1,41 +1,35 @@
+import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import useWidth from '../../hooks/useWidth'
-import '../../locales/config/i18n'
 import './Locales.css'
 
-const Locales = ({showMenu, setShowMenu}) => {
-  
+const Locales = () => {
   const { i18n } = useTranslation()
+  const [activeLanguages, setActiveLanguages] = useState([])
 
-  const languages = [
-    { name: 'EN', code: 'en', title: 'English' },
-    { name: 'ES', code: 'es', title: 'Español' }
-  ]
-  const width = useWidth()
+  const languages = useMemo(() => [
+      { name: 'EN', code: 'en', title: 'English' },
+      { name: 'ES', code: 'es', title: 'Español' }
+  ], [])
+
+  useEffect(() => {
+    setActiveLanguages(
+      languages.map((l) => ({ ...l, active: l.code === i18n.language }))
+    )
+  }, [i18n.language, languages])
 
   return (
     <div className='locales__container'>
-      {languages.map((opt, index) => (
+      {activeLanguages.map((opt) => (
         <button
           key={opt.code}
           title={opt.title}
           aria-label={`Change language to ${opt.title}`}
+          className={opt.active ? 'active_lng' : ''}
           onClick={() => i18n.changeLanguage(opt.code)}
         >
           {opt.name}
-          {index < languages.length - 1 && <div>|</div>}
         </button>
       ))}
-      {width <= 936 && (
-        <div
-          className={`locales__container-menu ${showMenu ? 'active-menu' : ''}`}
-          onClick={() => setShowMenu(!showMenu)}
-        >
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      )}
     </div>
   )
 }

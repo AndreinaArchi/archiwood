@@ -1,0 +1,7 @@
+.social__container {
+  display: flex;
+  gap:7px;
+  padding: 5px 15px 5px 0px;
+  border-right: 1px solid black;
+  margin-right: 15px;
+}

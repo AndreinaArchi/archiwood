@@ -6,12 +6,13 @@ const Img = ({
   h = 'auto',
   ofit = 'cover',
   br = '0%',
+  className = '',
   action = () => {}
 }) => {
   return (
     <img
       src={img}
-      className="img__settings"
+      className={`img__settings ${className}`}
       style={{
         width: w,
         height: h,

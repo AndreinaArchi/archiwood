@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import './Nav.css'
-import logo from '/logo.webp'
-import useTranslate from './translate'
 import useWidth from '../../hooks/useWidth'
+import useTranslate from './translate'
+import './Nav.css'
+import logo from '/logo_01.png'
+import Phone from '../SocialChannel/Phone'
 
+const ShowNav = React.lazy(() => import('./ShowNav'))
+const SocialChannel = React.lazy(() => import('../SocialChannel/SocialChannel'))
 const Locales = React.lazy(() => import('../Locales/Locales'))
 const Img = React.lazy(() => import('../Img/Img'))
 
@@ -17,9 +20,9 @@ const Nav = () => {
     <>
       <nav className='nav__container filter'>
         <div className='nav__content-links'>
-          <Img img={logo} w='140px' action={() => alert('action')} />
+          <Img img={logo} w={width <= 936 ? '80px' : '110px'} action={() => alert('action')} />
           {width > 936 && (
-            <ul>
+            <ul className={width > 936 ? 'nav__content-ul-desktop' : ''}>
               {navLinks.map((link, index) => (
                 <li key={index}>
                   <NavLink
@@ -36,34 +39,45 @@ const Nav = () => {
           )}
         </div>
         <div className='nav__content-locales'>
-          <Locales showMenu={showMenu} setShowMenu={setShowMenu} />
+          <Locales />
+          {width <= 936 && (
+            <ShowNav showMenu={showMenu} setShowMenu={setShowMenu} />
+          )}
+          {width > 936 && (
+            <>
+              <SocialChannel />
+              <Phone />
+            </>
+          )}
         </div>
       </nav>
-{/*       <div className='nav__separate'>
-        <hr />
-      </div> */}
-
       <div
         className={`nav__container-menu ${
-          showMenu && width <= 936 ? 'active filter' : ''
+          showMenu && width <= 936 ? 'active' : ''
         }`}
       >
         {width <= 936 && (
-          <ul>
-            {navLinks.map((link, index) => (
-              <li key={index}>
-                <NavLink
-                  to={link.path}
-                  className={({ isActive }) =>
-                    `${isActive ? 'nav__link-active' : ''}`
-                  }
-                  onClick={() => setShowMenu(false)}
-                >
-                  {link.name}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
+          <div className='nav__content-menu'>
+            <ul>
+              {navLinks.map((link, index) => (
+                <li key={index}>
+                  <NavLink
+                    to={link.path}
+                    className={({ isActive }) =>
+                      `${isActive ? 'nav__link-active' : ''}`
+                    }
+                    onClick={() => setShowMenu(false)}
+                  >
+                    {link.name}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+            <div className='nav__content-menu-social'>
+              <SocialChannel />
+              <Phone />
+            </div>
+          </div>
         )}
       </div>
     </>

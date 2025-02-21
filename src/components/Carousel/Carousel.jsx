@@ -5,7 +5,6 @@ import arrow_right from '/icons/arrow-right.svg'
 
 const Img = React.lazy(() => import('../Img/Img'))
 
-
 const Carousel = ({ children, images }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [prevIndex, setPrevIndex] = useState(null)
@@ -25,6 +24,7 @@ const Carousel = ({ children, images }) => {
     setCurrentIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     )
+    console.log(currentIndex)
   }
 
   return (
@@ -49,11 +49,10 @@ const Carousel = ({ children, images }) => {
       </div>
       <div className='carousel__buttons'>
         <div className='carousel__button left'>
-          <Img img={arrow_left} w='30px' h='30px' action={prevSlide} />
+          <Img img={arrow_left} w='40px' h='40px' action={prevSlide} />
         </div>
         <div className='carousel__button right'>
-        <Img img={arrow_right} w='30px' h='30px' action={nextSlide} />
-
+          <Img img={arrow_right} w='40px' h='40px' action={nextSlide} />
         </div>
       </div>
       {children}

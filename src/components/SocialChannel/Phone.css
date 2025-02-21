@@ -1,0 +1,10 @@
+.phone__container {
+  display: flex;
+  gap: 7px;
+  align-items: end;
+}
+
+.phone__container > a{
+  font-size: 13px;
+  font-family: 'TT0005M', sans-serif;
+}
