@@ -21,6 +21,10 @@ const useSliderMobile = [
   {
     src: '/images/2_home.webp',
     alt: 'Image 2'
+  },
+  {
+    src: '/images/3_home.webp',
+    alt: 'Image 3'
   }
 ]
 

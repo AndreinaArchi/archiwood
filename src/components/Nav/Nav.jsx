@@ -20,7 +20,7 @@ const Nav = () => {
     <>
       <nav className='nav__container filter'>
         <div className='nav__content-links'>
-          <Img img={logo} w={width <= 936 ? '80px' : '110px'} action={() => alert('action')} />
+          <Img img={logo} w={width <= 936 ? '90px' : '110px'} action={() => alert('action')} />
           {width > 936 && (
             <ul className={width > 936 ? 'nav__content-ul-desktop' : ''}>
               {navLinks.map((link, index) => (

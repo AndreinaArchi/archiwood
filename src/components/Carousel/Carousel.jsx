@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Carousel.css'
 import arrow_left from '/icons/arrow-left.svg'
 import arrow_right from '/icons/arrow-right.svg'
+import useWidth from '../../hooks/useWidth'
 
 const Img = React.lazy(() => import('../Img/Img'))
 
@@ -9,6 +10,7 @@ const Carousel = ({ children, images }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [prevIndex, setPrevIndex] = useState(null)
   const [slideDirection, setSlideDirection] = useState('')
+  const width = useWidth()
 
   const prevSlide = () => {
     setPrevIndex(currentIndex)
@@ -24,12 +26,11 @@ const Carousel = ({ children, images }) => {
     setCurrentIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     )
-    console.log(currentIndex)
   }
 
   return (
     <div className='carousel__container'>
-      <div className='carousel__image-wrapper'>
+      <div className='carousel__image-wrapper' style={{ height: width > 936 ? "950px" : "100svh" }}>
         {prevIndex !== null && (
           <img
             key={`prev-${prevIndex}`}
