@@ -50,10 +50,10 @@ const Carousel = ({ children, images }) => {
       </div>
       <div className='carousel__buttons'>
         <div className='carousel__button left'>
-          <Img img={arrow_left} w='40px' h='40px' action={prevSlide} />
+          <Img img={arrow_left} w='30px' h='30px' action={prevSlide} />
         </div>
         <div className='carousel__button right'>
-          <Img img={arrow_right} w='40px' h='40px' action={nextSlide} />
+          <Img img={arrow_right} w='30px' h='30px' action={nextSlide} />
         </div>
       </div>
       {children}

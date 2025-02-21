@@ -15,17 +15,17 @@ const useSlider = [
 
 const useSliderMobile = [
   {
-    src: '/images/1_home.webp',
-    alt: 'Image 1'
-  },
-  {
     src: '/images/2_home.webp',
     alt: 'Image 2'
   },
   {
     src: '/images/3_home.webp',
     alt: 'Image 3'
-  }
+  },
+  {
+    src: '/images/1_home.webp',
+    alt: 'Image 1'
+  },
 ]
 
 export { useSlider, useSliderMobile }

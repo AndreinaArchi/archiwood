@@ -34,7 +34,7 @@ const Home = () => {
               txtColor='white'
               p='10px 20px'
               br='20px'
-              fs='16px'
+              fs='14px'
               className='btn-large'
             />
           </div>
