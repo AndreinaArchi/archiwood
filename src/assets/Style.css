@@ -2,10 +2,12 @@
   /* Background Colors */
   --aw-bg-primary: #C8C2BA;
   --aw-bg-secondary: #303030;
+  --aw-bg-thir: #4E3F3A;
 
   /* Text Colors */
   --aw-text-primary: #383838;
-  --aw-text-secondary: #C8C2BA;
+  --aw-text-secondary: #FFFFFF;
+  --aw-text-thir: #4E3F3A;
 
   /*SPACING AND ROUNDED*/
   --aw-spacing-xs: 8px;
@@ -16,6 +18,8 @@
   --aw-font-size-l: 20px;
   --aw-font-size-xl: 24px;
   --aw-font-size-xxl: 32px;
+  --aw-font-size-xxxl: 38px;
+  --aw-font-size-xxxxl: 44px;
 }
 
 @font-face {
@@ -59,31 +63,35 @@ img {
 }
 
 h1 {
-  font-size: var(--aw-font-size-xxl);
+  font-size: var(--aw-font-size-xxxl);
   font-family: 'TT0005M', sans-serif;
+  color: var(--aw-text-primary)
 }
 
 h2 {
-  font-size: var(--aw-font-size-xl);
+  font-size: var(--aw-font-size-xxxl);
   font-family: 'TT0005M', sans-serif;
+  color: var(--aw-text-primary)
 }
 
 h3,
 h4,
 h5 {
-  font-size: var(--p-font-size-l);
+  font-size: var(--aw-font-size-xxl);
+  color: var(--aw-text-primary)
 }
 
 p,
 li {
   font-family: 'TT0003M', sans-serif;
-  font-size: var(--aw-font-size-l);
+  font-size: var(--aw-font-size-xl);
+  color: var(--aw-text-thir)
 }
 
 a {
   text-decoration: none;
   font-family: 'TT0003M', sans-serif;
-  color: var(--aw-text-primary);
+  color: var(--aw-text-thir);
 }
 
 button {
@@ -129,9 +137,9 @@ button:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #000000;
+  background-color: var(--aw-bg-thir);
   border-radius: 10px;
-  border: 3px solid #777777;
+  border: 3px solid var(--aw-bg-primary);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -139,7 +147,7 @@ button:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background: #777777;
+  background: #77777700;
   border-radius: 10px;
 }
 
@@ -149,22 +157,22 @@ button:hover {
 
 @media (max-width: 936px) {
   h1 {
-    font-size: var(--aw-font-size-xl);
+    font-size: var(--aw-font-size-xl)!important;
   }
-  h2 {
-    font-size: var(--aw-font-size-l);
+  h2, h3 {
+    font-size: var(--aw-font-size-l)!important;
   }
 }
 
 @media (max-width: 546px) {
   h1 {
-    font-size: var(--aw-font-size-l);
+    font-size: var(--aw-font-size-l)!important;
   }
-  h2 {
-    font-size: var(--aw-font-size-l);
+  h2, h3 {
+    font-size: var(--aw-font-size-l)!important;
   }
   p,
   li {
-    font-size: var(--aw-font-size-m);
+    font-size: var(--aw-font-size-m)!important;
   }
 }

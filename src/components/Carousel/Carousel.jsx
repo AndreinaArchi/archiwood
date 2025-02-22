@@ -2,15 +2,13 @@ import React, { useState } from 'react'
 import './Carousel.css'
 import arrow_left from '/icons/arrow-left.svg'
 import arrow_right from '/icons/arrow-right.svg'
-import useWidth from '../../hooks/useWidth'
 
 const Img = React.lazy(() => import('../Img/Img'))
 
-const Carousel = ({ children, images }) => {
+const Carousel = ({ children, images, h='120svh' }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [prevIndex, setPrevIndex] = useState(null)
   const [slideDirection, setSlideDirection] = useState('')
-  const width = useWidth()
 
   const prevSlide = () => {
     setPrevIndex(currentIndex)
@@ -29,8 +27,8 @@ const Carousel = ({ children, images }) => {
   }
 
   return (
-    <div className='carousel__container'>
-      <div className='carousel__image-wrapper' style={{ height: width > 936 ? "950px" : "100svh" }}>
+    <div className='carousel__container' style={{height:h}}>
+      <div className='carousel__image-wrapper'>
         {prevIndex !== null && (
           <img
             key={`prev-${prevIndex}`}
@@ -48,14 +46,16 @@ const Carousel = ({ children, images }) => {
           loading='lazy'
         />
       </div>
-      <div className='carousel__buttons'>
-        <div className='carousel__button left'>
-          <Img img={arrow_left} w='30px' h='30px' action={prevSlide} />
+      {images.length !== 1 && (
+        <div className='carousel__buttons'>
+          <div className='carousel__button left'>
+            <Img img={arrow_left} w='30px' h='30px' action={prevSlide} />
+          </div>
+          <div className='carousel__button right'>
+            <Img img={arrow_right} w='30px' h='30px' action={nextSlide} />
+          </div>
         </div>
-        <div className='carousel__button right'>
-          <Img img={arrow_right} w='30px' h='30px' action={nextSlide} />
-        </div>
-      </div>
+      )}
       {children}
     </div>
   )

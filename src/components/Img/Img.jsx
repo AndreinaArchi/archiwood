@@ -13,7 +13,7 @@ const Img = ({
   return (
     <img
       src={img}
-      className={`img__settings ${className}`}
+      className={`${className !== '' ? '' : 'img__settings'}`}
       style={{
         width: w,
         height: h,

@@ -1,0 +1,142 @@
+.carousel-text__container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  margin: auto;
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutToRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.carousel-text__buttons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 120px;
+  gap: 40px;
+}
+
+.carousel-text__button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  z-index: 10;
+}
+
+.carousel-text__container-section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 200px 70px;
+}
+
+.carousel-text-content__ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel-text-content__ > hr {
+  width: 100%;
+  height: 2px;
+  background-color: var(--aw-bg-thir);
+  border: none;
+}
+
+.carousel-text-content-p {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px 70px;
+}
+
+.carousel-text-content-img {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carousel-text-container-img {
+  width: 310px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.carousel-text-container-img > p {
+  font-size: 18px;
+}
+
+@media (max-width: 936px) {
+  .carousel-text__container-section2 {
+    padding: 200px 30px;
+  }
+  .carousel-text-content-p {
+    padding: 0;
+    width: 100%;
+  }
+  .carousel-text__container-section2{
+    padding: 50px 30px 100px;
+  }
+  .carousel-text__buttons {
+    padding-bottom: 20px;
+  }
+}
