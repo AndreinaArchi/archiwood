@@ -128,7 +128,7 @@ const Nav = () => {
       >
         {width <= 936 && (
           <div className='nav__content-menu'>
-          <ul className={width < 936 ? 'nav__content-ul-mobile' : ''}>
+            <ul className={width < 936 ? 'nav__content-ul-mobile' : ''}>
               {navLinks.map((link) => (
                 <li key={link.id}>
                   {link.options ? (
@@ -148,7 +148,13 @@ const Nav = () => {
                       {openSubMenu === link.id && (
                         <ul className='nav__content-submenuMobile fadeIn'>
                           {link.options.map((subItem) => (
-                            <li key={subItem.id}>
+                            <li
+                              key={subItem.id}
+                              onClick={() => {
+                                setOpenSubMenu(false)
+                                setShowMenu(false)
+                              }}
+                            >
                               {'·'}
                               <NavLink to={subItem.ref}>{subItem.name}</NavLink>
                             </li>
@@ -158,6 +164,10 @@ const Nav = () => {
                     </>
                   ) : (
                     <NavLink
+                      onClick={() => {
+                        setOpenSubMenu(false)
+                        setShowMenu(false)
+                      }}
                       to={link.path}
                       className={({ isActive }) =>
                         `${isActive ? 'nav__link-active' : ''}`
