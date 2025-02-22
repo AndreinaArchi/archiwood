@@ -1,6 +1,6 @@
 :root {
   /* Background Colors */
-  --aw-bg-primary: #999999;
+  --aw-bg-primary: #C8C2BA;
   --aw-bg-secondary: #303030;
 
   /* Text Colors */
@@ -46,6 +46,7 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Spartan-Variable', sans-serif;
+  background-color: var(--aw-bg-primary);
 }
 
 html,

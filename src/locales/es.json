@@ -4,7 +4,34 @@
     "about": "Sobre nosotros",
     "products": "Productos",
     "proyects": "Proyectos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "purspose":"Nuestro proposito",
+    "showroom":"Nuestra sala de exposición",
+    "process":"Nuestro proceso",
+    "news":"Noticias",
+    "kitchen":"Cocina",
+    "closets":"Armarios",
+    "doors":"Puertas",
+    "screens":"Pantallas",
+    "vanities":"Vanidades",
+    "counter_top":"Encimera",
+    "plasters":"Yesos",
+    "plumbing":"Plomería",
+    "wall_unit":"Unidad de pared",
+    "art":"Arte"
+
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "En Archiwood, estamos listos para ayudarte a crear espacios únicos con carpintería de alta calidad. Contáctanos para recibir asesoría personalizada y descubrir cómo podemos hacer realidad tu visión.",
+    "actionAddres": " Ver en Google Maps.",
+    "actionSocialMedia": "Síguenos",
+    "secondDescription": "¿Tienes alguna duda o necesitas más información?",
+    "secondDescription_": "¡Escríbenos!",
+    "nameAndLastname": "Nombre y Apellido",
+    "email": "Email",
+    "message": "Escribe tu mensaje aquí",
+    "btnAction": "¡Enviar!"
   },
   "home": {
     "title_1": "¡Especialistas en Carpintería personalizada!",

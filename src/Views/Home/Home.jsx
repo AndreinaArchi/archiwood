@@ -4,6 +4,7 @@ import Button from '../../components/Button/Button'
 import useTranslate from './translate'
 import './Home.css'
 import useWidth from '../../hooks/useWidth'
+import Contact from '../../components/Contact/Contact'
 
 const Carousel = React.lazy(() => import('../../components/Carousel/Carousel'))
 

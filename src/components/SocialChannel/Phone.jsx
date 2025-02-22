@@ -6,12 +6,12 @@ const Img = React.lazy(() => import('../Img/Img'))
 
 const Phone = () => {
   const callMe = () => {
-    window.open('tel:+380722650507')
+    window.open('tel:+17864586859')
   }
   return (
     <div className='phone__container'>
       <Img img={phone} w='18px' action={() => callMe()} ofit='contain' />
-      <a onClick={() => callMe()}>722.65.05.07</a>
+      <a onClick={() => callMe()}>(1)786.458.6859</a>
     </div>
   )
 }

@@ -6,6 +6,7 @@ const Img = ({
   h = 'auto',
   ofit = 'cover',
   br = '0%',
+  r = 0,
   className = '',
   action = () => {}
 }) => {
@@ -17,7 +18,8 @@ const Img = ({
         width: w,
         height: h,
         objectFit: ofit,
-        borderRadius: br
+        borderRadius: br,
+        transform: `rotate(${r}deg)`
       }}
       onClick={action}
       loading='lazy'

@@ -4,19 +4,25 @@ import useWidth from '../../hooks/useWidth'
 import useTranslate from './translate'
 import './Nav.css'
 import logo from '/logo_01.png'
-import Phone from '../SocialChannel/Phone'
+import show from '/icons/show.png'
 
 const ShowNav = React.lazy(() => import('./ShowNav'))
 const SocialChannel = React.lazy(() => import('../SocialChannel/SocialChannel'))
 const Locales = React.lazy(() => import('../Locales/Locales'))
 const Img = React.lazy(() => import('../Img/Img'))
+const Phone = React.lazy(() => import('../SocialChannel/Phone'))
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false)
+  const [openSubMenu, setOpenSubMenu] = useState(false)
   const [isHidden, setIsHidden] = useState(false)
   const [hasFilter, setHasFilter] = useState(false)
   const navLinks = useTranslate()
   const width = useWidth()
+
+  const toggleSubMenu = (id) => {
+    setOpenSubMenu(openSubMenu === id ? false : id)
+  }
 
   useEffect(() => {
     let lastScrollY = window.scrollY
@@ -24,7 +30,11 @@ const Nav = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY
 
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      if (
+        !openSubMenu &&
+        currentScrollY > lastScrollY &&
+        currentScrollY > 100
+      ) {
         setIsHidden(true)
       } else {
         setIsHidden(false)
@@ -37,14 +47,14 @@ const Nav = () => {
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [width])
+  }, [width, openSubMenu])
 
   return (
     <>
       <nav
-        className={`nav__container ${isHidden && !showMenu ? 'nav--hidden' : ''} ${
-          hasFilter ? 'filter' : ''
-        }`}
+        className={`nav__container ${
+          isHidden && !showMenu ? 'nav--hidden' : ''
+        } ${hasFilter ? 'filter' : ''}`}
       >
         <div className='nav__content-links'>
           <Img
@@ -54,16 +64,36 @@ const Nav = () => {
           />
           {width > 936 && (
             <ul className={width > 936 ? 'nav__content-ul-desktop' : ''}>
-              {navLinks.map((link, index) => (
-                <li key={index}>
-                  <NavLink
-                    to={link.path}
-                    className={({ isActive }) =>
-                      `${isActive ? 'nav__link-active' : ''}`
-                    }
-                  >
-                    {link.name}
-                  </NavLink>
+              {navLinks.map((link) => (
+                <li key={link.id}>
+                  {link.options ? (
+                    <>
+                      <button
+                        className={`nav__submenu`}
+                        onClick={() => toggleSubMenu(link.id)}
+                      >
+                        {link.name}{' '}
+                        <Img
+                          img={show}
+                          w='9px'
+                          h='9px'
+                          r={openSubMenu === link.id ? 180 : 0}
+                        />
+                      </button>
+                      {openSubMenu === link.id && (
+                        <ul className='nav__content-submenu fadeIn'>
+                          {link.options.map((subItem, index) => (
+                            <li key={subItem.id}>
+                              {index !== 0 && '·'}
+                              <NavLink to={subItem.ref}>{subItem.name}</NavLink>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </>
+                  ) : (
+                    <NavLink to={link.path}>{link.name}</NavLink>
+                  )}
                 </li>
               ))}
             </ul>
@@ -82,6 +112,8 @@ const Nav = () => {
           )}
         </div>
       </nav>
+
+      {/**NAV MOBILE */}
       <div
         className={`nav__container-menu ${
           showMenu && width <= 936 ? 'active' : ''
