@@ -5,6 +5,7 @@
 
   /* Text Colors */
   --aw-text-primary: #383838;
+  --aw-text-secondary: #C8C2BA;
 
   /*SPACING AND ROUNDED*/
   --aw-spacing-xs: 8px;
@@ -130,7 +131,7 @@ button:hover {
 ::-webkit-scrollbar-thumb {
   background-color: #000000;
   border-radius: 10px;
-  border: 3px solid #fff;
+  border: 3px solid #777777;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -138,7 +139,7 @@ button:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #777777;
   border-radius: 10px;
 }
 

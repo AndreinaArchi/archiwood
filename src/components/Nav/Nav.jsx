@@ -92,7 +92,14 @@ const Nav = () => {
                       )}
                     </>
                   ) : (
-                    <NavLink to={link.path}>{link.name}</NavLink>
+                    <NavLink
+                      to={link.path}
+                      className={({ isActive }) =>
+                        `${isActive ? 'nav__link-active' : ''}`
+                      }
+                    >
+                      {link.name}
+                    </NavLink>
                   )}
                 </li>
               ))}
@@ -114,26 +121,51 @@ const Nav = () => {
       </nav>
 
       {/**NAV MOBILE */}
-      <div
+      <nav
         className={`nav__container-menu ${
           showMenu && width <= 936 ? 'active' : ''
         }`}
-        onClick={() => setShowMenu(false)}
       >
         {width <= 936 && (
           <div className='nav__content-menu'>
-            <ul>
-              {navLinks.map((link, index) => (
-                <li key={index}>
-                  <NavLink
-                    to={link.path}
-                    className={({ isActive }) =>
-                      `${isActive ? 'nav__link-active' : ''}`
-                    }
-                    onClick={() => setShowMenu(false)}
-                  >
-                    {link.name}
-                  </NavLink>
+          <ul className={width < 936 ? 'nav__content-ul-mobile' : ''}>
+              {navLinks.map((link) => (
+                <li key={link.id}>
+                  {link.options ? (
+                    <>
+                      <button
+                        className={`nav__submenu`}
+                        onClick={() => toggleSubMenu(link.id)}
+                      >
+                        {link.name}{' '}
+                        <Img
+                          img={show}
+                          w='9px'
+                          h='9px'
+                          r={openSubMenu === link.id ? 180 : 0}
+                        />
+                      </button>
+                      {openSubMenu === link.id && (
+                        <ul className='nav__content-submenuMobile fadeIn'>
+                          {link.options.map((subItem) => (
+                            <li key={subItem.id}>
+                              {'·'}
+                              <NavLink to={subItem.ref}>{subItem.name}</NavLink>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </>
+                  ) : (
+                    <NavLink
+                      to={link.path}
+                      className={({ isActive }) =>
+                        `${isActive ? 'nav__link-active' : ''}`
+                      }
+                    >
+                      {link.name}
+                    </NavLink>
+                  )}
                 </li>
               ))}
             </ul>
@@ -143,7 +175,7 @@ const Nav = () => {
             </div>
           </div>
         )}
-      </div>
+      </nav>
     </>
   )
 }
