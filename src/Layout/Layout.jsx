@@ -5,7 +5,7 @@ const Layout = () => {
   return (
     <>
       <Nav />
-      <section className='layout__section'>
+      <section className='layout__section fadeIn'>
         <Outlet />
       </section>
     </>

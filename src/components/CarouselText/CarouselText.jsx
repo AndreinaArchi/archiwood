@@ -7,29 +7,34 @@ const Img = React.lazy(() => import('../Img/Img'))
 
 const CarouselText = ({ arrayText }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [animation, setAnimation] = useState('')
+  const [animation, setAnimation] = useState(false)
+
   const prevSlide = () => {
-    if (currentIndex > 0) {
-      setAnimation('slideOutToRight')
-      setTimeout(() => {
-        setCurrentIndex(currentIndex - 1)
-        setAnimation('slideInFromLeft')
-      }, 300)
-    }
+    setAnimation(true)
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? arrayText.length - 1 : prevIndex - 1
+    )
+    setTimeout(() => {
+      setAnimation(false)
+    }, 600)
   }
 
   const nextSlide = () => {
-    if (currentIndex < arrayText.length - 1) {
-      setAnimation('slideOutToLeft')
-      setTimeout(() => {
-        setCurrentIndex(currentIndex + 1)
-        setAnimation('slideInFromRight')
-      }, 300)
-    }
+    setCurrentIndex((prevIndex) =>
+      prevIndex === arrayText.length - 1 ? 0 : prevIndex + 1
+    )
+    setAnimation(true)
+    setTimeout(() => {
+      setAnimation(false)
+    }, 600)
   }
   return (
     <div className='carousel-text__container'>
-      <div className='carousel-text__container-section2 fadeIn'>
+      <div
+        className={`carousel-text__container-section2 ${
+          animation ? 'fadeIn' : ''
+        }`}
+      >
         <div className='carousel-text-content__'>
           <h2>{arrayText[currentIndex].title_1}</h2>
           <hr />
@@ -44,7 +49,7 @@ const CarouselText = ({ arrayText }) => {
           <div className='carousel-text-content-img'>
             {arrayText[currentIndex].items?.map((item, index) => (
               <div key={index} className='carousel-text-container-img'>
-                <Img img={item.img} w='60px' h='60px' ofit="contain" />
+                <Img img={item.img} w='60px' h='60px' ofit='contain' />
                 <p>{item.paragraph}</p>
               </div>
             ))}

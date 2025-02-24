@@ -4,6 +4,7 @@
   position: relative;
   z-index: 9;
   width: 100%;
+  height:100svh;
   margin: auto;
 }
 @keyframes slideInFromLeft {
@@ -107,7 +108,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .carousel-text-container-img {
@@ -123,6 +124,7 @@
 
 .carousel-text-container-img > p {
   font-size: 18px;
+  text-align: center;
 }
 
 @media (max-width: 936px) {
@@ -133,7 +135,7 @@
     padding: 0;
     width: 100%;
   }
-  .carousel-text__container-section2{
+  .carousel-text__container-section2 {
     padding: 50px 30px 100px;
   }
   .carousel-text__buttons {
