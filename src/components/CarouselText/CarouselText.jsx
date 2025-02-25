@@ -5,7 +5,7 @@ import arrow_right from '/icons/arrow-right.svg'
 
 const Img = React.lazy(() => import('../Img/Img'))
 
-const CarouselText = ({ arrayText }) => {
+const CarouselText = ({ arrayText, slice = false }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [animation, setAnimation] = useState(false)
 
@@ -56,14 +56,16 @@ const CarouselText = ({ arrayText }) => {
           </div>
         )}
       </div>
-      <div className='carousel-text__buttons'>
-        <div className='carousel-text__button left'>
-          <Img img={arrow_left} w='30px' h='30px' action={prevSlide} />
+      {slice && (
+        <div className='carousel-text__buttons'>
+          <div className='carousel-text__button left'>
+            <Img img={arrow_left} w='30px' h='30px' action={prevSlide} />
+          </div>
+          <div className='carousel-text__button right'>
+            <Img img={arrow_right} w='30px' h='30px' action={nextSlide} />
+          </div>
         </div>
-        <div className='carousel-text__button right'>
-          <Img img={arrow_right} w='30px' h='30px' action={nextSlide} />
-        </div>
-      </div>
+      )}
     </div>
   )
 }

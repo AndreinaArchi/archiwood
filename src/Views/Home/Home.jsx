@@ -7,17 +7,20 @@ import {
   useSliderSection3Mobile
 } from './Slider'
 import Button from '../../components/Button/Button'
-import { useTranslateSection1, useTranslateSection2, useTranslateSection3 } from './translate'
+import { useTranslateSection1, useTranslateSection2, useTranslateSection3, useTranslateSection4 } from './translate'
 import './Home.css'
 
 const CarousleText = React.lazy(() => import('../../components/CarouselText/CarouselText'))
 const Carousel = React.lazy(() => import('../../components/Carousel/Carousel'))
+const Process = React.lazy(() => import('../../components/Process/Process'))
 
 const Home = () => {
   const textContent = useTranslateSection1()
   const textContent3 = useTranslateSection3()
   const width = useWidth()
   const arrayText = useTranslateSection2()
+  const arrayText4 = useTranslateSection4()
+
 
   return (
     <div>
@@ -51,7 +54,7 @@ const Home = () => {
         </Carousel>
       </section>
       <section>
-        <CarousleText arrayText={arrayText} />
+        <CarousleText arrayText={arrayText} slice={true} />
       </section>
       <section>
         <Carousel
@@ -79,6 +82,9 @@ const Home = () => {
             </div>
           </div>
         </Carousel>
+      </section>
+      <section>
+        <Process arrayText={arrayText4} />
       </section>
     </div>
   )

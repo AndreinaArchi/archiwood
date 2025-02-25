@@ -1,0 +1,114 @@
+.process__container {
+  width: 100%;
+  padding: 180px 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.process__content-title {
+  padding: 0 20px 5px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid var(--aw-bg-thir);
+}
+
+.process__content-title > h2 {
+  text-transform: capitalize;
+}
+
+.process__container-article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  position: relative;
+}
+
+/* Línea central */
+.process__container-article::after {
+ /*  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: var(--aw-bg-thir);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; */
+}
+
+.process__content-article {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+/* Alternar posición de los artículos */
+.process__content-article:nth-child(odd) {
+  align-self: flex-start;
+  text-align: end;
+  transform: translateX(29px);
+}
+
+.process__content-article:nth-child(even) {
+  align-self: flex-end;
+  text-align: start;
+  flex-direction: row-reverse;
+  transform: translateX(-31px);
+}
+
+/* Imágenes con mayor z-index */
+.process__content-img {
+  position: relative;
+  z-index: 5; /* Por encima de la línea */
+}
+
+/* Quitar línea en el último artículo */
+.process__content-article:last-child::after {
+  display: none;
+}
+
+.process__content-article > div > h3,
+.process__content-article > div > p {
+  font-size: 18px;
+}
+
+.process__btn-action {
+  background:none;
+  border:1px solid var(--aw-bg-thir);
+  padding: 5px  10px;
+  transition: all 0.3s ease-in;
+}
+
+@media (max-width: 936px) {
+  .process__container {
+    padding: 130px 70px;
+  }
+
+  .process__container-article::after {
+    display: none; /* Mover línea más a la izquierda en pantallas pequeñas */
+  }
+
+  .process__content-article {
+    width: 100%;
+    text-align: left;
+  }
+
+  .process__content-article:nth-child(odd),
+  .process__content-article:nth-child(even) {
+    transform: none;
+  }
+}
+
+@media (max-width: 546px) {
+  .process__container {
+    padding: 100px 30px;
+  }
+}

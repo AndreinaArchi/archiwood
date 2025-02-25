@@ -7,6 +7,7 @@ const Img = ({
   ofit = 'cover',
   br = '0%',
   r = 0,
+  alt='',
   className = '',
   action = () => {}
 }) => {
@@ -21,6 +22,7 @@ const Img = ({
         borderRadius: br,
         transform: `rotate(${r}deg)`
       }}
+      alt={alt}
       onClick={action}
       loading='lazy'
     />
