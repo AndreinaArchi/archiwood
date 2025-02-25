@@ -8,12 +8,14 @@ import five from '/images/5.png'
 import six from '/images/6.png'
 import seven from '/images/7.png'
 import useTranslate from './translate'
+import useWidth from '../../hooks/useWidth'
 
 const Img = React.lazy(() => import('../Img/Img'))
 
 const Process = ({ arrayText }) => {
   const [showAll, setShowAll] = useState(false)
   const btn_text = useTranslate()
+  const width = useWidth
   const arrayImg = {
     1: one,
     2: two,
@@ -50,8 +52,8 @@ const Process = ({ arrayText }) => {
                   <Img
                     img={imgSrc}
                     alt={`Image ${item.title}`}
-                    w='60px'
-                    h='60px'
+                    w={width >= 936 ? '60px' : '40px'}
+                    h={width >= 936 ? '60px' : '40px'}
                   />
                 </div>
               )}
