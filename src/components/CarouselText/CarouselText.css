@@ -4,9 +4,10 @@
   position: relative;
   z-index: 9;
   width: 100%;
-  min-height:80svh;
+  min-height: 80svh;
   margin: auto;
   transition: all 0.3s ease-in-out;
+  background: var(--aw-bg-gradiant);
 }
 
 @keyframes slideInFromLeft {
@@ -80,7 +81,7 @@
   align-items: center;
   gap: 20px;
   width: 100%;
-  padding: 100px 70px 200px ;
+  padding: 100px 70px 200px;
 }
 
 .carousel-text-content__ {

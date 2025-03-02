@@ -60,39 +60,51 @@
     "buttonText": "Habla con un experto"
   },
   "home_section4": {
-    "btn_on":"Leer más",
-    "btn_off":"Leer menos",
+    "btn_on": "Leer más",
+    "btn_off": "Leer menos",
     "title": "Nuestro proceso",
     "description": "En Archiwood, cada proyecto comienza con una idea única y un enfoque totalmente personalizado. Nuestro proceso está diseñado para asegurar que cada pieza de carpintería sea una obra maestra que refleje tus necesidades y visión. A continuación te presentamos los pasos de nuestro proceso:",
     "options": [
-      { "id":1,
+      {
+        "id": 1,
         "title": "Consulta Inicial",
         "description": "Comenzamos con una reunión contigo para entender tu visión, necesidades y el estilo que deseas lograr. Durante esta etapa, recopilamos todos los detalles clave del proyecto para asegurarnos de que nuestras soluciones se adapten perfectamente a tus expectativas."
       },
-      { "id":2,
+      {
+        "id": 2,
         "title": "Estimación y Presupuesto",
         "description": "Con base en la consulta inicial, te proporcionamos una estimación detallada y un presupuesto personalizado. Nos aseguramos de que el presupuesto sea transparente, claro y ajustado a tus necesidades, teniendo en cuenta materiales, tiempo de fabricación e instalación."
       },
-      { "id":3,
+      {
+        "id": 3,
         "title": "Diseño Personalizado",
         "description": "Nuestro equipo de diseñadores crea planos y diseños a medida basados en tus requerimientos. Usamos herramientas avanzadas de dibujo y renderizado para que puedas visualizar el diseño final y hacer cualquier ajuste antes de continuar con la producción."
       },
-      { "id":4,
+      {
+        "id": 4,
         "title": "Selección de Materiales",
         "description": "Trabajamos contigo para elegir los materiales más adecuados para tu proyecto, ya sea con madera local de alta calidad o con nuestra exclusiva línea importada de Europa. Nos aseguramos de que los materiales seleccionados cumplan con tus expectativas estéticas y de durabilidad."
       },
-      { "id":5,
+      {
+        "id": 5,
         "title": "Fabricación",
         "description": "Una vez aprobado el diseño y los materiales, comenzamos la fabricación. Nuestro equipo de expertos carpinteros da vida a cada pieza con precisión, cuidando cada detalle para garantizar la máxima calidad y acabado."
       },
-      { "id":6,
+      {
+        "id": 6,
         "title": "Instalación",
         "description": "El último paso es la instalación. Nuestro equipo se encarga de la entrega e instalación en el lugar, asegurando que todo encaje perfectamente y cumpla con los estándares más altos de calidad."
       },
-      { "id":7,
+      {
+        "id": 7,
         "title": "Acompañamiento Postventa",
         "description": "Después de la instalación, seguimos comprometidos con tu satisfacción. Ofrecemos apoyo postventa para resolver cualquier inquietud o necesidad adicional."
       }
     ]
+  },
+  "home_section5": {
+    "title": "En Archiwood,",
+    "paragraph": "nos enorgullece ofrecer soluciones de carpintería personalizadas que no solo cumplen con las expectativas de nuestros clientes, sino que las superan, creando espacios extraordinarios con cada proyecto.",
+    "buttonText": "Habla con un experto"
   }
 }

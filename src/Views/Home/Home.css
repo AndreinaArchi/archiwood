@@ -38,13 +38,43 @@
   font-size: var(--aw-font-size-xxl);
 }
 
+.carousel__content-section5 {
+  position: absolute;
+  margin-top: 280px;
+  right: 0px;
+  width: 55%;
+  padding: 0 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel__content-section5 > div > h1 {
+  color: var(--aw-text-secondary);
+  font-family: 'TT0003M', sans-serif;
+  font-weight: 300;
+  font-size: var(--aw-font-size-xxxl);
+}
+
+.carousel__content-section5 > div > p {
+  color: var(--aw-text-secondary);
+  font-family: 'TT0003M', sans-serif;
+  font-weight: 300;
+  font-size: var(--aw-font-size-l);
+}
+
 @media (max-width: 936px) {
   .carousel__content {
     margin-top: 150px;
     padding: 0 70px;
   }
-  .carousel__content-section3 {
-  padding: 0 70px;
+
+  .carousel__content-section3,
+  .carousel__content-section5 {
+    padding: 0 70px;
   }
 }
 
@@ -52,8 +82,16 @@
   .carousel__content {
     padding: 30px 30px;
   }
+
   .carousel__content-section3 {
-  padding: 0 30px;
-  margin-top: 40px;
+    padding: 0 30px;
+    margin-top: 40px;
+  }
+
+  .carousel__content-section5 {
+    margin-top: 40px;
+    left: 0px;
+    width: 60%;
+    padding: 0 30px;
   }
 }

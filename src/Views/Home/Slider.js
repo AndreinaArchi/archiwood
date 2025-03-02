@@ -34,11 +34,31 @@ const useSliderSection3 = [
     alt: 'Diseños unicos personalizados'
   }
 ]
-const useSliderSection3Mobile=[
+const useSliderSection3Mobile = [
   {
-    src:'/images/2_Diseños_unicos_personalizados.png',
-    alt:'Diseños unicos personalizados'
+    src: '/images/2_Diseños_unicos_personalizados.png',
+    alt: 'Diseños unicos personalizados'
   }
 ]
 
-export { useSlider, useSliderMobile, useSliderSection3, useSliderSection3Mobile }
+const useSliderSection5 = [
+  {
+    src: '/images/9_En Archiwood.png',
+    alt: 'Diseños unicos personalizados'
+  }
+]
+const useSliderSection5Mobile = [
+  {
+    src: '/images/3_En Archiwood_mobile.png',
+    alt: 'Diseños unicos personalizados'
+  }
+]
+
+export {
+  useSlider,
+  useSliderMobile,
+  useSliderSection3,
+  useSliderSection3Mobile,
+  useSliderSection5,
+  useSliderSection5Mobile
+}

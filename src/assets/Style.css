@@ -3,6 +3,11 @@
   --aw-bg-primary: #C8C2BA;
   --aw-bg-secondary: #303030;
   --aw-bg-thir: #4E3F3A;
+  --aw-bg-gradiant: linear-gradient(
+    174deg,
+    rgba(200, 194, 186, 1) 0%,
+    rgba(221, 213, 202, 1) 100%
+  );;
 
   /* Text Colors */
   --aw-text-primary: #383838;

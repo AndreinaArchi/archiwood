@@ -12,7 +12,7 @@ import useWidth from '../../hooks/useWidth'
 
 const Img = React.lazy(() => import('../Img/Img'))
 
-const Process = ({ arrayText }) => {
+const Process = ({ arrayText }) => {  
   const [showAll, setShowAll] = useState(false)
   const btn_text = useTranslate()
   const width = useWidth
@@ -43,26 +43,25 @@ const Process = ({ arrayText }) => {
           const imgSrc = arrayImg[item.id]
           return (
             <article key={index} className='process__content-article fadeIn'>
-              <div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
               {imgSrc && (
-                <div className='process__content-img'>
                   <Img
                     img={imgSrc}
                     alt={`Image ${item.title}`}
                     w={width >= 936 ? '60px' : '40px'}
                     h={width >= 936 ? '60px' : '40px'}
                   />
-                </div>
               )}
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
             </article>
           )
         })}
       </div>
       {arrayText.options.length > 3 && (
-        <button onClick={() => setShowAll(!showAll)} className='process__btn-action'>
+        <button
+          onClick={() => setShowAll(!showAll)}
+          className='process__btn-action'
+        >
           {showAll ? btn_text.button_off : btn_text.button_on}
         </button>
       )}
