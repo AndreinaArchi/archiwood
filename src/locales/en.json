@@ -106,6 +106,41 @@
     "title": "At Archiwood,",
     "paragraph": "we take pride in offering custom carpentry solutions that not only meet but exceed our clients' expectations, creating extraordinary spaces with every project.",
     "buttonText": "Talk to an Expert"
+  },
+  "home_section6": {
+    "items": [
+      {
+        "id": 1,
+        "principalTitle": "Our Showroom",
+        "img": "/images/10_nuestro_Showroom_1.png",
+        "title": "Discover our exclusive space",
+        "description_1": "At Archiwood, we offer a unique experience in our showroom, located in Miami, where you can explore our custom carpentry solutions, both locally made and imported from Europe.",
+        "description_2": "Here, you'll discover how quality, design, and functionality come together to offer you the best products and services. Whether you are an architect, designer, or homeowner, you'll find everything you need for your next project."
+      },
+      {
+        "id": 2,
+        "principalTitle": "Our Showroom",
+        "img": "/images/10_nuestro_Showroom_2.png",
+        "title": "Experience Archiwood",
+        "description_1": "PENDING",
+        "description_2": "PENDING"
+      },
+      {
+        "id": 3,
+        "principalTitle": "Our Showroom",
+        "img": "/images/10_nuestro_Showroom_1.png",
+        "title": "Expert advice at your disposal",
+        "description_1": "We have a team of designers and technical experts ready to offer you personalized guidance, supporting you at every step of the process. From design to material selection and project management, we ensure you get the best solution for your space with the efficiency and quality that define us.",
+        "description_2": ""
+      },
+      {
+        "id": 4,
+        "principalTitle": "Our Showroom",
+        "img": "/images/10_nuestro_Showroom_2.png",
+        "title": "Visit us and start your project",
+        "description_1": "PENDING",
+        "description_2": "PENDING"
+      }
+    ]
   }
 }
-

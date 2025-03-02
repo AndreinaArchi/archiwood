@@ -106,5 +106,41 @@
     "title": "En Archiwood,",
     "paragraph": "nos enorgullece ofrecer soluciones de carpintería personalizadas que no solo cumplen con las expectativas de nuestros clientes, sino que las superan, creando espacios extraordinarios con cada proyecto.",
     "buttonText": "Habla con un experto"
+  },
+  "home_section6": {
+    "items": [
+      {
+        "id": 1,
+        "principalTitle": "Nuestro Showroom",
+        "img": "/images/10_nuestro_Showroom_1.png",
+        "title": "Descubre nuestro espacio exclusivo",
+        "description_1": "En Archiwood, ofrecemos una experiencia única en nuestro showroom, ubicado en Miami, donde podrás explorar nuestras soluciones de carpintería personalizada, tanto locales como importadas desde Europa.",
+        "description_2": "Aquí, descubrirás cómo la calidad, diseño y funcionalidad se combinan para ofrecerte los mejores productos y servicios. Ya seas arquitecto, diseñador o propietario, encontrarás todo lo necesario para tu próximo proyecto."
+      },
+      {
+        "id": 2,
+        "principalTitle": "Nuestro Showroom",
+        "img": "/images/10_nuestro_Showroom_2.png",
+        "title": "Vive la experiencia Archiwood",
+        "description_1": "PENDIENTE",
+        "description_2": "PENDIENTE"
+      },
+      {
+        "id": 3,
+        "principalTitle": "Nuestro Showroom",
+        "img": "/images/10_nuestro_Showroom_1.png",
+        "title": "Asesoramiento experto a tu disposición",
+        "description_1": "Contamos con un equipo de diseñadores y expertos técnicos listos para ofrecerte asesoría personalizada, apoyándote en cada paso del proceso. Desde el diseño hasta la selección de materiales y la gestión de proyectos, nos aseguramos de que obtengas la mejor solución para tu espacio, con la eficiencia y calidad que nos caracteriza.",
+        "description_2": ""
+      },
+      {
+        "id": 4,
+        "principalTitle": "Nuestro Showroom",
+        "img": "/images/10_nuestro_Showroom_2.png",
+        "title": "Visítanos y comienza tu proyecto",
+        "description_1": "PENDIENTE",
+        "description_2": "PENDIENTE"
+      }
+    ]
   }
 }

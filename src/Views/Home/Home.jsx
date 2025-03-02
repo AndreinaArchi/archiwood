@@ -14,10 +14,12 @@ import {
   useTranslateSection2,
   useTranslateSection3,
   useTranslateSection4,
-  useTranslateSection5
+  useTranslateSection5,
+  useTranslateSection6
 } from './translate'
 import './Home.css'
 
+const Showroom = React.lazy(() => import('../../components/Showroom/Showroom'))
 const CarousleText = React.lazy(() =>
   import('../../components/CarouselText/CarouselText')
 )
@@ -31,6 +33,7 @@ const Home = () => {
   const arrayText = useTranslateSection2()
   const arrayText4 = useTranslateSection4()
   const textContent5 = useTranslateSection5()
+  const arrayText6 = useTranslateSection6()
 
   return (
     <div>
@@ -108,7 +111,7 @@ const Home = () => {
               <h1>{textContent5.title_1}</h1>
             </div>
             <div>
-                <p>{textContent5.paragraph}</p>
+              <p>{textContent5.paragraph}</p>
             </div>
             <div className='carousel__content__button'>
               <Button
@@ -124,6 +127,22 @@ const Home = () => {
             </div>
           </div>
         </Carousel>
+      </section>
+      <section>
+        <Showroom arrayText={arrayText6}>
+          <div className='carousel__content__button'>
+            <Button
+              value={textContent5.buttonText}
+              action={() => alert('Action')}
+              bgColor='black'
+              txtColor='white'
+              p='10px 20px'
+              br='20px'
+              fs='14px'
+              className='btn-large'
+            />
+          </div>
+        </Showroom>
       </section>
     </div>
   )
