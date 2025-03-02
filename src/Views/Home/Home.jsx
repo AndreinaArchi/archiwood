@@ -101,7 +101,7 @@ const Home = () => {
       <section>
         <Carousel
           images={width > 546 ? useSliderSection5 : useSliderSection5Mobile}
-          h={width <= 546 ? '40vh' : '100svh'}
+          h={width <= 546 ? '47vh' : '100svh'}
         >
           <div className='carousel__content-section5'>
             <div>
