@@ -1,16 +1,110 @@
 {
   "navbar": {
     "home": "Home",
-    "about": "About us",
+    "about": "About Us",
     "products": "Products",
-    "proyects": "Proyects",
-    "contact": "Contact"
+    "proyects": "Projects",
+    "contact": "Contact",
+    "purspose": "Our Purpose",
+    "showroom": "Our Showroom",
+    "process": "Our Process",
+    "news": "News",
+    "kitchen": "Kitchen",
+    "closets": "Closets",
+    "doors": "Doors",
+    "screens": "Screens",
+    "vanities": "Vanities",
+    "counter_top": "Countertop",
+    "plasters": "Plasters",
+    "plumbing": "Plumbing",
+    "wall_unit": "Wall Unit",
+    "art": "Art"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "At Archiwood, we are ready to help you create unique spaces with high-quality carpentry. Contact us for personalized advice and discover how we can bring your vision to life.",
+    "actionAddres": "View on Google Maps.",
+    "actionSocialMedia": "Follow us",
+    "secondDescription": "Do you have any questions or need more information?",
+    "secondDescription_": "Write to us!",
+    "nameAndLastname": "Name and Last Name",
+    "email": "Email",
+    "message": "Write your message here",
+    "btnAction": "Send!"
   },
   "home": {
-    "title_1": "Specialists in Custom Carpentry!",
-    "title_2": "Make your project a reality!",
+    "title_1": "Custom Carpentry Specialists!",
+    "title_2": "Make Your Project a Reality!",
     "text_1": "We offer tailored solutions with quality",
-    "text_2": "and design to transform your home",
-    "buttonText": "Discover our services"
+    "text_2": "and design to transform your home.",
+    "buttonText": "Discover Our Services"
+  },
+  "home_section2": {
+    "title_1": "Our Purpose",
+    "title_12": "Mission",
+    "paragraph_1": "Our company, based in Miami, specializes in custom carpentry manufacturing, both locally and imported from Europe. We offer tailored solutions that combine quality, design, and functionality, adapted to the needs of architects, designers, builders, and the general public. Additionally, we provide carpentry accessories and specialized technical support in drawing and rendering, ensuring the efficient management of each project.",
+    "title_2": "Our Purpose",
+    "title_22": "Vision",
+    "paragraph_2": "To become the leading company in carpentry solutions, recognized for the excellence of our products and services. We aim to be the trusted partner of architects, designers, and builders, offering innovation, quality, and efficiency, both with our local carpentry in Miami and our European line.",
+    "title_3": "Our Purpose",
+    "title_32": "Objectives",
+    "paragraph_31": "Provide personalized and high-quality carpentry products, both local and imported, that meet our customers' needs.",
+    "paragraph_32": "Offer a comprehensive service that includes technical advice, design, and renderings, optimizing project management.",
+    "paragraph_33": "Maintain a constant commitment to innovation and sustainability in all our products and processes.",
+    "paragraph_34": "Provide creative and functional solutions that contribute to the success of each project."
+  },
+  "home_section3": {
+    "title_1": "Unique and Personalized Designs!",
+    "text_1": "Discover the carpentry",
+    "text_2": "that transforms spaces!",
+    "buttonText": "Talk to an Expert"
+  },
+  "home_section4": {
+    "btn_on": "Read More",
+    "btn_off": "Read Less",
+    "title": "Our Process",
+    "description": "At Archiwood, every project starts with a unique idea and a fully personalized approach. Our process is designed to ensure that each piece of carpentry is a masterpiece that reflects your needs and vision. Here are the steps of our process:",
+    "options": [
+      {
+        "id": 1,
+        "title": "Initial Consultation",
+        "description": "We start with a meeting to understand your vision, needs, and the style you want to achieve. During this stage, we gather all the key details of the project to ensure that our solutions perfectly match your expectations."
+      },
+      {
+        "id": 2,
+        "title": "Estimate and Budget",
+        "description": "Based on the initial consultation, we provide a detailed estimate and a personalized budget. We ensure that the budget is transparent, clear, and adjusted to your needs, considering materials, manufacturing time, and installation."
+      },
+      {
+        "id": 3,
+        "title": "Custom Design",
+        "description": "Our design team creates custom plans and designs based on your requirements. We use advanced drawing and rendering tools so you can visualize the final design and make any adjustments before proceeding with production."
+      },
+      {
+        "id": 4,
+        "title": "Material Selection",
+        "description": "We work with you to choose the most suitable materials for your project, whether with high-quality local wood or our exclusive imported line from Europe. We ensure that the selected materials meet your aesthetic and durability expectations."
+      },
+      {
+        "id": 5,
+        "title": "Manufacturing",
+        "description": "Once the design and materials are approved, we begin manufacturing. Our team of expert carpenters brings each piece to life with precision, taking care of every detail to ensure the highest quality and finish."
+      },
+      {
+        "id": 6,
+        "title": "Installation",
+        "description": "The final step is installation. Our team handles delivery and installation on-site, ensuring that everything fits perfectly and meets the highest quality standards."
+      },
+      {
+        "id": 7,
+        "title": "Post-Sales Support",
+        "description": "After installation, we remain committed to your satisfaction. We offer post-sales support to address any concerns or additional needs."
+      }
+    ]
+  },
+  "home_section5": {
+    "title": "At Archiwood,",
+    "paragraph": "we take pride in offering custom carpentry solutions that not only meet but exceed our clients' expectations, creating extraordinary spaces with every project.",
+    "buttonText": "Talk to an Expert"
   }
 }
