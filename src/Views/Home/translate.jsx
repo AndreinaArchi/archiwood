@@ -101,6 +101,18 @@ const useTranslateSection7 = () => {
   }
 }
 
+const useTranslateSection8 = () => {
+  const [t] = useTranslation('global')
+
+  return {
+    title: t('home_section8.title'),
+    text_1: t('home_section8.text_1'),
+    text_2: t('home_section8.text_2'),
+    subTitle: t('home_section8.subTitle'),
+    items: t('home_section8.items', { returnObjects: true })
+  }
+}
+
 export {
   useTranslateSection1,
   useTranslateSection2,
@@ -108,5 +120,6 @@ export {
   useTranslateSection4,
   useTranslateSection5,
   useTranslateSection6,
-  useTranslateSection7
+  useTranslateSection7,
+  useTranslateSection8
 }

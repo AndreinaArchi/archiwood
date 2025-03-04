@@ -18,28 +18,30 @@ import {
   useTranslateSection4,
   useTranslateSection5,
   useTranslateSection6,
-  useTranslateSection7
+  useTranslateSection7,
+  useTranslateSection8
 } from './translate'
 import './Home.css'
 
+const Card = React.lazy(() => import('../../components/CardProduct/Card'))
+const Products = React.lazy(() => import('../../components/Products/Products'))
 const Showroom = React.lazy(() => import('../../components/Showroom/Showroom'))
+const Carousel = React.lazy(() => import('../../components/Carousel/Carousel'))
+const Process = React.lazy(() => import('../../components/Process/Process'))
 const CarousleText = React.lazy(() =>
   import('../../components/CarouselText/CarouselText')
 )
-const Carousel = React.lazy(() => import('../../components/Carousel/Carousel'))
-const Process = React.lazy(() => import('../../components/Process/Process'))
 
 const Home = () => {
-  const textContent = useTranslateSection1()
-  const textContent3 = useTranslateSection3()
   const width = useWidth()
   const arrayText = useTranslateSection2()
+  const textContent = useTranslateSection1()
+  const textContent3 = useTranslateSection3()
   const arrayText4 = useTranslateSection4()
   const textContent5 = useTranslateSection5()
   const arrayText6 = useTranslateSection6()
   const arrayText7 = useTranslateSection7()
-
-  console.log(arrayText7)
+  const arrayText8 = useTranslateSection8()
 
   return (
     <div>
@@ -184,6 +186,15 @@ const Home = () => {
             </div>
           ))}
         </Carousel>
+      </section>
+      <section>
+        <Products arrayText={arrayText8}>
+          <div className='products__array-cards'>
+            {arrayText8.items?.map((item) => (
+              <Card key={item.id} arrayItems={item} />
+            ))}
+          </div>
+        </Products>
       </section>
     </div>
   )

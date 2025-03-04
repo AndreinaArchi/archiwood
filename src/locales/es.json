@@ -154,5 +154,193 @@
         "text_3": "¡Sumérgete en el mundo de Archiwood y descubre nuestras novedades!"
       }
     ]
+  },
+  "home_section8": {
+    "title": "Productos",
+    "text_1": "En Archiwood, ofrecemos soluciones de carpintería personalizadas que combinan funcionalidad, diseño y calidad excepcional. Nuestra gama de productos incluye cocinas, closets, puertas, screens, vanities, encimeras, revestimientos en yeso, plomería, muebles de pared y arte decorativo, adaptados a cada proyecto.",
+    "text_2": "Trabajamos con materiales premium, tanto locales como importados de Europa, asegurando acabados impecables y durabilidad. Ya seas arquitecto, diseñador o constructor, te ayudamos a dar vida a tus ideas con innovación y precisión.",
+    "subTitle": "¡Contáctanos y descubre cómo transformar tus espacios!",
+    "items": [
+      {
+        "id": 1,
+        "img": "/images/14_Prodcutos_Kitchen.png",
+        "title": "Cocinas",
+        "buttonText": "Explora nuestros productos",
+        "text_1": "En Archiwood, creamos cocinas que combinan diseño sofisticado con la máxima funcionalidad. Cada proyecto es personalizado, asegurando que cada detalle se adapte a tu estilo y necesidades. Trabajamos con materiales de alta calidad, tanto locales como importados, para ofrecer acabados impecables y durabilidad excepcional.",
+        "text_2": "Desde cocinas modernas y minimalistas hasta diseños clásicos y elegantes, nuestro equipo transforma tu espacio en un ambiente práctico y armonioso. Descubre la diferencia de una cocina hecha a medida con Archiwood.",
+        "items": [
+          {
+            "id":11,
+            "title":"Minimalista Contemporánea",
+            "text_1":"La cocina 'Minimalista Contemporánea' de Archiwood combina líneas limpias, materiales de alta gama y un diseño funcional que maximiza el espacio. Con encimeras de mármol blanco, armarios sin tiradores de madera natural y electrodomésticos de última generación integrados, esta cocina ofrece una estética moderna y elegante.",
+            "text_2":"Los estantes flotantes y las unidades de almacenamiento inteligentes aseguran un ambiente ordenado y práctico. Perfecta para quienes buscan simplicidad sin renunciar a la sofisticación y la eficiencia.",
+            "text_3":"",
+            "subTitle":"Haz de tu cocina un centro de estilo y funcionalidad."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "img": "/images/14_Prodcutos_Closets.png",
+        "title": "Closets",
+        "buttonText": "Explora nuestros productos",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id":12,
+            "title":"",
+            "text_1":"",
+            "text_2":"",
+            "text_3":"",
+            "subTitle":""
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "img": "/images/14_Prodcutos_Doors.png",
+        "title": "Puertas",
+        "buttonText": "Explora nuestros productos",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id":13,
+            "title":"",
+            "text_1":"",
+            "text_2":"",
+            "text_3":"",
+            "subTitle":""
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "img": "/images/14_Prodcutos_Screens.png",
+        "title": "Screens",
+        "buttonText": "Explora nuestros productos",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id":14,
+            "title":"",
+            "text_1":"",
+            "text_2":"",
+            "text_3":"",
+            "subTitle":""
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "img": "/images/14_Prodcutos_Vanities.png",
+        "title": "Vanities",
+        "buttonText": "Explora nuestros productos",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id":15,
+            "title":"",
+            "text_1":"",
+            "text_2":"",
+            "text_3":"",
+            "subTitle":""
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "img": "/images/14_Prodcutos_Countertop.png",
+        "title": "Encimeras",
+        "buttonText": "Explora nuestros productos",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id":16,
+            "title":"",
+            "text_1":"",
+            "text_2":"",
+            "text_3":"",
+            "subTitle":""
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "img": "/images/14_Prodcutos_Plasters.png",
+        "title": "Yeso",
+        "buttonText": "Explora nuestros productos",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id":17,
+            "title":"",
+            "text_1":"",
+            "text_2":"",
+            "text_3":"",
+            "subTitle":""
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "img": "/images/14_Prodcutos_Plumbing.png",
+        "title": "Plomería",
+        "buttonText": "Explora nuestros productos",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id":18,
+            "title":"",
+            "text_1":"",
+            "text_2":"",
+            "text_3":"",
+            "subTitle":""
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "img": "/images/14_Prodcutos_WallUnit.png",
+        "title": "Muebles de Pared",
+        "buttonText": "Explora nuestros productos",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id":19,
+            "title":"",
+            "text_1":"",
+            "text_2":"",
+            "text_3":"",
+            "subTitle":""
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "img": "/images/14_Prodcutos_Art.png",
+        "title": "Arte",
+        "buttonText": "Explora nuestros productos",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id":110,
+            "title":"",
+            "text_1":"",
+            "text_2":"",
+            "text_3":"",
+            "subTitle":""
+          }
+        ]
+      }
+    ]
   }
 }

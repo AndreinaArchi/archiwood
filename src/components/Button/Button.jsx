@@ -10,6 +10,7 @@ const Button = ({
   h = 'auto',
   p = '10px 20px',
   br = '5px',
+  border,
   className = ''
 }) => {
   return (
@@ -22,7 +23,8 @@ const Button = ({
         height: h,
         padding: p,
         borderRadius: br,
-        fontSize: fs
+        fontSize: fs,
+        border: border
       }}
       onClick={action}
       aria-label={value}

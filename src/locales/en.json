@@ -154,6 +154,195 @@
         "text_3": "Dive into the world of Archiwood and discover our latest updates!"
       }
     ]
+  },
+  "home_section8": {
+    "title": "Products",
+    "text_1": "At Archiwood, we offer customized carpentry solutions that combine functionality, design, and exceptional quality. Our range of products includes kitchens, closets, doors, screens, vanities, countertops, plaster coatings, plumbing, wall units, and decorative art, tailored to each project.",
+    "text_2": "We work with premium materials, both locally sourced and imported from Europe, ensuring impeccable finishes and durability. Whether you're an architect, designer, or builder, we help bring your ideas to life with innovation and precision.",
+    "subTitle": "Contact us and discover how to transform your spaces!",
+    "items": [
+      {
+        "id": 1,
+        "img": "/images/14_Prodcutos_Kitchen.png",
+        "title": "Kitchen",
+        "buttonText": "Explore our products",
+        "text_1": "At Archiwood, we create kitchens that combine sophisticated design with maximum functionality. Each project is customized, ensuring that every detail fits your style and needs. We work with high-quality materials, both locally sourced and imported, to offer impeccable finishes and exceptional durability.",
+        "text_2": "From modern and minimalist kitchens to classic and elegant designs, our team transforms your space into a practical and harmonious environment. Discover the difference of a custom-made kitchen with Archiwood.",
+        "items": [
+          {
+            "id": 11,
+            "title": "Minimalist Contemporary",
+            "text_1": "Archiwood's 'Minimalist Contemporary' kitchen combines clean lines, high-end materials, and a functional design that maximizes space. Featuring white marble countertops, handle-free natural wood cabinets, and state-of-the-art integrated appliances, this kitchen offers a modern and elegant aesthetic.",
+            "text_2": "Floating shelves and smart storage units ensure a tidy and practical environment. Perfect for those seeking simplicity without sacrificing sophistication and efficiency.",
+            "text_3": "",
+            "subTitle": "Make your kitchen a center of style and functionality."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "img": "/images/14_Prodcutos_Closets.png",
+        "title": "Closets",
+        "buttonText": "Explore our products",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id": 12,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "img": "/images/14_Prodcutos_Doors.png",
+        "title": "Doors",
+        "buttonText": "Explore our products",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id": 13,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "img": "/images/14_Prodcutos_Screens.png",
+        "title": "Screens",
+        "buttonText": "Explore our products",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id": 14,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "img": "/images/14_Prodcutos_Vanities.png",
+        "title": "Vanities",
+        "buttonText": "Explore our products",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id": 15,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "img": "/images/14_Prodcutos_Countertop.png",
+        "title": "Countertop",
+        "buttonText": "Explore our products",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id": 16,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "img": "/images/14_Prodcutos_Plasters.png",
+        "title": "Plasters",
+        "buttonText": "Explore our products",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id": 17,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "img": "/images/14_Prodcutos_Plumbing.png",
+        "title": "Plumbing",
+        "buttonText": "Explore our products",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id": 18,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "img": "/images/14_Prodcutos_WallUnit.png",
+        "title": "Wall Unit",
+        "buttonText": "Explore our products",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id": 19,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "img": "/images/14_Prodcutos_Art.png",
+        "title": "Art",
+        "buttonText": "Explore our products",
+        "text_1": "",
+        "text_2": "",
+        "items": [
+          {
+            "id": 110,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
+          }
+        ]
+      }
+    ]
   }
+
 
 }

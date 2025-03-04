@@ -1,0 +1,24 @@
+.card__container {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__container > div > h2 {
+  font-family: 'TT0005M', sans-serif;
+  font-weight: bold;
+  font-size: var(--aw-font-size-xl);
+}
+
+@media (max-width: 936px) { 
+
+}
+
+
+@media (max-width: 546px) {
+
+
+}
