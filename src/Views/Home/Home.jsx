@@ -6,7 +6,9 @@ import {
   useSliderSection3,
   useSliderSection3Mobile,
   useSliderSection5,
-  useSliderSection5Mobile
+  useSliderSection5Mobile,
+  useSliderSection7,
+  useSliderSection7Mobile
 } from './Slider'
 import Button from '../../components/Button/Button'
 import {
@@ -15,7 +17,8 @@ import {
   useTranslateSection3,
   useTranslateSection4,
   useTranslateSection5,
-  useTranslateSection6
+  useTranslateSection6,
+  useTranslateSection7
 } from './translate'
 import './Home.css'
 
@@ -34,6 +37,9 @@ const Home = () => {
   const arrayText4 = useTranslateSection4()
   const textContent5 = useTranslateSection5()
   const arrayText6 = useTranslateSection6()
+  const arrayText7 = useTranslateSection7()
+
+  console.log(arrayText7)
 
   return (
     <div>
@@ -143,6 +149,41 @@ const Home = () => {
             />
           </div>
         </Showroom>
+      </section>
+      <section>
+        <Carousel
+          images={width > 546 ? useSliderSection7 : useSliderSection7Mobile}
+          h={width <= 546 ? '690px' : '790px'}
+        >
+          {arrayText7.items?.map((item) => (
+            <div
+              key={item.id}
+              className='carousel__content-section7'
+              style={{ height: width <= 546 ? '690px' : '790px' }}
+            >
+              <div>
+                <h2>{item.title}</h2>
+              </div>
+              <div className='carousel__content__button'>
+                <Button
+                  value={item.buttonText}
+                  action={() => alert('Action')}
+                  bgColor='black'
+                  txtColor='white'
+                  p='10px 20px'
+                  br='20px'
+                  fs={width <= 546 ? '14px' : '18px'}
+                  className='btn-large'
+                />
+              </div>
+              <div className='carousel__content-p-section7'>
+                <p>{item.text_1}</p>
+                <p>{item.text_2}</p>
+                <p>{item.text_3}</p>
+              </div>
+            </div>
+          ))}
+        </Carousel>
       </section>
     </div>
   )

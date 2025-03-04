@@ -102,11 +102,11 @@
   .showroom__content-left > h2 {
     font-size: var(--aw-font-size-xxl) !important;
   }
-
+  
   .showroom__container {
     flex-wrap: wrap;
     flex: auto;
-    min-height: 590px;
+    height: 100%;
   }
 
   .showroom__content-left {

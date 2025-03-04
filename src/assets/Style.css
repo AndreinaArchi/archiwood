@@ -100,7 +100,6 @@ a {
 }
 
 button {
-  font-size: var(--p-font-size-s);
   border: none;
 }
 a,

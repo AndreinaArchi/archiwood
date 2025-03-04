@@ -54,11 +54,26 @@ const useSliderSection5Mobile = [
   }
 ]
 
+const useSliderSection7 = [
+  {
+    src: '/images/11_News.png',
+    alt: 'News'
+  }
+]
+const useSliderSection7Mobile = [
+  {
+    src: '/images/5_News.png',
+    alt: 'News'
+  }
+]
+
 export {
   useSlider,
   useSliderMobile,
   useSliderSection3,
   useSliderSection3Mobile,
   useSliderSection5,
-  useSliderSection5Mobile
+  useSliderSection5Mobile,
+  useSliderSection7,
+  useSliderSection7Mobile
 }

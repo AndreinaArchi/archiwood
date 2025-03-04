@@ -142,5 +142,17 @@
         "description_2": "PENDIENTE"
       }
     ]
+  },
+  "home_section7": {
+    "items": [
+      {
+        "id": 1,
+        "title": "News",
+        "buttonText": "Explora lo más reciente en Archiwood",
+        "text_1": "Bienvenido a nuestro espacio de noticias, donde compartimos lo más reciente sobre Archiwood. Aquí encontrarás videos exclusivos, podcasts, colaboraciones, lanzamientos y nuestra participación en exposiciones y eventos del sector. ",
+        "text_2": "Mantente al día con las innovaciones en carpintería, diseño y arquitectura que están transformando espacios. Explora nuestros contenidos y sé parte de nuestra comunidad",
+        "text_3": "¡Sumérgete en el mundo de Archiwood y descubre nuestras novedades!"
+      }
+    ]
   }
 }
