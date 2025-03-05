@@ -109,6 +109,8 @@ const useTranslateSection8 = () => {
     text_1: t('home_section8.text_1'),
     text_2: t('home_section8.text_2'),
     subTitle: t('home_section8.subTitle'),
+    buttonText: t('home_section8.buttonText'),
+    subTitle3: t('home_section8.subTitle3'),
     items: t('home_section8.items', { returnObjects: true })
   }
 }

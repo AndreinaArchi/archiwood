@@ -161,6 +161,10 @@
   .nav__container-menu.active {
     transform: translateY(0px);
   }
+
+  .nav__submenu {
+    font-size:var(--aw-font-size-xl)
+  }
 }
 
 @media (max-width: 546px) {
@@ -170,5 +174,8 @@
   .nav__separate {
     margin-top: 135px;
     padding: 0 30px;
+  }
+  .nav__submenu {
+    font-size:var(--aw-font-size-m)
   }
 }

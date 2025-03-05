@@ -160,6 +160,8 @@
     "text_1": "En Archiwood, ofrecemos soluciones de carpintería personalizadas que combinan funcionalidad, diseño y calidad excepcional. Nuestra gama de productos incluye cocinas, closets, puertas, screens, vanities, encimeras, revestimientos en yeso, plomería, muebles de pared y arte decorativo, adaptados a cada proyecto.",
     "text_2": "Trabajamos con materiales premium, tanto locales como importados de Europa, asegurando acabados impecables y durabilidad. Ya seas arquitecto, diseñador o constructor, te ayudamos a dar vida a tus ideas con innovación y precisión.",
     "subTitle": "¡Contáctanos y descubre cómo transformar tus espacios!",
+    "buttonText": "¡Transforma tu espacio con Archiwood! ",
+    "subTitle3": "Contáctanos hoy y descubre soluciones de carpintería personalizadas para tu proyecto.",
     "items": [
       {
         "id": 1,
@@ -170,12 +172,12 @@
         "text_2": "Desde cocinas modernas y minimalistas hasta diseños clásicos y elegantes, nuestro equipo transforma tu espacio en un ambiente práctico y armonioso. Descubre la diferencia de una cocina hecha a medida con Archiwood.",
         "items": [
           {
-            "id":11,
-            "title":"Minimalista Contemporánea",
-            "text_1":"La cocina 'Minimalista Contemporánea' de Archiwood combina líneas limpias, materiales de alta gama y un diseño funcional que maximiza el espacio. Con encimeras de mármol blanco, armarios sin tiradores de madera natural y electrodomésticos de última generación integrados, esta cocina ofrece una estética moderna y elegante.",
-            "text_2":"Los estantes flotantes y las unidades de almacenamiento inteligentes aseguran un ambiente ordenado y práctico. Perfecta para quienes buscan simplicidad sin renunciar a la sofisticación y la eficiencia.",
-            "text_3":"",
-            "subTitle":"Haz de tu cocina un centro de estilo y funcionalidad."
+            "id": 11,
+            "title": "Minimalista Contemporánea",
+            "text_1": "La cocina 'Minimalista Contemporánea' de Archiwood combina líneas limpias, materiales de alta gama y un diseño funcional que maximiza el espacio. Con encimeras de mármol blanco, armarios sin tiradores de madera natural y electrodomésticos de última generación integrados, esta cocina ofrece una estética moderna y elegante.",
+            "text_2": "Los estantes flotantes y las unidades de almacenamiento inteligentes aseguran un ambiente ordenado y práctico. Perfecta para quienes buscan simplicidad sin renunciar a la sofisticación y la eficiencia.",
+            "text_3": "",
+            "subTitle": "Haz de tu cocina un centro de estilo y funcionalidad."
           }
         ]
       },
@@ -188,12 +190,12 @@
         "text_2": "",
         "items": [
           {
-            "id":12,
-            "title":"",
-            "text_1":"",
-            "text_2":"",
-            "text_3":"",
-            "subTitle":""
+            "id": 12,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
           }
         ]
       },
@@ -206,12 +208,12 @@
         "text_2": "",
         "items": [
           {
-            "id":13,
-            "title":"",
-            "text_1":"",
-            "text_2":"",
-            "text_3":"",
-            "subTitle":""
+            "id": 13,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
           }
         ]
       },
@@ -224,12 +226,12 @@
         "text_2": "",
         "items": [
           {
-            "id":14,
-            "title":"",
-            "text_1":"",
-            "text_2":"",
-            "text_3":"",
-            "subTitle":""
+            "id": 14,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
           }
         ]
       },
@@ -242,12 +244,12 @@
         "text_2": "",
         "items": [
           {
-            "id":15,
-            "title":"",
-            "text_1":"",
-            "text_2":"",
-            "text_3":"",
-            "subTitle":""
+            "id": 15,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
           }
         ]
       },
@@ -260,12 +262,12 @@
         "text_2": "",
         "items": [
           {
-            "id":16,
-            "title":"",
-            "text_1":"",
-            "text_2":"",
-            "text_3":"",
-            "subTitle":""
+            "id": 16,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
           }
         ]
       },
@@ -278,12 +280,12 @@
         "text_2": "",
         "items": [
           {
-            "id":17,
-            "title":"",
-            "text_1":"",
-            "text_2":"",
-            "text_3":"",
-            "subTitle":""
+            "id": 17,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
           }
         ]
       },
@@ -296,12 +298,12 @@
         "text_2": "",
         "items": [
           {
-            "id":18,
-            "title":"",
-            "text_1":"",
-            "text_2":"",
-            "text_3":"",
-            "subTitle":""
+            "id": 18,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
           }
         ]
       },
@@ -314,12 +316,12 @@
         "text_2": "",
         "items": [
           {
-            "id":19,
-            "title":"",
-            "text_1":"",
-            "text_2":"",
-            "text_3":"",
-            "subTitle":""
+            "id": 19,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
           }
         ]
       },
@@ -332,12 +334,12 @@
         "text_2": "",
         "items": [
           {
-            "id":110,
-            "title":"",
-            "text_1":"",
-            "text_2":"",
-            "text_3":"",
-            "subTitle":""
+            "id": 110,
+            "title": "",
+            "text_1": "",
+            "text_2": "",
+            "text_3": "",
+            "subTitle": ""
           }
         ]
       }

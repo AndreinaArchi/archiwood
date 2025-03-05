@@ -47,8 +47,8 @@ const Process = ({ arrayText }) => {
                   <Img
                     img={imgSrc}
                     alt={`Image ${item.title}`}
-                    w={width >= 936 ? '60px' : '40px'}
-                    h={width >= 936 ? '60px' : '40px'}
+                    w={width >= 936 ? '80px' : '60px'}
+                    h={width >= 936 ? '80px' : '60px'}
                   />
               )}
               <h3>{item.title}</h3>

@@ -103,9 +103,46 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 80px;;
   gap:40px;
+  margin-top:80px;
 }
+
+.products__array-cards > * {
+  flex: 1 1 calc(20% - 40px);
+}
+
+.products__content-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  gap:30px;
+}
+
+.products__content-action > h3 {
+  font-size: var(--aw-font-size-m);
+  width:400px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .products__array-cards > * {
+    flex: 1 1 calc(50% - 40px);
+  }
+  .products__content-action > h3 {
+    font-size: var(--aw-font-size-m)!important;
+    width:100%;
+  }
+}
+
+/* Móviles (1 columna) */
+@media (max-width: 768px) {
+  .products__array-cards > * {
+    flex: 1 1 100%;
+  }
+}
+
 
 @media (max-width: 936px) {
   .carousel__content {

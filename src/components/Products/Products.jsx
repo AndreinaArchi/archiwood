@@ -1,8 +1,6 @@
 import './Products.css'
 
 const Products = ({ children, arrayText }) => {
-  console.log(arrayText)
-
   return (
     <div className='products__container'>
       <div className='products__content'>

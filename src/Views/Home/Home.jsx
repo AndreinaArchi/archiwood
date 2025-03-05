@@ -63,9 +63,9 @@ const Home = () => {
               <Button
                 value={textContent.buttonText}
                 action={() => alert('Action')}
-                bgColor='black'
-                txtColor='white'
-                p='10px 20px'
+                bgColor='var(--aw-bg-btn)'
+                txtColor='var(--aw-text-btn)'
+                p='10px 25px'
                 br='20px'
                 fs='14px'
                 className='btn-large'
@@ -95,9 +95,9 @@ const Home = () => {
               <Button
                 value={textContent3.buttonText}
                 action={() => alert('Action')}
-                bgColor='black'
-                txtColor='white'
-                p='10px 20px'
+                bgColor='var(--aw-bg-btn)'
+                txtColor='var(--aw-text-btn)'
+                p='10px 25px'
                 br='20px'
                 fs='14px'
                 className='btn-large'
@@ -125,9 +125,9 @@ const Home = () => {
               <Button
                 value={textContent5.buttonText}
                 action={() => alert('Action')}
-                bgColor='black'
-                txtColor='white'
-                p='10px 20px'
+                bgColor='var(--aw-bg-btn)'
+                txtColor='var(--aw-text-btn)'
+                p='10px 25px'
                 br='20px'
                 fs='14px'
                 className='btn-large'
@@ -142,9 +142,9 @@ const Home = () => {
             <Button
               value={textContent5.buttonText}
               action={() => alert('Action')}
-              bgColor='black'
-              txtColor='white'
-              p='10px 20px'
+              bgColor='var(--aw-bg-btn)'
+              txtColor='var(--aw-text-btn)'
+              p='10px 25px'
               br='20px'
               fs='14px'
               className='btn-large'
@@ -170,9 +170,9 @@ const Home = () => {
                 <Button
                   value={item.buttonText}
                   action={() => alert('Action')}
-                  bgColor='black'
-                  txtColor='white'
-                  p='10px 20px'
+                  bgColor='var(--aw-bg-btn)'
+                  txtColor='var(--aw-text-btn)'
+                  p='10px 25px'
                   br='20px'
                   fs={width <= 546 ? '14px' : '18px'}
                   className='btn-large'
@@ -193,6 +193,19 @@ const Home = () => {
             {arrayText8.items?.map((item) => (
               <Card key={item.id} arrayItems={item} />
             ))}
+          </div>
+          <div className='products__content-action'>
+            <Button
+              value={arrayText8.buttonText}
+              action={() => alert('Action')}
+              bgColor='var(--aw-bg-btn)'
+              txtColor='var(--aw-text-btn)'
+              p='10px 25px'
+              br='20px'
+              fs={width > 768 ? '16px' : '14px'}
+              className='btn-large'
+            />
+            <h3>{arrayText8.subTitle3}</h3>
           </div>
         </Products>
       </section>

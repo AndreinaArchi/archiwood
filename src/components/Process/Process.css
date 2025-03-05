@@ -24,15 +24,16 @@
 
 .process__content-description {
   text-align: center;
-  max-width: 75%;
+  max-width: 970px;
 }
 
 .process__container-article {
+  margin-top: 80px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 80px;
+  justify-content: center;
+  gap: 120px;
 }
 
 .process__content-article {
@@ -47,9 +48,11 @@
 .process__content-article > p,
 .process__container > p {
   font-size: var(--aw-font-size-l);
+  line-height: 27px;
 }
 
 .process__btn-action {
+  margin-top: 50px;;
   background: none;
   border: 1px solid var(--aw-bg-thir);
   padding: 5px 10px;
@@ -57,9 +60,6 @@
 }
 
 @media (max-width: 1450px) {
-  .process__container-article {
-    justify-content: space-between;
-  }
   .process__content-article {
     min-width: 40%;
     max-width: 46%;

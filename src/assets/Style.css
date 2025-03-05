@@ -1,18 +1,20 @@
 :root {
   /* Background Colors */
-  --aw-bg-primary: #C8C2BA;
+  --aw-bg-primary: #c8c2ba;
   --aw-bg-secondary: #303030;
-  --aw-bg-thir: #4E3F3A;
+  --aw-bg-thir: #4e3f3a;
+  --aw-bg-btn: #1b1b1b;
   --aw-bg-gradiant: linear-gradient(
     174deg,
     rgba(200, 194, 186, 1) 0%,
     rgba(221, 213, 202, 1) 100%
-  );;
+  );
 
   /* Text Colors */
   --aw-text-primary: #383838;
-  --aw-text-secondary: #FFFFFF;
-  --aw-text-thir: #4E3F3A;
+  --aw-text-secondary: #ffffff;
+  --aw-text-thir: #4e3f3a;
+  --aw-text-btn: #d8d8d8;
 
   /*SPACING AND ROUNDED*/
   --aw-spacing-xs: 8px;
@@ -70,27 +72,27 @@ img {
 h1 {
   font-size: var(--aw-font-size-xxxl);
   font-family: 'TT0005M', sans-serif;
-  color: var(--aw-text-primary)
+  color: var(--aw-text-primary);
 }
 
 h2 {
   font-size: var(--aw-font-size-xxxl);
   font-family: 'TT0005M', sans-serif;
-  color: var(--aw-text-primary)
+  color: var(--aw-text-primary);
 }
 
 h3,
 h4,
 h5 {
   font-size: var(--aw-font-size-xxl);
-  color: var(--aw-text-primary)
+  color: var(--aw-text-primary);
 }
 
 p,
 li {
   font-family: 'TT0003M', sans-serif;
-  font-size: var(--aw-font-size-xl);
-  color: var(--aw-text-thir)
+  font-size: var(--aw-font-size-l);
+  color: var(--aw-text-thir);
 }
 
 a {
@@ -161,22 +163,24 @@ button:hover {
 
 @media (max-width: 936px) {
   h1 {
-    font-size: var(--aw-font-size-xl)!important;
+    font-size: var(--aw-font-size-xl) !important;
   }
-  h2, h3 {
-    font-size: var(--aw-font-size-l)!important;
+  h2,
+  h3 {
+    font-size: var(--aw-font-size-l) !important;
   }
 }
 
 @media (max-width: 546px) {
   h1 {
-    font-size: var(--aw-font-size-l)!important;
+    font-size: var(--aw-font-size-l) !important;
   }
-  h2, h3 {
-    font-size: var(--aw-font-size-l)!important;
+  h2,
+  h3 {
+    font-size: var(--aw-font-size-l) !important;
   }
   p,
   li {
-    font-size: var(--aw-font-size-m)!important;
+    font-size: var(--aw-font-size-m) !important;
   }
 }

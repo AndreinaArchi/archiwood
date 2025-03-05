@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import useWidth from '../../hooks/useWidth'
 import useTranslate from './translate'
 import './Nav.css'
@@ -18,6 +18,7 @@ const Nav = () => {
   const [isHidden, setIsHidden] = useState(false)
   const [hasFilter, setHasFilter] = useState(false)
   const navLinks = useTranslate()
+  const navigate = useNavigate()
   const width = useWidth()
 
   const toggleSubMenu = (id) => {
@@ -60,7 +61,7 @@ const Nav = () => {
           <Img
             img={logo}
             w={width <= 936 ? '90px' : '110px'}
-            action={() => alert('action')}
+            action={() => navigate('/')}
           />
           {width > 936 && (
             <ul className={width > 936 ? 'nav__content-ul-desktop' : ''}>

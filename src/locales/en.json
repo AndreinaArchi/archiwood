@@ -160,6 +160,8 @@
     "text_1": "At Archiwood, we offer customized carpentry solutions that combine functionality, design, and exceptional quality. Our range of products includes kitchens, closets, doors, screens, vanities, countertops, plaster coatings, plumbing, wall units, and decorative art, tailored to each project.",
     "text_2": "We work with premium materials, both locally sourced and imported from Europe, ensuring impeccable finishes and durability. Whether you're an architect, designer, or builder, we help bring your ideas to life with innovation and precision.",
     "subTitle": "Contact us and discover how to transform your spaces!",
+    "buttonText": "Transform your space with Archiwood!",
+    "subTitle3": "Contact us today and discover custom carpentry solutions for your project.",
     "items": [
       {
         "id": 1,
@@ -343,6 +345,4 @@
       }
     ]
   }
-
-
 }

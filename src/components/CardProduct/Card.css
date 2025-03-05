@@ -3,18 +3,22 @@
   display: flex;
   flex-direction: column;
   gap:20px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .card__container > div > h2 {
   font-family: 'TT0005M', sans-serif;
   font-weight: bold;
-  font-size: var(--aw-font-size-xl);
+  font-size: var(--aw-font-size-l);
 }
 
 @media (max-width: 936px) { 
-
+  .card__container > div > h2 {
+    font-family: 'TT0005M', sans-serif;
+    font-weight: bold;
+    font-size: var(--aw-font-size-m)!important;
+  }
 }
 
 
