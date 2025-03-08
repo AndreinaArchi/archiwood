@@ -7,16 +7,15 @@ const Img = React.lazy(() => import('../Img/Img'))
 
 const Card = ({ arrayItems }) => {
   const navigate = useNavigate()
+  console.log(arrayItems)
 
   const handleOpenProduct = (item) => {
-    console.log(item)
     const formatName = item.title
       .toLowerCase()
       .replace(/[\s]+/g, '-')
       .replace(/[^\w-]+/g, '')
 
-    console.log(formatName)
-    navigate(`/product/${formatName}`)
+    navigate(`/${formatName}/${item.id}`)
   }
 
   return (
@@ -27,22 +26,19 @@ const Card = ({ arrayItems }) => {
       <div>
         <h2>{arrayItems.title}</h2>
       </div>
-      {arrayItems.items.map(
-        (item) =>
-          item.title !== '' && (
-            <div key={item.id}>
-              <Button
-                value={arrayItems.buttonText}
-                bgColor='transparent'
-                fs='14'
-                border='1px solid var(--aw-text-primary)'
-                br='0px'
-                txtColor='var(--aw-text-primary)'
-                p='5px 10px'
-                action={() => handleOpenProduct(item)}
-              />
-            </div>
-          )
+      {arrayItems.items[0].title !== '' && (
+        <div>
+          <Button
+            value={arrayItems.buttonText}
+            bgColor='transparent'
+            fs='14'
+            border='1px solid var(--aw-text-primary)'
+            br='0px'
+            txtColor='var(--aw-text-primary)'
+            p='5px 10px'
+            action={() => handleOpenProduct(arrayItems)}
+          />
+        </div>
       )}
     </div>
   )
