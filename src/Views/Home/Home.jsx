@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import useWidth from '../../hooks/useWidth'
 import {
   useSlider,
@@ -22,6 +22,7 @@ import {
   useTranslateSection8
 } from './translate'
 import './Home.css'
+import { ScrollContext } from '../../context/createContext'
 
 const Card = React.lazy(() => import('../../components/CardProduct/Card'))
 const Products = React.lazy(() => import('../../components/Products/Products'))
@@ -42,11 +43,16 @@ const Home = () => {
   const arrayText6 = useTranslateSection6()
   const arrayText7 = useTranslateSection7()
   const arrayText8 = useTranslateSection8()
+  const { section1, section2, section4, purposeRef, showroomRef, processRef, productsRef } =
+    useContext(ScrollContext)
 
   return (
     <div>
       <section style={{ width: '100%' }}>
-        <Carousel images={width > 546 ? useSlider : useSliderMobile}>
+        <Carousel
+          images={width > 546 ? useSlider : useSliderMobile}
+          scroll={section1}
+        >
           <div className='carousel__content'>
             <div>
               <h1>{textContent.title_1}</h1>
@@ -74,8 +80,8 @@ const Home = () => {
           </div>
         </Carousel>
       </section>
-      <section>
-        <CarousleText arrayText={arrayText} slice={true} />
+      <section ref={purposeRef}>
+        <CarousleText arrayText={arrayText} slice={true} scroll={section2} />
       </section>
       <section>
         <Carousel
@@ -106,8 +112,8 @@ const Home = () => {
           </div>
         </Carousel>
       </section>
-      <section>
-        <Process arrayText={arrayText4} />
+      <section ref={processRef}>
+        <Process arrayText={arrayText4} scroll={section4} />
       </section>
       <section>
         <Carousel
@@ -136,7 +142,7 @@ const Home = () => {
           </div>
         </Carousel>
       </section>
-      <section>
+      <section ref={showroomRef}>
         <Showroom arrayText={arrayText6}>
           <div className='carousel__content__button'>
             <Button
@@ -187,7 +193,7 @@ const Home = () => {
           ))}
         </Carousel>
       </section>
-      <section>
+      <section ref={productsRef}>
         <Products arrayText={arrayText8}>
           <div className='products__array-cards'>
             {arrayText8.items?.map((item) => (

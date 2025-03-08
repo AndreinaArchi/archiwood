@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './CarouselText.css'
 import arrow_left from '/icons/arrow-left.svg'
 import arrow_right from '/icons/arrow-right.svg'
+import { ScrollContext } from '../../context/createContext'
 
 const Img = React.lazy(() => import('../Img/Img'))
 
-const CarouselText = ({ arrayText, slice = false }) => {
+const CarouselText = ({ arrayText, slice = false, scroll }) => {
+  const { SCROLL } = useContext(ScrollContext)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [animation, setAnimation] = useState(false)
 
@@ -14,6 +16,7 @@ const CarouselText = ({ arrayText, slice = false }) => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? arrayText.length - 1 : prevIndex - 1
     )
+    SCROLL(scroll)
     setTimeout(() => {
       setAnimation(false)
     }, 600)
@@ -24,12 +27,13 @@ const CarouselText = ({ arrayText, slice = false }) => {
       prevIndex === arrayText.length - 1 ? 0 : prevIndex + 1
     )
     setAnimation(true)
+    SCROLL(scroll)
     setTimeout(() => {
       setAnimation(false)
     }, 600)
   }
   return (
-    <div className='carousel-text__container'>
+    <div ref={scroll} className='carousel-text__container'>
       <div
         className={`carousel-text__container-section2 ${
           animation ? 'fadeIn' : ''

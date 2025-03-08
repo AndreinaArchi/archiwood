@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { useTranslateSection8 } from '../Home/translate'
 import './Product.css'
 import arrow_left from '/icons/arrow-left.svg'
 import arrow_right from '/icons/arrow-right.svg'
 import useWidth from '../../hooks/useWidth'
+import { ScrollContext } from '../../context/createContext'
 
 const Button = React.lazy(() => import('../../components/Button/Button'))
 const Card = React.lazy(() => import('../../components/CardProduct/Card'))
@@ -13,6 +14,7 @@ const Img = React.lazy(() => import('../../components/Img/Img'))
 const Product = () => {
   const width = useWidth()
   const arrayObjetct = useTranslateSection8()
+  const { SCROLL, productDescriptionRef } = useContext(ScrollContext)
 
   const location = useLocation()
   const idProducts = location.pathname.split('/')[2]
@@ -42,10 +44,10 @@ const Product = () => {
       return
     }
 
-    setCurrentProduct((prev) => ({
+    /* setCurrentProduct((prev) => ({
       ...prev,
       show: false
-    }))
+    })) */
 
     setTimeout(() => {
       setCurrentProduct({
@@ -59,7 +61,7 @@ const Product = () => {
     const currentIndex = parentItem.items.findIndex(
       (item) => item.id === currentProduct.product?.id
     )
-
+    SCROLL(productDescriptionRef)
     if (currentIndex === -1) return
 
     const nextIndex = (currentIndex + 1) % parentItem.items.length
@@ -70,7 +72,7 @@ const Product = () => {
     const currentIndex = parentItem.items.findIndex(
       (item) => item.id === currentProduct.product?.id
     )
-
+    SCROLL(productDescriptionRef)
     if (currentIndex === -1) return
 
     const prevIndex =
@@ -125,7 +127,10 @@ const Product = () => {
         </div>
       </div>
       {currentProduct.show && (
-        <div className={`product__content-description-prod`}>
+        <div
+          ref={productDescriptionRef}
+          className={`product__content-description-prod fadeIn`}
+        >
           <div className='product__content-description-prod-img'>
             <Img img={currentProduct.product?.imgFull} w='100%' />
           </div>

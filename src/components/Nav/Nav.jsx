@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
+import React, { useEffect, useState, useContext } from 'react'
+import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import useWidth from '../../hooks/useWidth'
+import { ScrollContext } from '../../context/createContext'
 import useTranslate from './translate'
 import './Nav.css'
 import logo from '/logo_01.png'
@@ -20,6 +21,30 @@ const Nav = () => {
   const navLinks = useTranslate()
   const navigate = useNavigate()
   const width = useWidth()
+  const location = useLocation()
+  const { SCROLL, purposeRef, showroomRef, processRef, productsRef } =
+    useContext(ScrollContext)
+
+  const scrollToSection = (section) => {
+    if (location.pathname !== '/') {
+      navigate('/')
+    }
+    setTimeout(() => {
+      if (section === 'purpose' && purposeRef.current) {
+        SCROLL(purposeRef)
+        toggleSubMenu()
+      } else if (section === 'showroom' && showroomRef.current) {
+        SCROLL(showroomRef)
+        toggleSubMenu()
+      } else if (section === 'process' && processRef.current) {
+        SCROLL(processRef)
+        toggleSubMenu()
+      } else if (section === 'products' && productsRef.current) {
+        SCROLL(productsRef)
+        toggleSubMenu()
+      }
+    }, 300)
+  }
 
   const toggleSubMenu = (id) => {
     setOpenSubMenu(openSubMenu === id ? false : id)
@@ -86,12 +111,33 @@ const Nav = () => {
                           {link.options.map((subItem, index) => (
                             <li key={subItem.id}>
                               {index !== 0 && '·'}
-                              <NavLink to={subItem.ref}>{subItem.name}</NavLink>
+                              {subItem.ref ? (
+                                <button
+                                  className={`nav__submenu`}
+                                  onClick={() => scrollToSection(subItem.ref)}
+                                >
+                                  {subItem.name}
+                                </button>
+                              ) : (
+                                <NavLink
+                                  to={subItem.path}
+                                  onClick={toggleSubMenu}
+                                >
+                                  {subItem.name}
+                                </NavLink>
+                              )}
                             </li>
                           ))}
                         </ul>
                       )}
                     </>
+                  ) : link.ref ? (
+                    <button
+                      className={`nav__submenu`}
+                      onClick={() => scrollToSection(link.ref)}
+                    >
+                      {link.name}
+                    </button>
                   ) : (
                     <NavLink
                       to={link.path}
@@ -157,12 +203,30 @@ const Nav = () => {
                               }}
                             >
                               {'·'}
-                              <NavLink to={subItem.ref}>{subItem.name}</NavLink>
+                              {subItem.ref ? (
+                                <button
+                                  className={`nav__submenu`}
+                                  onClick={() => scrollToSection(subItem.ref)}
+                                >
+                                  {subItem.name}
+                                </button>
+                              ) : (
+                                <NavLink to={subItem.path}>
+                                  {subItem.name}
+                                </NavLink>
+                              )}
                             </li>
                           ))}
                         </ul>
                       )}
                     </>
+                  ) : link.ref ? (
+                    <button
+                      className={`nav__submenu`}
+                      onClick={() => scrollToSection(link.ref)}
+                    >
+                      {link.name}
+                    </button>
                   ) : (
                     <NavLink
                       onClick={() => {

@@ -140,6 +140,9 @@
 }
 
 @media (max-width: 936px) {
+  .carousel-text__container {
+    padding: 0px 0;
+  }
   .carousel-text__container-section2 {
     padding: 200px 30px;
   }

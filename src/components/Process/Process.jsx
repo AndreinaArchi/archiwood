@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import useWidth from '../../hooks/useWidth'
+import { ScrollContext } from '../../context/createContext'
 import './Process.css'
 import one from '/images/1.png'
 import two from '/images/2.png'
@@ -8,11 +10,11 @@ import five from '/images/5.png'
 import six from '/images/6.png'
 import seven from '/images/7.png'
 import useTranslate from './translate'
-import useWidth from '../../hooks/useWidth'
 
 const Img = React.lazy(() => import('../Img/Img'))
 
-const Process = ({ arrayText }) => {  
+const Process = ({ arrayText, scroll }) => {
+  const { SCROLL } = useContext(ScrollContext)
   const [showAll, setShowAll] = useState(false)
   const btn_text = useTranslate()
   const width = useWidth
@@ -31,7 +33,7 @@ const Process = ({ arrayText }) => {
     : arrayText.options.slice(0, 3)
 
   return (
-    <div className='process__container'>
+    <div ref={scroll} className='process__container'>
       <div className='process__content-title'>
         <h2>{arrayText.title}</h2>
       </div>
@@ -44,12 +46,12 @@ const Process = ({ arrayText }) => {
           return (
             <article key={index} className='process__content-article fadeIn'>
               {imgSrc && (
-                  <Img
-                    img={imgSrc}
-                    alt={`Image ${item.title}`}
-                    w={width >= 936 ? '80px' : '60px'}
-                    h={width >= 936 ? '80px' : '60px'}
-                  />
+                <Img
+                  img={imgSrc}
+                  alt={`Image ${item.title}`}
+                  w={width >= 936 ? '80px' : '60px'}
+                  h={width >= 936 ? '80px' : '60px'}
+                />
               )}
               <h3>{item.title}</h3>
               <p className='line-height'>{item.description}</p>
@@ -59,7 +61,10 @@ const Process = ({ arrayText }) => {
       </div>
       {arrayText.options.length > 3 && (
         <button
-          onClick={() => setShowAll(!showAll)}
+          onClick={() => {
+            setShowAll(!showAll)
+            SCROLL(scroll)
+          }}
           className='process__btn-action'
         >
           {showAll ? btn_text.button_off : btn_text.button_on}
