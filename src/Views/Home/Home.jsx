@@ -194,7 +194,7 @@ const Home = () => {
               <Card key={item.id} arrayItems={item} />
             ))}
           </div>
-          <div className='products__content-action'>
+          <div className='products__content-action margin-top'>
             <Button
               value={arrayText8.buttonText}
               action={() => alert('Action')}

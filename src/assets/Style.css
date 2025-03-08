@@ -115,6 +115,14 @@ button:hover {
   transform: scale(1.03);
 }
 
+hr {
+  margin: 100px 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: var(--aw-bg-secondary);
+}
+
 .line-height {
   line-height: 25px;
 }
@@ -173,6 +181,9 @@ button:hover {
   h3 {
     font-size: var(--aw-font-size-l) !important;
   }
+  hr {
+    margin: 80px 70px;
+  }
 }
 
 @media (max-width: 546px) {
@@ -186,5 +197,8 @@ button:hover {
   p,
   li {
     font-size: var(--aw-font-size-m) !important;
+  }
+  hr {
+    margin: 50px 30px;
   }
 }

@@ -21,8 +21,10 @@ const Product = () => {
     (parent) => parent.id.toString() === idProducts
   )
 
-  const newArrayProducts =  arrayObjetct.items.filter((item) => item.id !== parentItem.id)
-  
+  const newArrayProducts = arrayObjetct.items.filter(
+    (item) => item.id !== parentItem.id
+  )
+
   const [currentProduct, setCurrentProduct] = useState(() => ({
     show: true,
     product: parentItem?.items[0]
@@ -192,8 +194,9 @@ const Product = () => {
         />
         <h3>{arrayObjetct.subTitle3}</h3>
       </div>
-      <div>
-        <div className='products__content-options'>
+      <hr className='hr' />
+      <div className='products__container-options'>
+        <div className='products__content-options-product'>
           <div className='product__content-title'>
             <h2>{arrayObjetct.more_options}</h2>
           </div>
