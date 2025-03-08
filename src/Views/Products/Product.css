@@ -44,7 +44,7 @@
 }
 
 .product__content-description-prod {
-  padding: 150px 120px;
+  padding: 150px 120px 50px;
   display: flex;
   justify-content: center;
   gap: 80px;
@@ -83,6 +83,20 @@
   overflow: hidden;
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
+}
+
+.products__content-options {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+.product__content-title {
+  padding: 10px 60px;
+}
+
+.product__content-title > h2 {
+  font-size: var(--aw-font-size-l) !important;
+  font-family: 'TT0003M', sans-serif;
 }
 
 @media (max-width: 936px) {

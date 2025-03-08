@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import './Showroom.css'
 import show from '/icons/show.png'
-import Img from '../Img/Img'
+
+const Img = React.lazy(() => import('../Img/Img'))
 
 const Showroom = ({ children, arrayText }) => {
   const [openItems, setOpenItems] = useState({})
@@ -55,7 +56,9 @@ const Showroom = ({ children, arrayText }) => {
                 }`}
               >
                 <p className='line-height'>{item.description_1}</p>
-                {item.description_2 && <p className='line-height'>{item.description_2}</p>}
+                {item.description_2 && (
+                  <p className='line-height'>{item.description_2}</p>
+                )}
               </div>
             </div>
           ))}

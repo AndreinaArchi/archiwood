@@ -106,6 +106,7 @@ const useTranslateSection8 = () => {
 
   return {
     title: t('home_section8.title'),
+    more_options: t('home_section8.more_options'),
     text_1: t('home_section8.text_1'),
     text_2: t('home_section8.text_2'),
     subTitle: t('home_section8.subTitle'),

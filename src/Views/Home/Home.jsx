@@ -80,7 +80,7 @@ const Home = () => {
       <section>
         <Carousel
           images={width > 546 ? useSliderSection3 : useSliderSection3Mobile}
-          h={width <= 546 ? '40vh' : '100svh'}
+          h={width <= 936 ? '490px' : '1090px'}
         >
           <div className='carousel__content-section3'>
             <div>
@@ -112,7 +112,7 @@ const Home = () => {
       <section>
         <Carousel
           images={width > 546 ? useSliderSection5 : useSliderSection5Mobile}
-          h={width <= 546 ? '47vh' : '140svh'}
+          h={width <= 936 ? '490px' : '1090px'}
         >
           <div className='carousel__content-section5'>
             <div>
@@ -155,7 +155,7 @@ const Home = () => {
       <section>
         <Carousel
           images={width > 546 ? useSliderSection7 : useSliderSection7Mobile}
-          h={width <= 546 ? '690px' : '790px'}
+          h={width <= 546 ? '690px' : '900px'}
         >
           {arrayText7.items?.map((item) => (
             <div

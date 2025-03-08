@@ -6,22 +6,27 @@ import arrow_left from '/icons/arrow-left.svg'
 import arrow_right from '/icons/arrow-right.svg'
 import useWidth from '../../hooks/useWidth'
 
+const Button = React.lazy(() => import('../../components/Button/Button'))
+const Card = React.lazy(() => import('../../components/CardProduct/Card'))
 const Img = React.lazy(() => import('../../components/Img/Img'))
 
 const Product = () => {
   const width = useWidth()
-  const [currentProduct, setCurrentProduct] = useState({
-    show: false,
-    product: {}
-  })
-
   const arrayObjetct = useTranslateSection8()
+
   const location = useLocation()
   const idProducts = location.pathname.split('/')[2]
 
   const parentItem = arrayObjetct.items.find(
     (parent) => parent.id.toString() === idProducts
   )
+
+  const newArrayProducts =  arrayObjetct.items.filter((item) => item.id !== parentItem.id)
+  
+  const [currentProduct, setCurrentProduct] = useState(() => ({
+    show: true,
+    product: parentItem?.items[0]
+  }))
 
   if (!parentItem) {
     return <div>Producto no encontrado</div>
@@ -82,12 +87,14 @@ const Product = () => {
         <h1>{parentItem.title}</h1>
       </div>
       <div className='product__content-description'>
-        <p className='line-height'
+        <p
+          className='line-height'
           dangerouslySetInnerHTML={{
             __html: highlightText(parentItem.text_1, 'Archiwood')
           }}
         ></p>
-        <p className='line-height'
+        <p
+          className='line-height'
           dangerouslySetInnerHTML={{
             __html: highlightText(parentItem.text_2, 'Archiwood')
           }}
@@ -124,7 +131,8 @@ const Product = () => {
             <article>
               <h3>{currentProduct.product?.title}</h3>
               {currentProduct.product?.text_1 && (
-                <p className='line-height'
+                <p
+                  className='line-height'
                   dangerouslySetInnerHTML={{
                     __html: highlightText(
                       currentProduct.product.text_1,
@@ -134,7 +142,8 @@ const Product = () => {
                 ></p>
               )}
               {currentProduct.product?.text_2 && (
-                <p className='line-height'
+                <p
+                  className='line-height'
                   dangerouslySetInnerHTML={{
                     __html: highlightText(
                       currentProduct.product.text_2,
@@ -170,6 +179,31 @@ const Product = () => {
           </div>
         </div>
       )}
+      <div className='products__content-action'>
+        <Button
+          value={arrayObjetct.buttonText}
+          action={() => alert('Action')}
+          bgColor='var(--aw-bg-btn)'
+          txtColor='var(--aw-text-btn)'
+          p='10px 25px'
+          br='20px'
+          fs={width > 768 ? '16px' : '14px'}
+          className='btn-large'
+        />
+        <h3>{arrayObjetct.subTitle3}</h3>
+      </div>
+      <div>
+        <div className='products__content-options'>
+          <div className='product__content-title'>
+            <h2>{arrayObjetct.more_options}</h2>
+          </div>
+        </div>
+        <div className='products__array-cards'>
+          {newArrayProducts?.map((item) => (
+            <Card key={item.id} arrayItems={item} />
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

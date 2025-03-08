@@ -7,7 +7,6 @@ const Img = React.lazy(() => import('../Img/Img'))
 
 const Card = ({ arrayItems }) => {
   const navigate = useNavigate()
-  console.log(arrayItems)
 
   const handleOpenProduct = (item) => {
     const formatName = item.title

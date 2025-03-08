@@ -17,7 +17,7 @@ const Products = ({ children, arrayText }) => {
           <h3 className='line-height'>{arrayText.subTitle}</h3>
         </div>
       </div>
-      <div>{children}</div>
+      <div style={{width:'100%'}}>{children}</div>
     </div>
   )
 }
