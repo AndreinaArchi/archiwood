@@ -74,25 +74,34 @@ const Product = () => {
   return (
     <div className='product__container'>
       <div className='product__hero-content'>
-        <Img img={parentItem.imgSection} w='100%' h={width > 599 ? '590px' : '200px'} />
+        <Img
+          img={parentItem.imgSection}
+          w='100%'
+          h={width > 599 ? '590px' : '200px'}
+        />
         <h1>{parentItem.title}</h1>
       </div>
       <div className='product__content-description'>
-        <p
+        <p className='line-height'
           dangerouslySetInnerHTML={{
             __html: highlightText(parentItem.text_1, 'Archiwood')
           }}
         ></p>
-        <p
+        <p className='line-height'
           dangerouslySetInnerHTML={{
             __html: highlightText(parentItem.text_2, 'Archiwood')
           }}
         ></p>
       </div>
       <div className='product__content-slice-img'>
-        <div>
+        <div className='product__content-array-img'>
           {parentItem.items.map((item) => (
-            <div key={item.id} className={`${currentProduct.product.id === item.id ? 'selected' : ''}`}>
+            <div
+              key={item.id}
+              className={`${
+                currentProduct.product.id === item.id ? 'selected' : ''
+              }`}
+            >
               <Img img={item.img} action={() => handleProduct(item)} />
             </div>
           ))}
@@ -115,7 +124,7 @@ const Product = () => {
             <article>
               <h3>{currentProduct.product?.title}</h3>
               {currentProduct.product?.text_1 && (
-                <p
+                <p className='line-height'
                   dangerouslySetInnerHTML={{
                     __html: highlightText(
                       currentProduct.product.text_1,
@@ -125,7 +134,7 @@ const Product = () => {
                 ></p>
               )}
               {currentProduct.product?.text_2 && (
-                <p
+                <p className='line-height'
                   dangerouslySetInnerHTML={{
                     __html: highlightText(
                       currentProduct.product.text_2,
@@ -143,6 +152,11 @@ const Product = () => {
                     )
                   }}
                 ></p>
+              )}
+              {currentProduct.product?.subTitle && (
+                <p className='product__content-description-prod-article-subtitle line-height'>
+                  {currentProduct.product?.subTitle}
+                </p>
               )}
             </article>
             <div className='product__buttons'>

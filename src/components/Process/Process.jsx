@@ -36,7 +36,7 @@ const Process = ({ arrayText }) => {
         <h2>{arrayText.title}</h2>
       </div>
       <div className='process__content-description'>
-        <p>{arrayText.description}</p>
+        <p className='line-height'>{arrayText.description}</p>
       </div>
       <div className='process__container-article'>
         {visibleOptions.map((item, index) => {
@@ -52,7 +52,7 @@ const Process = ({ arrayText }) => {
                   />
               )}
               <h3>{item.title}</h3>
-              <p>{item.description}</p>
+              <p className='line-height'>{item.description}</p>
             </article>
           )
         })}

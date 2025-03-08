@@ -115,6 +115,10 @@ button:hover {
   transform: scale(1.03);
 }
 
+.line-height {
+  line-height: 25px;
+}
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;

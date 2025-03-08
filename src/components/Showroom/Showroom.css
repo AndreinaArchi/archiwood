@@ -60,12 +60,9 @@
 
 .showroom__description > p {
   margin-bottom: 20px;
-  line-height: 25px;
   padding-right: 120px;;
-}
-
-.showroom__description > p {
   font-size: var(--aw-font-size-m);
+  font-family: 'TT0003M', sans-serif;
 }
 
 /*ANIMATION*/

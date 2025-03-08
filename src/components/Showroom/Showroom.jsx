@@ -54,8 +54,8 @@ const Showroom = ({ children, arrayText }) => {
                   openItems[item.id] ? 'show' : 'hide'
                 }`}
               >
-                <p>{item.description_1}</p>
-                {item.description_2 && <p>{item.description_2}</p>}
+                <p className='line-height'>{item.description_1}</p>
+                {item.description_2 && <p className='line-height'>{item.description_2}</p>}
               </div>
             </div>
           ))}

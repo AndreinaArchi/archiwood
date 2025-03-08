@@ -45,10 +45,8 @@
 
 .process__content-description > p,
 .process__content-article > h3,
-.process__content-article > p,
-.process__container > p {
+.process__content-article > p {
   font-size: var(--aw-font-size-l);
-  line-height: 27px;
 }
 
 .process__btn-action {
