@@ -50,6 +50,11 @@
   src: url('./fonts/tt0005m_.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'TT0102M';
+  src: url('./fonts/tt0102m_.ttf') format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -72,33 +77,34 @@ img {
 
 h1 {
   font-size: var(--aw-font-size-xxxl);
-  font-family: 'TT0005M', sans-serif;
+  font-family: 'TT0102M', sans-serif;
   color: var(--aw-text-primary);
 }
 
 h2 {
   font-size: var(--aw-font-size-xxxl);
-  font-family: 'TT0005M', sans-serif;
+  font-family: 'TT0102M', sans-serif;
   color: var(--aw-text-primary);
 }
 
 h3,
 h4,
 h5 {
+  font-family: 'TT0102M', sans-serif;
   font-size: var(--aw-font-size-xxl);
   color: var(--aw-text-primary);
 }
 
 p,
 li {
-  font-family: 'TT0003M', sans-serif;
+  font-family: 'TT0005M', sans-serif;
   font-size: var(--aw-font-size-l);
   color: var(--aw-text-thir);
 }
 
 a {
   text-decoration: none;
-  font-family: 'TT0003M', sans-serif;
+  font-family: 'TT0005M', sans-serif;
   color: var(--aw-text-thir);
 }
 
