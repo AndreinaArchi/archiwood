@@ -113,7 +113,13 @@ const Product = () => {
                 currentProduct.product.id === item.id ? 'selected' : ''
               }`}
             >
-              <Img img={item.img} action={() => handleProduct(item)} />
+              <Img
+                img={item.img}
+                action={() => {
+                  handleProduct(item)
+                  SCROLL(productDescriptionRef)
+                }}
+              />
             </div>
           ))}
         </div>

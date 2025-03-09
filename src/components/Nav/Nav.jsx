@@ -223,7 +223,10 @@ const Nav = () => {
                   ) : link.ref ? (
                     <button
                       className={`nav__submenu`}
-                      onClick={() => scrollToSection(link.ref)}
+                      onClick={() => {
+                        scrollToSection(link.ref)
+                        setShowMenu(false)
+                      }}
                     >
                       {link.name}
                     </button>

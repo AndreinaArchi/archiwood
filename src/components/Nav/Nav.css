@@ -176,6 +176,7 @@
     padding: 0 30px;
   }
   .nav__submenu {
-    font-size:var(--aw-font-size-m)
+    font-size:var(--aw-font-size-m);
+    text-align: start;
   }
 }
