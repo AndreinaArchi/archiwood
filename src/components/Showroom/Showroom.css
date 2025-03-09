@@ -18,6 +18,7 @@
   color: var(--aw-text-secondary);
   font-family: 'Diagramm-Regular', sans-serif;
   font-weight: 100;
+  font-size: var(--aw-font-size-xxxxl);
 }
 
 .showroom__content-right {
@@ -53,7 +54,7 @@
 }
 
 .showroom__description {
-  padding: 0 0 0 10px;
+  padding: 0 0 20px 20px;
   display: flex;
   flex-direction: column;
 }
@@ -61,7 +62,7 @@
 .showroom__description > p {
   margin-bottom: 20px;
   padding-right: 120px;;
-  font-size: var(--aw-font-size-m);
+  font-size: var(--aw-font-size-l);
   font-family: 'TT0003M', sans-serif;
 }
 

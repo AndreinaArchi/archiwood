@@ -33,7 +33,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 120px;
+  gap: 160px;
 }
 
 .process__content-article {

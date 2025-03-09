@@ -1,4 +1,5 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState, Fragment } from 'react'
+import { useNavigate } from 'react-router-dom'
 import useWidth from '../../hooks/useWidth'
 import {
   useSlider,
@@ -23,6 +24,7 @@ import {
 } from './translate'
 import './Home.css'
 import { ScrollContext } from '../../context/createContext'
+import Contact from '../../components/Contact/Contact'
 
 const Card = React.lazy(() => import('../../components/CardProduct/Card'))
 const Products = React.lazy(() => import('../../components/Products/Products'))
@@ -34,7 +36,9 @@ const CarousleText = React.lazy(() =>
 )
 
 const Home = () => {
+  const [showContact, setShowContact] = useState(false)
   const width = useWidth()
+  const navigate = useNavigate()
   const arrayText = useTranslateSection2()
   const textContent = useTranslateSection1()
   const textContent3 = useTranslateSection3()
@@ -43,11 +47,31 @@ const Home = () => {
   const arrayText6 = useTranslateSection6()
   const arrayText7 = useTranslateSection7()
   const arrayText8 = useTranslateSection8()
-  const { section1, section2, section4, purposeRef, showroomRef, processRef, productsRef } =
-    useContext(ScrollContext)
+  const {
+    section1,
+    section2,
+    section4,
+    purposeRef,
+    showroomRef,
+    processRef,
+    productsRef
+  } = useContext(ScrollContext)
+
+  const handleNavigateToNews = () => {
+    navigate('/news')
+  }
+
+  const handleContactUs = () => {
+    setShowContact(!showContact)
+  }
 
   return (
-    <div>
+    <Fragment>
+      {showContact && (
+        <section className='section__contact'>
+          <Contact />
+        </section>
+      )}
       <section style={{ width: '100%' }}>
         <Carousel
           images={width > 546 ? useSlider : useSliderMobile}
@@ -68,7 +92,7 @@ const Home = () => {
             <div className='carousel__content__button'>
               <Button
                 value={textContent.buttonText}
-                action={() => alert('Action')}
+                action={handleContactUs}
                 bgColor='var(--aw-bg-btn)'
                 txtColor='var(--aw-text-btn)'
                 p='10px 25px'
@@ -115,7 +139,7 @@ const Home = () => {
       <section ref={processRef}>
         <Process arrayText={arrayText4} scroll={section4} />
       </section>
-      <section>
+      {/* <section>
         <Carousel
           images={width > 546 ? useSliderSection5 : useSliderSection5Mobile}
           h={width <= 936 ? '490px' : '1090px'}
@@ -141,7 +165,7 @@ const Home = () => {
             </div>
           </div>
         </Carousel>
-      </section>
+      </section> */}
       <section ref={showroomRef}>
         <Showroom arrayText={arrayText6}>
           <div className='carousel__content__button'>
@@ -175,7 +199,7 @@ const Home = () => {
               <div className='carousel__content__button'>
                 <Button
                   value={item.buttonText}
-                  action={() => alert('Action')}
+                  action={handleNavigateToNews}
                   bgColor='var(--aw-bg-btn)'
                   txtColor='var(--aw-text-btn)'
                   p='10px 25px'
@@ -215,7 +239,7 @@ const Home = () => {
           </div>
         </Products>
       </section>
-    </div>
+    </Fragment>
   )
 }
 

@@ -1,0 +1,19 @@
+.contact__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 120px;
+}
+
+@media (max-width: 936px) {
+  .contact__container {
+    padding: 70px;
+  }
+}
+@media (max-width: 546px) {
+  .contact__container {
+    padding: 30px;
+  }
+}

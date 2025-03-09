@@ -1,3 +1,13 @@
+.section__contact {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height:100%;
+  display: flex;
+  z-index: 2000;
+  background-color: var(--aw-bg-primary);
+}
+
 .carousel__content {
   position: absolute;
   margin-top: 260px;
