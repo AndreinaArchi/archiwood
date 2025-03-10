@@ -43,9 +43,10 @@
 .nav__content-links ul li a,
 .nav__submenu,
 .nav__linkref,
-.nav__content-submenuMobile > li > a {
-  color: var(--aw-text-primary);
-  font-size: var(--aw-font-size-s);
+.nav__content-submenuMobile > li > a,
+.nav__content-submenuMobile > li > button {
+  font-size: var(--aw-font-size-m) !important;
+  color: var(--aw-text-primary) !important;
 }
 
 .nav__content-submenu {
@@ -163,20 +164,26 @@
   }
 
   .nav__submenu {
-    font-size:var(--aw-font-size-xl)
+    font-size: var(--aw-font-size-xl);
   }
 }
 
 @media (max-width: 546px) {
+  .nav__content-submenuMobile > li > a {
+    font-size: var(--aw-font-size-xl);
+  }
+
   .nav__container {
     padding: 30px 30px;
   }
+
   .nav__separate {
     margin-top: 135px;
     padding: 0 30px;
   }
+
   .nav__submenu {
-    font-size:var(--aw-font-size-m);
+    font-size: var(--aw-font-size-m);
     text-align: start;
   }
 }

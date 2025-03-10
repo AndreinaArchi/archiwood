@@ -113,13 +113,14 @@ const Nav = () => {
                               {index !== 0 && '·'}
                               {subItem.ref ? (
                                 <button
-                                  className={`nav__submenu`}
+                                  className={`nav__submenu `}
                                   onClick={() => scrollToSection(subItem.ref)}
                                 >
                                   {subItem.name}
                                 </button>
                               ) : (
                                 <NavLink
+                                  className=''
                                   to={subItem.path}
                                   onClick={toggleSubMenu}
                                 >
@@ -133,7 +134,7 @@ const Nav = () => {
                     </>
                   ) : link.ref ? (
                     <button
-                      className={`nav__submenu`}
+                      className={`nav__submenu `}
                       onClick={() => scrollToSection(link.ref)}
                     >
                       {link.name}
@@ -142,7 +143,7 @@ const Nav = () => {
                     <NavLink
                       to={link.path}
                       className={({ isActive }) =>
-                        `${isActive ? 'nav__link-active' : ''}`
+                        ` ${isActive ? 'nav__link-active' : ''}`
                       }
                     >
                       {link.name}
@@ -181,7 +182,7 @@ const Nav = () => {
                   {link.options ? (
                     <>
                       <button
-                        className={`nav__submenu`}
+                        className={`nav__submenu `}
                         onClick={() => toggleSubMenu(link.id)}
                       >
                         {link.name}{' '}
@@ -197,6 +198,7 @@ const Nav = () => {
                           {link.options.map((subItem) => (
                             <li
                               key={subItem.id}
+                              className=''
                               onClick={() => {
                                 setOpenSubMenu(false)
                                 setShowMenu(false)
@@ -205,13 +207,13 @@ const Nav = () => {
                               {'·'}
                               {subItem.ref ? (
                                 <button
-                                  className={`nav__submenu`}
+                                  className={`nav__submenu `}
                                   onClick={() => scrollToSection(subItem.ref)}
                                 >
                                   {subItem.name}
                                 </button>
                               ) : (
-                                <NavLink to={subItem.path}>
+                                <NavLink to={subItem.path} className=''>
                                   {subItem.name}
                                 </NavLink>
                               )}

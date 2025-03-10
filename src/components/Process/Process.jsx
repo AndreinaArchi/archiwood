@@ -53,7 +53,7 @@ const Process = ({ arrayText, scroll }) => {
                   h={width >= 936 ? '80px' : '60px'}
                 />
               )}
-              <h3>{item.title}</h3>
+              <h3 className='gray'>{item.title}</h3>
               <p className='line-height'>{item.description}</p>
             </article>
           )

@@ -6,8 +6,8 @@ import {
   useSliderMobile,
   useSliderSection3,
   useSliderSection3Mobile,
-  useSliderSection5,
-  useSliderSection5Mobile,
+/*   useSliderSection5,
+  useSliderSection5Mobile, */
   useSliderSection7,
   useSliderSection7Mobile
 } from './Slider'
@@ -79,15 +79,15 @@ const Home = () => {
         >
           <div className='carousel__content'>
             <div>
-              <h1>{textContent.title_1}</h1>
+              <h1 className='gray'>{textContent.title_1}</h1>
             </div>
             <div>
               {textContent.text.map((text, index) => (
-                <p key={index}>{text}</p>
+                <p key={index} className='gray'>{text}</p>
               ))}
             </div>
             <div>
-              <h2>{textContent.title_2}</h2>
+              <h2 className='gray'>{textContent.title_2}</h2>
             </div>
             <div className='carousel__content__button'>
               <Button
@@ -97,7 +97,7 @@ const Home = () => {
                 txtColor='var(--aw-text-btn)'
                 p='10px 25px'
                 br='20px'
-                fs='14px'
+                fs={width <= 546 ? '14px' : '18px'}
                 className='btn-large'
               />
             </div>
@@ -129,7 +129,7 @@ const Home = () => {
                 txtColor='var(--aw-text-btn)'
                 p='10px 25px'
                 br='20px'
-                fs='14px'
+                fs={width <= 546 ? '14px' : '18px'}
                 className='btn-large'
               />
             </div>
@@ -176,7 +176,7 @@ const Home = () => {
               txtColor='var(--aw-text-btn)'
               p='10px 25px'
               br='20px'
-              fs='14px'
+              fs={width <= 546 ? '14px' : '18px'}
               className='btn-large'
             />
           </div>
@@ -185,7 +185,7 @@ const Home = () => {
       <section>
         <Carousel
           images={width > 546 ? useSliderSection7 : useSliderSection7Mobile}
-          h={width <= 546 ? '690px' : '900px'}
+          h={width <= 546 ? '950px' : '1050px'}
         >
           {arrayText7.items?.map((item) => (
             <div
@@ -232,7 +232,7 @@ const Home = () => {
               txtColor='var(--aw-text-btn)'
               p='10px 25px'
               br='20px'
-              fs={width > 768 ? '16px' : '14px'}
+              fs={width <= 546 ? '14px' : '18px'}
               className='btn-large'
             />
             <h3>{arrayText8.subTitle3}</h3>

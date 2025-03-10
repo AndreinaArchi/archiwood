@@ -89,7 +89,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .carousel-text-content__ > hr {
@@ -102,7 +102,7 @@
 .carousel-text-content-p {
   max-width: 1000px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 80px;
   padding: 20px 70px;
 }
 
@@ -147,13 +147,19 @@
     padding: 200px 30px;
   }
   .carousel-text-content-p {
-    padding: 0;
+    padding: 0 70px;
     width: 100%;
   }
   .carousel-text__container-section2 {
     padding: 150px 30px 180px;
   }
   .carousel-text__buttons {
-    padding-bottom: 60px;
+    padding-bottom: 120px;
+  }
+}
+
+@media (max-width: 546px) {
+  .carousel-text-content-p {
+    padding: 0 30px;
   }
 }

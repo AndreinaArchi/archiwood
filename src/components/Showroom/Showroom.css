@@ -18,12 +18,11 @@
   color: var(--aw-text-secondary);
   font-family: 'Diagramm-Regular', sans-serif;
   font-weight: 100;
-  font-size: var(--aw-font-size-xxxxl);
+  font-size: var(--aw-font-size-xxxxxl);
 }
 
 .showroom__content-right {
   width: 100%;
-  padding: 120px 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,21 +30,26 @@
 }
 
 .showroom__content-options {
+  padding: 120px 170px;
+  max-width: 950px;
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 10px;
+}
+
+.showrrom__children {
+  padding: 0px 170px;
 }
 
 .showroom__item {
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
 
 .showroom__content-title {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 
 .showroom__content-title > h2 {
@@ -60,10 +64,15 @@
 }
 
 .showroom__description > p {
-  margin-bottom: 20px;
-  padding-right: 120px;;
   font-size: var(--aw-font-size-l);
   font-family: 'TT0003M', sans-serif;
+}
+
+.showroom__description > p:first-child {
+  margin: 40px 0;
+}
+.showroom__description > p:last-child {
+  margin-bottom: 20px;
 }
 
 /*ANIMATION*/
@@ -90,7 +99,7 @@
 }
 
 .show {
-  max-height:590px;
+  max-height: 590px;
   opacity: 1;
 }
 
@@ -99,11 +108,17 @@
   opacity: 0;
 }
 
-@media (max-width: 936px) {
-  .showroom__content-left > h2 {
-    font-size: var(--aw-font-size-xxl) !important;
+@media (max-width: 1493px) {
+  .showroom__content-options {
+    padding: 120px 90px;
+    max-width: 950px;
   }
-  
+  .showrrom__children {
+    padding: 0px 90px 120px;
+  }
+}
+
+@media (max-width: 1278px) {
   .showroom__container {
     flex-wrap: wrap;
     flex: auto;
@@ -111,24 +126,48 @@
   }
 
   .showroom__content-left {
-    height: 490px;
+    height: 690px;
+  }
+}
+
+@media (max-width: 936px) {
+  .showroom__content-left > h2 {
+    font-size: var(--aw-font-size-xxxl) !important;
   }
 
   .showroom__content-right {
-    padding: 80px 70px;
+    padding: 0px;
+  }
+
+  .showroom__content-options {
+    max-width: 650px;
+  }
+
+  .showroom__content-title > h2 {
+    font-size: var(--aw-font-size-l) !important;
   }
 }
 
 @media (max-width: 546px) {
   .showroom__description > p {
-    padding-right: 0px;;
+    padding-right: 0px;
   }
 
   .showroom__content-right {
-    padding: 70px 30px;
+    padding: 0px;
   }
 
   .showroom__content-left > h2 {
-    font-size: var(--aw-font-size-xl) !important;
+    font-size: var(--aw-font-size-xxl) !important;
+  }
+  .showroom__content-options {
+    padding: 100px 60px;
+    width: 100%;
+  }
+  .showrrom__children {
+    padding: 0px 60px 120px;
+  }
+  .showroom__content-title > h2 {
+    font-size: var(--aw-font-size-m) !important;
   }
 }

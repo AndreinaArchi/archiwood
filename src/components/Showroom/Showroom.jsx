@@ -63,7 +63,7 @@ const Showroom = ({ children, arrayText }) => {
             </div>
           ))}
         </div>
-        {children}
+        <div className='showrrom__children'>{children}</div>
       </div>
     </div>
   )

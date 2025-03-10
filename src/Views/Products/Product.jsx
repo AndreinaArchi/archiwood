@@ -192,7 +192,7 @@ const Product = () => {
           </div>
         </div>
       )}
-      <div className='products__content-action'>
+      <div className='product__content-action'>
         <Button
           value={arrayObjetct.buttonText}
           action={() => alert('Action')}
@@ -200,7 +200,7 @@ const Product = () => {
           txtColor='var(--aw-text-btn)'
           p='10px 25px'
           br='20px'
-          fs={width > 768 ? '16px' : '14px'}
+          fs={width <= 546 ? '14px' : '18px'}
           className='btn-large'
         />
         <h3>{arrayObjetct.subTitle3}</h3>
@@ -212,7 +212,7 @@ const Product = () => {
             <h2>{arrayObjetct.more_options}</h2>
           </div>
         </div>
-        <div className='products__array-cards'>
+        <div className='product__array-cards'>
           {newArrayProducts?.map((item) => (
             <Card key={item.id} arrayItems={item} />
           ))}

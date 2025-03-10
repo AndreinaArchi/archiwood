@@ -20,7 +20,7 @@ const Card = ({ arrayItems }) => {
   return (
     <div className='card__container'>
       <div>
-        <Img img={arrayItems.img} w='100%' />
+        <Img img={arrayItems.img} w='280px' />
       </div>
       <div>
         <h2>{arrayItems.title}</h2>

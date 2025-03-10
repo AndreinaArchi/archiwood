@@ -1,5 +1,5 @@
 .card__container {
-  margin-bottom: 40px;
+  margin-bottom: 140px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -13,6 +13,10 @@
   font-size: var(--aw-font-size-l);
 }
 
+.products__content-children{
+  width:100%;
+}
+
 @media (max-width: 936px) {
   .card__container > div > h2 {
     font-family: 'TT0005M', sans-serif;
@@ -21,6 +25,8 @@
   }
 }
 
-@media (max-width: 546px) {
-
+@media (max-width: 748px) {
+  .card__container {
+    margin-bottom: 40px;
+  }
 }
