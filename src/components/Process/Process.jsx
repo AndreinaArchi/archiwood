@@ -49,8 +49,8 @@ const Process = ({ arrayText, scroll }) => {
                 <Img
                   img={imgSrc}
                   alt={`Image ${item.title}`}
-                  w={width >= 936 ? '80px' : '60px'}
-                  h={width >= 936 ? '80px' : '60px'}
+                  w={width >= 936 ? '80px' : '40px'}
+                  h={width >= 936 ? '80px' : '40px'}
                 />
               )}
               <h3 className='gray'>{item.title}</h3>

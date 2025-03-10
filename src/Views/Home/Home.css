@@ -238,11 +238,11 @@
   }
 
   .carousel__content-section3 > div > h1 {
-    font-size: var(--aw-font-size-l) !important;
+    font-size: var(--aw-font-size-xl) !important;
   }
 
   .carousel__content-section3 > div > p {
-    font-size: var(--aw-font-size-m) !important;
+    font-size: var(--aw-font-size-l) !important;
   }
 
   .carousel__content-section5 {
@@ -268,6 +268,8 @@
   .carousel__content__button {
     margin-top: 20px;
     padding: 0 3px;
+    display: flex;
+    justify-content: center;
   }
 
   .products__content-action {

@@ -19,7 +19,7 @@
 
 .products__content-title {
   padding: 10px 60px;
-  border-bottom: 2px solid var(--aw-bg-secondary);
+  border-bottom: 1px solid var(--aw-bg-secondary);
 }
 
 .products__content-title > h2 {

@@ -3,6 +3,7 @@ import './CarouselText.css'
 import arrow_left from '/icons/arrow-left.svg'
 import arrow_right from '/icons/arrow-right.svg'
 import { ScrollContext } from '../../context/createContext'
+import useWidth from '../../hooks/useWidth'
 
 const Img = React.lazy(() => import('../Img/Img'))
 
@@ -10,6 +11,7 @@ const CarouselText = ({ arrayText, slice = false, scroll }) => {
   const { SCROLL } = useContext(ScrollContext)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [animation, setAnimation] = useState(false)
+  const width = useWidth()
 
   const prevSlide = () => {
     setAnimation(true)
@@ -40,9 +42,18 @@ const CarouselText = ({ arrayText, slice = false, scroll }) => {
         }`}
       >
         <div className='carousel-text-content__'>
-          <h2>{arrayText[currentIndex].title_1}</h2>
-          <hr />
-          <h3>{arrayText[currentIndex].title_2}</h3>
+          {width >= 546 ? (
+            <>
+              <h2>{arrayText[currentIndex].title_1}</h2>
+              <hr className='carousel__hr' />
+              <h3>{arrayText[currentIndex].title_2}</h3>
+            </>
+          ) : (
+            <>
+              <h3>{arrayText[currentIndex].title_2}</h3>
+              <hr className='carousel__hr' />
+            </>
+          )}
         </div>
         {arrayText[currentIndex].paragraph && (
           <div className='carousel-text-content-p'>

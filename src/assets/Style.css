@@ -22,7 +22,7 @@
   /*FONT SIZE*/
   --aw-font-size-xs: 12px;
   --aw-font-size-s: 14px;
-  --aw-font-size-m: 18px;
+  --aw-font-size-m: 16px;
   --aw-font-size-l: 20px;
   --aw-font-size-xl: 24px;
   --aw-font-size-xxl: 32px;
@@ -94,6 +94,12 @@ h5 {
   font-family: 'TT0102M', sans-serif;
   font-size: var(--aw-font-size-xxl);
   color: var(--aw-text-primary);
+}
+
+p {
+  /* text-align:left!important;
+  hyphens: auto;
+  word-break: break-word; */
 }
 
 p,

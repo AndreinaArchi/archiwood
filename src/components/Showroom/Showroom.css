@@ -161,13 +161,17 @@
     font-size: var(--aw-font-size-xxl) !important;
   }
   .showroom__content-options {
-    padding: 100px 60px;
+    padding: 100px 30px;
     width: 100%;
   }
   .showrrom__children {
     padding: 0px 60px 120px;
   }
   .showroom__content-title > h2 {
-    font-size: var(--aw-font-size-m) !important;
+    font-size: 16px !important;
+    font-weight: 500;
+  }
+  .showroom__description > p{
+    font-size: 16px !important;
   }
 }
