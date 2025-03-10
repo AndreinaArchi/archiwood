@@ -6,10 +6,12 @@ import {
   useSliderMobile,
   useSliderSection3,
   useSliderSection3Mobile,
-/*   useSliderSection5,
+  /*   useSliderSection5,
   useSliderSection5Mobile, */
   useSliderSection7,
-  useSliderSection7Mobile
+  useSliderSection7Mobile,
+  useSliderSection9,
+  /* useSliderSection9Mobile, */
 } from './Slider'
 import Button from '../../components/Button/Button'
 import {
@@ -20,7 +22,8 @@ import {
   useTranslateSection5,
   useTranslateSection6,
   useTranslateSection7,
-  useTranslateSection8
+  useTranslateSection8,
+  useTranslateSection9
 } from './translate'
 import './Home.css'
 import { ScrollContext } from '../../context/createContext'
@@ -47,6 +50,7 @@ const Home = () => {
   const arrayText6 = useTranslateSection6()
   const arrayText7 = useTranslateSection7()
   const arrayText8 = useTranslateSection8()
+  const arrayText9 = useTranslateSection9()
   const {
     section1,
     section2,
@@ -83,7 +87,9 @@ const Home = () => {
             </div>
             <div>
               {textContent.text.map((text, index) => (
-                <p key={index} className='gray'>{text}</p>
+                <p key={index} className='gray'>
+                  {text}
+                </p>
               ))}
             </div>
             <div>
@@ -238,6 +244,28 @@ const Home = () => {
             <h3>{arrayText8.subTitle3}</h3>
           </div>
         </Products>
+      </section>
+
+      <section>
+        <Carousel
+          images={useSliderSection9}
+          h={width <= 546 ? '950px' : '1050px'}
+        >
+          <div
+            className='carousel__content-section-proyects'
+            style={{ height: width <= 546 ? '690px' : '790px' }}
+          >
+            <div>
+              <h2>{arrayText9.title}</h2>
+            </div>
+            <div>
+              <h3>{arrayText9.subTitle}</h3>
+            </div>
+            <div className='carousel__content-section-proyects-p'>
+              <p>{arrayText9.text}</p>
+            </div>
+          </div>
+        </Carousel>
       </section>
     </Fragment>
   )

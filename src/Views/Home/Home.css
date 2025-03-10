@@ -104,6 +104,44 @@
   font-size: var(--aw-font-size-xxxxxl);
 }
 
+.carousel__content-section-proyects {
+  padding: 0 30px;
+  margin-top: 120px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel__content-section-proyects > div > h2 {
+  color: var(--aw-text-secondary);
+  font-family: 'Diagramm-Regular', sans-serif;
+  font-weight: 300;
+  font-size: var(--aw-font-size-xxxxxl);
+}
+
+.carousel__content-section-proyects > div > h3 {
+  color: var(--aw-text-secondary);
+  font-family: 'Diagramm-Regular', sans-serif;
+  font-weight: 300;
+  font-size: var(--aw-font-size-xxxl);
+}
+
+.carousel__content-section-proyects-p {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.carousel__content-section-proyects-p > p {
+  color: var(--aw-text-secondary);
+  max-width: 550px;
+  text-align: center;
+}
+
 .carousel__content-p-section7 > p {
   text-align: center;
   color: var(--aw-text-secondary);
@@ -168,8 +206,13 @@
     padding: 0 70px;
   }
 
-  .carousel__content-section7 > div > h2 {
-    font-size: var(--aw-font-size-xxxl);
+  .carousel__content-section7 > div > h2,
+  .carousel__content-section-proyects > div > h2 {
+    font-size: var(--aw-font-size-xxxxl)!important;
+  }
+
+  .carousel__content-section-proyects > div > h3 {
+    font-size: var(--aw-font-size-xxl)!important;
   }
 
   .carousel__content-section3 {
@@ -257,8 +300,13 @@
     padding: 20px 30px 0;
   }
 
-  .carousel__content-section7 > div > h2 {
-    font-size: var(--aw-font-size-xxxl) !important;
+  .carousel__content-section7 > div > h2,
+  .carousel__content-section-proyects > div > h2 {
+    font-size: var(--aw-font-size-xxl)!important;
+  }
+
+  .carousel__content-section-proyects > div > h3 {
+    font-size: var(--aw-font-size-l)!important;
   }
 
   .carousel__content-p-section7 > p {
