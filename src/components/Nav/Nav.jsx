@@ -46,7 +46,7 @@ const Nav = () => {
         SCROLL(proyectsRef)
         toggleSubMenu()
       }
-    }, 300)
+    }, 400)
   }
 
   const toggleSubMenu = (id) => {

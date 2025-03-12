@@ -120,9 +120,9 @@ const useTranslateSection9 = () => {
   const [t] = useTranslation('global')
 
   return {
-    title: t('home_section9.title'),
-    subTitle: t('home_section9.subTitle'),
-    text: t('home_section9.text')
+    category_1: t('home_section9.category_1', { returnObjects: true }),
+    category_2: t('home_section9.category_2', { returnObjects: true }),
+    category_3: t('home_section9.category_3', { returnObjects: true })
 }
 }
 

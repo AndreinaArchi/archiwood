@@ -397,8 +397,20 @@
     ]
   },
   "home_section9": {
-    "title": "Proyectos",
-    "subTitle": "Transformamos ideas en realidades",
-    "text": "Cada proyecto que realizamos es una combinación de innovación, calidad y precisión. En Archiwood, trabajamos en estrecha colaboración con arquitectos, diseñadores y constructores para crear espacios únicos, utilizando materiales de alta gama y carpintería personalizada."
+    "category_1": {
+      "title": "Proyectos",
+      "subTitle": "Transformamos ideas en realidades",
+      "text": "Cada proyecto que realizamos es una combinación de innovación, calidad y precisión. En Archiwood, trabajamos en estrecha colaboración con arquitectos, diseñadores y constructores para crear espacios únicos, utilizando materiales de alta gama y carpintería personalizada."
+    },
+    "category_2": {
+      "text": "Descubre algunos de nuestros proyectos más recientes y déjate inspirar por la calidad y el diseño de Archiwood.",
+      "actionText": "¡Agenda una consulta y comienza tu proyecto hoy!",
+      "btnText": "¡Contáctanos!"
+    },
+    "category_3": {
+      "text": "Convierte tu inspiración en un proyecto real.",
+      "actionText": "Permítenos asesorarte en cada detalle.",
+      "btnText": "¡Hablemos sobre tu proyecto!"
+    }
   }
 }

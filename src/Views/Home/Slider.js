@@ -80,6 +80,81 @@ const useSliderSection9Mobile = [
   }
 ]
 
+const useSliderSectionProyects = [
+  {
+    src: '/images/15_Proyectos_fotos_grandes1.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes2.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes3.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes4.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes5.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes6.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes7.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes8.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes9.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes10.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes11.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes12.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes13.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes14.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes15.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes16.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes17.png',
+    alt: 'Proyect image'
+  },
+  {
+    src: '/images/15_Proyectos_fotos_grandes18.png',
+    alt: 'Proyect image'
+  }
+]
+
 export {
   useSlider,
   useSliderMobile,
@@ -90,5 +165,6 @@ export {
   useSliderSection7,
   useSliderSection7Mobile,
   useSliderSection9,
-  useSliderSection9Mobile
+  useSliderSection9Mobile,
+  useSliderSectionProyects
 }

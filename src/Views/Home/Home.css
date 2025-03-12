@@ -128,9 +128,11 @@
   font-family: 'Diagramm-Regular', sans-serif;
   font-weight: 300;
   font-size: var(--aw-font-size-xxxl);
+  text-align: center;
 }
 
 .carousel__content-section-proyects-p {
+  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -164,18 +166,37 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
   gap: 30px;
 }
 
 .products__content-action > h3 {
-  font-size: var(--aw-font-size-m);
-  width: 400px;
+  font-size: var(--aw-font-size-l);
+  width: 450px;
   text-align: center;
 }
 
 .margin-top {
   margin-top: 50px !important;
+}
+
+.proyects__category_2 {
+  background-color: var(--aw-bg-gradiant);
+  width:100%;
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:60px;
+}
+.proyects__category_2 > div {
+  width: 650px;
+  text-align: center;
+}
+
+.proyects__category_2 > div > h3 {
+  font-size: var(--aw-font-size-l)!important;
+  color:var(--aw-text-thir)
 }
 
 @media (max-width: 1528px) {
@@ -208,11 +229,11 @@
 
   .carousel__content-section7 > div > h2,
   .carousel__content-section-proyects > div > h2 {
-    font-size: var(--aw-font-size-xxxxl)!important;
+    font-size: var(--aw-font-size-xxxxl) !important;
   }
 
   .carousel__content-section-proyects > div > h3 {
-    font-size: var(--aw-font-size-xxl)!important;
+    font-size: var(--aw-font-size-xxl) !important;
   }
 
   .carousel__content-section3 {
@@ -264,9 +285,18 @@
     max-width: 300px;
     scroll-snap-align: start;
   }
+
+  .proyects__category_2 {
+    padding: 120px 70px;
+  }
+
+  .proyects__category_2 > div {
+    width: 100%;
+  }
 }
 
 @media (max-width: 546px) {
+
   .carousel__content {
     padding: 30px 30px;
   }
@@ -302,11 +332,11 @@
 
   .carousel__content-section7 > div > h2,
   .carousel__content-section-proyects > div > h2 {
-    font-size: var(--aw-font-size-xxl)!important;
+    font-size: var(--aw-font-size-xxl) !important;
   }
 
   .carousel__content-section-proyects > div > h3 {
-    font-size: var(--aw-font-size-l)!important;
+    font-size: var(--aw-font-size-l) !important;
   }
 
   .carousel__content-p-section7 > p {
@@ -322,10 +352,18 @@
 
   .products__content-action {
     margin-top: 20px;
-    padding: 0 30px;
   }
 
   .products__content-action > h3 {
     padding-bottom: 80px;
   }
+
+  .proyects__category_2 {
+    padding: 120px 30px;
+  }
+  .proyects__category_2 > div > h3 {
+    font-size: var(--aw-font-size-m) !important;
+
+  }
+
 }

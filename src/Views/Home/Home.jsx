@@ -1,6 +1,7 @@
 import React, { useContext, useState, Fragment } from 'react'
 import { useNavigate } from 'react-router-dom'
 import useWidth from '../../hooks/useWidth'
+import { ScrollContext } from '../../context/createContext'
 import {
   useSlider,
   useSliderMobile,
@@ -10,7 +11,8 @@ import {
   useSliderSection5Mobile, */
   useSliderSection7,
   useSliderSection7Mobile,
-  useSliderSection9
+  useSliderSection9,
+  useSliderSectionProyects
   /* useSliderSection9Mobile, */
 } from './Slider'
 import Button from '../../components/Button/Button'
@@ -26,9 +28,9 @@ import {
   useTranslateSection9
 } from './translate'
 import './Home.css'
-import { ScrollContext } from '../../context/createContext'
-import Contact from '../../components/Contact/Contact'
 
+const Contact = React.lazy(() => import('../../components/Contact/Contact'))
+const Proyects = React.lazy(() => import('../../components/Proyects/Proyects'))
 const Card = React.lazy(() => import('../../components/CardProduct/Card'))
 const Products = React.lazy(() => import('../../components/Products/Products'))
 const Showroom = React.lazy(() => import('../../components/Showroom/Showroom'))
@@ -231,7 +233,7 @@ const Home = () => {
               <Card key={item.id} arrayItems={item} />
             ))}
           </div>
-          <div className='products__content-action margin-top'>
+          <div className='products__content-action'>
             <Button
               value={arrayText8.buttonText}
               action={() => alert('Action')}
@@ -246,7 +248,6 @@ const Home = () => {
           </div>
         </Products>
       </section>
-
       <section ref={proyectsRef}>
         <Carousel
           images={useSliderSection9}
@@ -257,16 +258,43 @@ const Home = () => {
             style={{ height: width <= 546 ? '690px' : '790px' }}
           >
             <div>
-              <h2>{arrayText9.title}</h2>
+              <h2>{arrayText9.category_1.title}</h2>
             </div>
             <div>
-              <h3>{arrayText9.subTitle}</h3>
+              <h3>{arrayText9.category_1.subTitle}</h3>
             </div>
             <div className='carousel__content-section-proyects-p'>
-              <p>{arrayText9.text}</p>
+              <p>{arrayText9.category_1.text}</p>
             </div>
           </div>
         </Carousel>
+        <div className='proyects__category_2'>
+          <div>
+            <p>{arrayText9.category_2.text}</p>
+          </div>
+          <div>
+            <h3>{arrayText9.category_2.actionText}</h3>
+          </div>
+          <div>
+            <Button
+              value={arrayText9.category_2.btnText}
+              action={() => alert('Action')}
+              bgColor='var(--aw-bg-btn)'
+              txtColor='var(--aw-text-btn)'
+              p='10px 25px'
+              br='20px'
+              fs={width <= 546 ? '14px' : '18px'}
+              className='btn-large'
+            />
+          </div>
+        </div>
+        <div className='proyects__img-container'>
+          <div>
+            <Proyects arrayImage={useSliderSectionProyects} />
+          </div>
+          <div></div>
+          <div></div>
+        </div>
       </section>
     </Fragment>
   )
