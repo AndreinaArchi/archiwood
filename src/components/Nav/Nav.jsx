@@ -22,7 +22,7 @@ const Nav = () => {
   const navigate = useNavigate()
   const width = useWidth()
   const location = useLocation()
-  const { SCROLL, purposeRef, showroomRef, processRef, productsRef } =
+  const { SCROLL, purposeRef, showroomRef, processRef, productsRef, proyectsRef } =
     useContext(ScrollContext)
 
   const scrollToSection = (section) => {
@@ -41,6 +41,9 @@ const Nav = () => {
         toggleSubMenu()
       } else if (section === 'products' && productsRef.current) {
         SCROLL(productsRef)
+        toggleSubMenu()
+      } else if (section === 'proyects' && proyectsRef.current) {
+        SCROLL(proyectsRef)
         toggleSubMenu()
       }
     }, 300)

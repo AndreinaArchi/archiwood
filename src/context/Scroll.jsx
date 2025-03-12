@@ -13,6 +13,7 @@ export const ScrollProvider = ({ children }) => {
   const showroomRef = useRef(null)
   const processRef = useRef(null)
   const productsRef = useRef(null)
+  const proyectsRef = useRef(null)
   const productDescriptionRef = useRef(null)
 
   return (
@@ -27,6 +28,7 @@ export const ScrollProvider = ({ children }) => {
         showroomRef,
         processRef,
         productsRef,
+        proyectsRef,
         productDescriptionRef
       }}
     >

@@ -10,7 +10,7 @@ import {
   useSliderSection5Mobile, */
   useSliderSection7,
   useSliderSection7Mobile,
-  useSliderSection9,
+  useSliderSection9
   /* useSliderSection9Mobile, */
 } from './Slider'
 import Button from '../../components/Button/Button'
@@ -58,7 +58,8 @@ const Home = () => {
     purposeRef,
     showroomRef,
     processRef,
-    productsRef
+    productsRef,
+    proyectsRef
   } = useContext(ScrollContext)
 
   const handleNavigateToNews = () => {
@@ -246,7 +247,7 @@ const Home = () => {
         </Products>
       </section>
 
-      <section>
+      <section ref={proyectsRef}>
         <Carousel
           images={useSliderSection9}
           h={width <= 546 ? '950px' : '1050px'}

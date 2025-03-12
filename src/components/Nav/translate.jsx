@@ -31,7 +31,7 @@ const useTranslate = () => {
         { id: 311, name: t('navbar.art'), ref: '#' }
       ] */
     },
-    { id: 4, name: t('navbar.proyects'), path: '/proyects' },
+    { id: 4, name: t('navbar.proyects'), ref: 'proyects' },
     { id: 5, name: t('navbar.contact'), path: '/contact' }
   ]
 }

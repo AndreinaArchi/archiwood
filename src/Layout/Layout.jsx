@@ -15,9 +15,9 @@ const Layout = () => {
   return (
     <>
       <Nav />
-      <section ref={topRef} className='layout__section fadeIn'>
+      <div ref={topRef} className='layout__section fadeIn'>
         <Outlet />
-      </section>
+      </div>
     </>
   )
 }

@@ -157,7 +157,7 @@
   },
   "home_section8": {
     "title": "Productos",
-    "more_options":"Ver más Productos",
+    "more_options": "Ver más Productos",
     "text_1": "En Archiwood, ofrecemos soluciones de carpintería personalizadas que combinan funcionalidad, diseño y calidad excepcional. Nuestra gama de productos incluye cocinas, closets, puertas, screens, vanities, encimeras, revestimientos en yeso, plomería, muebles de pared y arte decorativo, adaptados a cada proyecto.",
     "text_2": "Trabajamos con materiales premium, tanto locales como importados de Europa, asegurando acabados impecables y durabilidad. Ya seas arquitecto, diseñador o constructor, te ayudamos a dar vida a tus ideas con innovación y precisión.",
     "subTitle": "¡Contáctanos y descubre cómo transformar tus espacios!",
@@ -397,8 +397,8 @@
     ]
   },
   "home_section9": {
-    "title":"Proyectos",
-    "subTitle":"Transformamos ideas en realidades",
-    "text":"Cada proyecto que realizamos es una combinación de innovación, calidad y precisión. En Archiwood, trabajamos en estrecha colaboración con arquitectos, diseñadores y constructores para crear espacios únicos, utilizando materiales de alta gama y carpintería personalizada."
+    "title": "Proyectos",
+    "subTitle": "Transformamos ideas en realidades",
+    "text": "Cada proyecto que realizamos es una combinación de innovación, calidad y precisión. En Archiwood, trabajamos en estrecha colaboración con arquitectos, diseñadores y constructores para crear espacios únicos, utilizando materiales de alta gama y carpintería personalizada."
   }
 }
