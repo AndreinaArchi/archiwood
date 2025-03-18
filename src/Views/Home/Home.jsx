@@ -292,8 +292,25 @@ const Home = () => {
           <div>
             <Proyects arrayImage={useSliderSectionProyects} />
           </div>
-          <div></div>
-          <div></div>
+          <div className='proyects__category_3'>
+          <hr style={{width:'300px'}} />
+          <div className='proyects__category_3-text'>
+            <p>{arrayText9.category_3.text}</p>
+            <h3>{arrayText9.category_3.actionText}</h3>
+          </div>
+          <div>
+            <Button
+              value={arrayText9.category_3.btnText}
+              action={() => alert('Action')}
+              bgColor='var(--aw-bg-btn)'
+              txtColor='var(--aw-text-btn)'
+              p='10px 25px'
+              br='20px'
+              fs={width <= 546 ? '14px' : '18px'}
+              className='btn-large'
+            />
+          </div>
+        </div>
         </div>
       </section>
     </Fragment>

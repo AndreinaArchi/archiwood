@@ -20,7 +20,7 @@
 }
 
 .proyects__thumbnail-container {
-  width: 100%; /* Ocupar todo el ancho */
+  width: 90%; /* Ocupar todo el ancho */
   height: 150px; /* Altura fija para las miniaturas */
   overflow-x: auto; /* Permitir desplazamiento horizontal */
   overflow-y: hidden;

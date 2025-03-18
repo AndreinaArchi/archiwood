@@ -34,7 +34,6 @@ const Proyects = ({ arrayImage }) => {
 
   return (
     <div className='proyects-container'>
-      {/* Imagen Principal */}
       <div className='main-image'>
         <Suspense fallback={<div>Cargando...</div>}>
           <Img
