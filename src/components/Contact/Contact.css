@@ -11,6 +11,7 @@
   font-size: var(--aw-font-size-xxl);
   border-bottom: 1px solid var(--aw-bg-thir);
   padding: 0 70px 20px;
+  margin-bottom: 50px;
 }
 
 .contact__content-banner {
