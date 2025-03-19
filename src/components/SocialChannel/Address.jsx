@@ -1,10 +1,12 @@
 import React from 'react'
+import useWidth from '../../hooks/useWidth'
 import './Address.css'
-import phone from '/icons/phone_icon.png'
+import position from '/icons/address.png'
 
 const Img = React.lazy(() => import('../Img/Img'))
 
-const Address = ({ children}) => {
+const Address = ({ children }) => {
+  const width = useWidth()
   const googleAddress = () => {
     window.open('https://maps.app.goo.gl/RBykxe6JGwwssbDk7')
   }
@@ -14,10 +16,20 @@ const Address = ({ children}) => {
   }
   return (
     <div className='address__container'>
-      <Img img={phone} w='18px' action={() => googleAddress()} ofit='contain' />
+      <Img
+        img={position}
+        w='18px'
+        action={() => googleAddress()}
+        ofit='contain'
+      />
       <div>
         <p>{addressContext.lineOne}</p>
-        <div className='address__container-visit'>
+        <div
+          className='address__container-visit'
+          style={{
+            flexDirection: width <= 546 ? 'column' : 'row'
+          }}
+        >
           <p>{addressContext.lineTwo}</p>
           <a onClick={() => googleAddress()}>{children}</a>
         </div>

@@ -29,8 +29,10 @@
     "secondDescription_": "¡Escríbenos!",
     "nameAndLastname": "Nombre y Apellido",
     "email": "Email",
+    "phone": "Teléfono",
     "message": "Escribe tu mensaje aquí",
-    "btnAction": "¡Enviar!"
+    "btnAction": "¡Enviar!",
+    "btnClose": "Cerrar"
   },
   "home": {
     "title_1": "¡Especialistas en Carpintería personalizada!",

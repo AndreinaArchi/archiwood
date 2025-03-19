@@ -30,7 +30,8 @@
     "nameAndLastname": "Name and Last Name",
     "email": "Email",
     "message": "Write your message here",
-    "btnAction": "Send!"
+    "btnAction": "Send!",
+    "followUs": "Follow us"
   },
   "home": {
     "title_1": "Custom Carpentry Specialists!",

@@ -22,8 +22,15 @@ const Nav = () => {
   const navigate = useNavigate()
   const width = useWidth()
   const location = useLocation()
-  const { SCROLL, purposeRef, showroomRef, processRef, productsRef, proyectsRef } =
-    useContext(ScrollContext)
+  const {
+    SCROLL,
+    purposeRef,
+    showroomRef,
+    processRef,
+    productsRef,
+    proyectsRef,
+    contactRef
+  } = useContext(ScrollContext)
 
   const scrollToSection = (section) => {
     if (location.pathname !== '/') {
@@ -44,6 +51,9 @@ const Nav = () => {
         toggleSubMenu()
       } else if (section === 'proyects' && proyectsRef.current) {
         SCROLL(proyectsRef)
+        toggleSubMenu()
+      } else if (section === 'contact' && contactRef.current) {
+        SCROLL(contactRef)
         toggleSubMenu()
       }
     }, 400)
@@ -164,7 +174,7 @@ const Nav = () => {
           )}
           {width > 936 && (
             <>
-              <SocialChannel />
+              <SocialChannel borderRight={true} />
               <Phone />
             </>
           )}
@@ -253,7 +263,7 @@ const Nav = () => {
               ))}
             </ul>
             <div className='nav__content-menu-social'>
-              <SocialChannel />
+              <SocialChannel borderRight={true} />
               <Phone />
             </div>
           </div>

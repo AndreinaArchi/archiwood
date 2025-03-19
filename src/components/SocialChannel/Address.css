@@ -4,6 +4,11 @@
   align-items: start;
 }
 
+/* .address__container-visit {
+  display: flex;
+  flex-direction: column;
+} */
+
 .address__container > div > p,
 .address__container-visit > p, .address__container-visit > a {
   font-size: 13px;

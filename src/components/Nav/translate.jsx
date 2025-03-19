@@ -32,7 +32,7 @@ const useTranslate = () => {
       ] */
     },
     { id: 4, name: t('navbar.proyects'), ref: 'proyects' },
-    { id: 5, name: t('navbar.contact'), path: '/contact' }
+    { id: 5, name: t('navbar.contact'), ref: 'contact' }
   ]
 }
 

@@ -1,4 +1,4 @@
-import React, { useContext, useState, Fragment } from 'react'
+import React, { useContext, Fragment } from 'react'
 import { useNavigate } from 'react-router-dom'
 import useWidth from '../../hooks/useWidth'
 import { ScrollContext } from '../../context/createContext'
@@ -15,7 +15,6 @@ import {
   useSliderSectionProyects
   /* useSliderSection9Mobile, */
 } from './Slider'
-import Button from '../../components/Button/Button'
 import {
   useTranslateSection1,
   useTranslateSection2,
@@ -29,6 +28,7 @@ import {
 } from './translate'
 import './Home.css'
 
+const Button = React.lazy(() => import('../../components/Button/Button'))
 const Contact = React.lazy(() => import('../../components/Contact/Contact'))
 const Proyects = React.lazy(() => import('../../components/Proyects/Proyects'))
 const Card = React.lazy(() => import('../../components/CardProduct/Card'))
@@ -41,7 +41,6 @@ const CarousleText = React.lazy(() =>
 )
 
 const Home = () => {
-  const [showContact, setShowContact] = useState(false)
   const width = useWidth()
   const navigate = useNavigate()
   const arrayText = useTranslateSection2()
@@ -54,6 +53,7 @@ const Home = () => {
   const arrayText8 = useTranslateSection8()
   const arrayText9 = useTranslateSection9()
   const {
+    handleContactUs,
     section1,
     section2,
     section4,
@@ -61,24 +61,15 @@ const Home = () => {
     showroomRef,
     processRef,
     productsRef,
-    proyectsRef
+    proyectsRef,
   } = useContext(ScrollContext)
 
   const handleNavigateToNews = () => {
     navigate('/news')
   }
 
-  const handleContactUs = () => {
-    setShowContact(!showContact)
-  }
-
   return (
     <Fragment>
-      {showContact && (
-        <section className='section__contact'>
-          <Contact />
-        </section>
-      )}
       <section style={{ width: '100%' }}>
         <Carousel
           images={width > 546 ? useSlider : useSliderMobile}
@@ -133,7 +124,7 @@ const Home = () => {
             <div className='carousel__content__button'>
               <Button
                 value={textContent3.buttonText}
-                action={() => alert('Action')}
+                action={handleContactUs}
                 bgColor='var(--aw-bg-btn)'
                 txtColor='var(--aw-text-btn)'
                 p='10px 25px'
@@ -163,7 +154,7 @@ const Home = () => {
             <div className='carousel__content__button'>
               <Button
                 value={textContent5.buttonText}
-                action={() => alert('Action')}
+                action={handleContactUs}
                 bgColor='var(--aw-bg-btn)'
                 txtColor='var(--aw-text-btn)'
                 p='10px 25px'
@@ -180,7 +171,7 @@ const Home = () => {
           <div className='carousel__content__button'>
             <Button
               value={textContent5.buttonText}
-              action={() => alert('Action')}
+              action={handleContactUs}
               bgColor='var(--aw-bg-btn)'
               txtColor='var(--aw-text-btn)'
               p='10px 25px'
@@ -236,7 +227,7 @@ const Home = () => {
           <div className='products__content-action'>
             <Button
               value={arrayText8.buttonText}
-              action={() => alert('Action')}
+              action={handleContactUs}
               bgColor='var(--aw-bg-btn)'
               txtColor='var(--aw-text-btn)'
               p='10px 25px'
@@ -278,7 +269,7 @@ const Home = () => {
           <div>
             <Button
               value={arrayText9.category_2.btnText}
-              action={() => alert('Action')}
+              action={handleContactUs}
               bgColor='var(--aw-bg-btn)'
               txtColor='var(--aw-text-btn)'
               p='10px 25px'
@@ -293,25 +284,28 @@ const Home = () => {
             <Proyects arrayImage={useSliderSectionProyects} />
           </div>
           <div className='proyects__category_3'>
-          <hr style={{width:'300px'}} />
-          <div className='proyects__category_3-text'>
-            <p>{arrayText9.category_3.text}</p>
-            <h3>{arrayText9.category_3.actionText}</h3>
-          </div>
-          <div>
-            <Button
-              value={arrayText9.category_3.btnText}
-              action={() => alert('Action')}
-              bgColor='var(--aw-bg-btn)'
-              txtColor='var(--aw-text-btn)'
-              p='10px 25px'
-              br='20px'
-              fs={width <= 546 ? '14px' : '18px'}
-              className='btn-large'
-            />
+            <hr style={{ width: '300px' }} />
+            <div className='proyects__category_3-text'>
+              <p>{arrayText9.category_3.text}</p>
+              <h3>{arrayText9.category_3.actionText}</h3>
+            </div>
+            <div>
+              <Button
+                value={arrayText9.category_3.btnText}
+                action={handleContactUs}
+                bgColor='var(--aw-bg-btn)'
+                txtColor='var(--aw-text-btn)'
+                p='10px 25px'
+                br='20px'
+                fs={width <= 546 ? '14px' : '18px'}
+                className='btn-large'
+              />
+            </div>
           </div>
         </div>
-        </div>
+      </section>
+      <section>
+        <Contact />
       </section>
     </Fragment>
   )

@@ -12,8 +12,10 @@ const useTranslate = () => {
     secondDescription_: t('contact.secondDescription_'),
     nameAndLastname: t('contact.nameAndLastname'),
     email: t('contact.email'),
+    phone: t('contact.phone'),
     message: t('contact.message'),
-    btnAction: t('contact.btnAction')
+    btnAction: t('contact.btnAction'),
+    btnClose: t('contact.btnClose'),
   }
 }
 

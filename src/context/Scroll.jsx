@@ -1,8 +1,9 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { ScrollContext } from './createContext'
 import useScrollToRef from '../hooks/useScrollToRef'
 
 export const ScrollProvider = ({ children }) => {
+  const [showContact, setShowContact] = useState(false)
   const SCROLL = useScrollToRef()
 
   const topRef = useRef(null)
@@ -15,10 +16,20 @@ export const ScrollProvider = ({ children }) => {
   const productsRef = useRef(null)
   const proyectsRef = useRef(null)
   const productDescriptionRef = useRef(null)
+  const contactRef = useRef(null)
+
+
+  /**FUNCTION BTN CONTACT*/
+  const handleContactUs = () => {
+    setShowContact(!showContact)
+  }
 
   return (
     <ScrollContext.Provider
       value={{
+        handleContactUs,
+        showContact,
+        setShowContact,
         SCROLL,
         topRef,
         section1,
@@ -29,7 +40,8 @@ export const ScrollProvider = ({ children }) => {
         processRef,
         productsRef,
         proyectsRef,
-        productDescriptionRef
+        productDescriptionRef,
+        contactRef
       }}
     >
       {children}

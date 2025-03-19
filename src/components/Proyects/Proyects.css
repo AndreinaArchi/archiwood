@@ -7,7 +7,7 @@
 }
 
 .main-image {
-  width: 100vw; /* Ocupar todo el ancho */
+  width: 100%; /* Ocupar todo el ancho */
   display: flex;
   justify-content: center;
   align-items: center;
