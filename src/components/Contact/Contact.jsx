@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import useTranslate from './translate'
-import width from '../../hooks/useWidth'
+import useWidth from '../../hooks/useWidth'
 import { ScrollContext } from '../../context/createContext'
 import './Contact.css'
 import banner from '/images/contact.png'
@@ -12,6 +12,7 @@ const Phone = React.lazy(() => import('../SocialChannel/Phone'))
 const Address = React.lazy(() => import('../SocialChannel/Address'))
 
 const Contact = ({ bannerImg = true }) => {
+  const width = useWidth()
   const {contactRef} = useContext(ScrollContext)
   const { setShowContact } = useContext(ScrollContext)
   const textContent = useTranslate()
@@ -37,7 +38,7 @@ const Contact = ({ bannerImg = true }) => {
     const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAW}&su=Contacto%20de%20${encodeURIComponent(
       nameLastname
     )}&body=${encodeURIComponent(
-      `Name: ${nameLastname}\nEmail: ${email}\nPhone: ${phone}\nMBody: ${message}`
+      `Name: ${nameLastname}\nEmail: ${email}\nPhone: ${phone}\nMBody: ${message}\n\n\n\n\n\n***Archiwood***`
     )}`
 
     const mailtoLinkMobile = `mailto:${emailAW}?subject=Contacto%20de%20${encodeURIComponent(
@@ -46,7 +47,9 @@ const Contact = ({ bannerImg = true }) => {
       `Name: ${nameLastname}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}\n\n\n\n\n\n***Archiwood***`
     )}`
 
-    if (width > 546) {
+    console.log(width);
+    if (width >= 546) {
+      
       window.open(mailtoLink, '_blank')
     } else {
       window.location.href = mailtoLinkMobile
@@ -94,6 +97,7 @@ const Contact = ({ bannerImg = true }) => {
                 value={formData.nameLastname}
                 onChange={handleChange}
                 required
+                autoComplete="off"
               />
             </div>
             <div>
@@ -104,6 +108,7 @@ const Contact = ({ bannerImg = true }) => {
                 value={formData.email}
                 onChange={handleChange}
                 required
+                autoComplete="off"
               />
             </div>
             <div>
@@ -114,6 +119,7 @@ const Contact = ({ bannerImg = true }) => {
                 value={formData.phone}
                 onChange={handleChange}
                 required
+                autoComplete="off"
               />
             </div>
             <textarea

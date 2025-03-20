@@ -62,6 +62,7 @@
 
 .contact__form > div > p {
   font-size: var(--aw-font-size-m);
+  white-space: nowrap;
 }
 
 .contact__form > div > input {
@@ -75,6 +76,12 @@
 .contact__form > textarea:focus {
   outline: none;
 }
+
+.contact__form > div > input:not(:placeholder-shown),
+.contact__form > textarea:not(:placeholder-shown) {
+  background-color: transparent;
+}
+
 
 .contact__form > textarea {
   margin: 20px 0;
