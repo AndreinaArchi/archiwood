@@ -6,7 +6,7 @@ import pinterest from '/icons/pinterest_icon.png'
 
 const Img = React.lazy(() => import('../Img/Img'))
 
-const SocialChannel = ({ borderRight = false }) => {
+const SocialChannel = ({ borderRight = false, w='18px' }) => {
   const socialIg = () => {
     window.open('https://www.instagram.com/archiwood.usa')
   }
@@ -21,11 +21,11 @@ const SocialChannel = ({ borderRight = false }) => {
       className='social__container'
       style={{ borderRight: borderRight && '1px solid var(--aw-bg-btn)' }}
     >
-      <Img img={ig} w='18px' ofit='contain' action={() => socialIg()} />
-      <Img img={tiktok} w='18px' ofit='contain' action={() => socialTikTok()} />
+      <Img img={ig} w={w} ofit='contain' action={() => socialIg()} />
+      <Img img={tiktok} w={w} ofit='contain' action={() => socialTikTok()} />
       <Img
         img={pinterest}
-        w='18px'
+        w={w}
         ofit='contain'
         action={() => socialPinterest()}
       />

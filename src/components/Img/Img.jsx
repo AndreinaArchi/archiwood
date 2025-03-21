@@ -14,7 +14,7 @@ const Img = ({
   return (
     <img
       src={img}
-      className={`${classname !== '' ? '' : 'img__settings'}`}
+      className={`${classname !== '' ? classname : 'img__settings'}`}
       style={{
         width: w,
         height: h,

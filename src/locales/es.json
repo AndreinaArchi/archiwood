@@ -414,5 +414,32 @@
       "actionText": "Permítenos asesorarte en cada detalle.",
       "btnText": "¡Hablemos sobre tu proyecto!"
     }
+  },
+  "news": {
+    "banner": "/images/News.png",
+    "texts": {
+      "title": "Noticias",
+      "welcomeMessage": "¡Te damos la bienvenida a nuestro espacio de noticias!",
+      "subTitle": "Categorías"
+    },
+    "categories": [
+      { "id": 1, "name": "Podcast" },
+      { "id": 2, "name": "Colaboraciones" },
+      { "id": 3, "name": "Novedades" },
+      { "id": 4, "name": "Eventos" },
+      { "id": 5, "name": "Exposiciones" }
+    ],
+    "news": [
+      {
+        "id": 11,
+        "title": "Andreina Orta | Creative Talks",
+        "date": "Enero 17, 2024",
+        "categoryId": 1,
+        "category": "Podcast",
+        "image": "",
+        "video": "https://www.youtube.com/embed/Jr63T9E4cw8?si=RJo2OaKbVNb3qfUz",
+        "content":  "Andreina Orta de Archidesart es una talentosa arquitecta y diseñadora de interiores venezolana, con\nmuchos años de experiencia trabajando con desarrolladores en la creación de spec homes maravillosas. Sus primeros años los dedicó a trabajar en Venezuela, en la constructora de su familia, como arquitecta y diseñadora.\n\nDesde que llegó a Miami, incursionó en el mundo de la carpintería, especializándose en este campo, lo que la llevó a crear su propia empresa de muebles a medida. Archidesart, además de desarrollar sus propios proyectos, colabora con otras diseñadoras y arquitectas para crear piezas únicas, con un nivel de detalle y acabados de excelencia.\n\nHoy hablaremos de su próximo hito, ya que está por inaugurar su boutique showroom de diseño de carpintería en Doral."
+      }
+    ]
   }
 }
