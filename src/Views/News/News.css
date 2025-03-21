@@ -38,11 +38,6 @@
   gap: 30px;
 }
 
-.product__section-news-content > iframe {
-  width: 100%;
-  height: 500px;
-}
-
 .product__section-news,
 .product__section-categories {
   display: flex;

@@ -29,6 +29,8 @@ const News = () => {
                 <div key={item.id} className='product__section-news-content'>
                   {item.video && (
                     <iframe
+                      width={width < 1581 ? '100%' : '80%'}
+                      height='500px'
                       src={item.video}
                       title='YouTube video player'
                       frameBorder='0'
