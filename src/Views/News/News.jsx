@@ -196,7 +196,7 @@ const News = () => {
             </div>
           </div>
           <div className='news__section-categories'>
-            {width <= 1179 ? (
+            {width <= 956 ? (
               <>
                 <div className='news__recent-news'>
                   <h3>{newsT.texts?.recentNews}</h3>
@@ -253,7 +253,6 @@ const News = () => {
                       </div>
                     )}
                   </div>
-                  {width <= 956 && <hr style={{ marginTop: '30px' }} />}
                   <div className='news__categories-list'>
                     <div>
                       {newsT.texts?.subTitle && <h3>{newsT.texts.subTitle}</h3>}
@@ -281,6 +280,7 @@ const News = () => {
                         </div>
                       ))}
                     </div>
+                    {width <= 956 && <hr style={{ marginTop: '30px' }} />}
                   </div>
                 </div>
               </>
