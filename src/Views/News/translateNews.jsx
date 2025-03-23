@@ -1,9 +1,13 @@
 import { useTranslation } from 'react-i18next'
+import { useMemo } from 'react'
 
 export const useTranlateNews = () => {
-  const [t] = useTranslation('global')
+  const { t } = useTranslation('global')
 
-  return {
-    newsT: t('news', { returnObjects: true }),
-  }
+  return useMemo(
+    () => ({
+      newsT: t('news', { returnObjects: true })
+    }),
+    [t]
+  )
 }

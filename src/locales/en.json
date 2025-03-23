@@ -22,90 +22,92 @@
   },
   "contact": {
     "title": "Contact",
-    "description": "At Archiwood, we are ready to help you create unique spaces with high-quality carpentry. Contact us for personalized advice and discover how we can bring your vision to life.",
+    "description": "At Archiwood, we are ready to help you create unique spaces with high-quality carpentry. Contact us for personalized advice and discover how we can make your vision a reality.",
     "actionAddres": "View on Google Maps.",
-    "actionSocialMedia": "Follow us",
+    "actionSocialMedia": "Follow Us",
     "secondDescription": "Do you have any questions or need more information?",
     "secondDescription_": "Write to us!",
-    "nameAndLastname": "Name and Last Name",
+    "nameAndLastname": "First and Last Name",
     "email": "Email",
+    "phone": "Phone",
     "message": "Write your message here",
     "btnAction": "Send!",
-    "followUs": "Follow us"
+    "btnClose": "Close"
   },
   "home": {
-    "title_1": "Custom Carpentry Specialists!",
+    "title_1": "Specialists in Custom Carpentry!",
     "title_2": "Make Your Project a Reality!",
-    "text_1": "We offer tailored solutions with quality",
+    "text_1": "We offer tailor-made solutions with quality",
     "text_2": "and design to transform your home.",
-    "buttonText": "Discover Our Services"
+    "buttonText": "Discover Our Products"
   },
   "home_section2": {
     "title_1": "Our Purpose",
     "title_12": "Mission",
-    "paragraph_1": "Our company, based in Miami, specializes in custom carpentry manufacturing, both locally and imported from Europe. We offer tailored solutions that combine quality, design, and functionality, adapted to the needs of architects, designers, builders, and the general public. Additionally, we provide carpentry accessories and specialized technical support in drawing and rendering, ensuring the efficient management of each project.",
+    "paragraph_1": "Our company, located in Miami, specializes in the manufacture of custom carpentry, both locally and imported from Europe. We offer tailor-made solutions that combine quality, design, and functionality, tailored to the needs of architects, designers, builders, and the general public. We also provide carpentry accessories and specialized technical support in drawing and rendering, ensuring the efficient management of each project.",
     "title_2": "Our Purpose",
     "title_22": "Vision",
     "paragraph_2": "To become the leading company in carpentry solutions, recognized for the excellence of our products and services. We aim to be the trusted partner of architects, designers, and builders, offering innovation, quality, and efficiency, both with our local carpentry in Miami and our European line.",
     "title_3": "Our Purpose",
     "title_32": "Objectives",
-    "paragraph_31": "Provide personalized and high-quality carpentry products, both local and imported, that meet our customers' needs.",
-    "paragraph_32": "Offer a comprehensive service that includes technical advice, design, and renderings, optimizing project management.",
-    "paragraph_33": "Maintain a constant commitment to innovation and sustainability in all our products and processes.",
-    "paragraph_34": "Provide creative and functional solutions that contribute to the success of each project."
+    "paragraph_31": "To provide personalized, high-quality carpentry products, both local and imported, that meet the needs of our clients.",
+    "paragraph_32": "To offer a comprehensive service that includes technical advice, design, and renderings, optimizing project management.",
+    "paragraph_33": "To maintain a constant commitment to innovation and sustainability in all our products and processes.",
+    "paragraph_34": "To provide creative and functional solutions that contribute to the success of each project."
   },
   "home_section3": {
-    "title_1": "Unique and Personalized Designs!",
+    "title_1": "Unique and Custom Designs!",
     "text_1": "Discover the carpentry",
     "text_2": "that transforms spaces!",
     "buttonText": "Talk to an Expert"
   },
+
   "home_section4": {
-    "btn_on": "Read More",
-    "btn_off": "Read Less",
+    "btn_on": "Read more",
+    "btn_off": "Read less",
     "title": "Our Process",
-    "description": "At Archiwood, every project starts with a unique idea and a fully personalized approach. Our process is designed to ensure that each piece of carpentry is a masterpiece that reflects your needs and vision. Here are the steps of our process:",
+    "description": "At Archiwood, every project begins with a unique idea and a fully personalized approach. Our process is designed to ensure that each piece of carpentry is a masterpiece that reflects your needs and vision. Below are the steps of our process:",
     "options": [
       {
         "id": 1,
         "title": "Initial Consultation",
-        "description": "We start with a meeting to understand your vision, needs, and the style you want to achieve. During this stage, we gather all the key details of the project to ensure that our solutions perfectly match your expectations."
+        "description": "We begin with a meeting with you to understand your vision, needs, and the style you wish to achieve. During this stage, we gather all the key details of the project to ensure our solutions perfectly match your expectations."
       },
       {
         "id": 2,
-        "title": "Estimate and Budget",
-        "description": "Based on the initial consultation, we provide a detailed estimate and a personalized budget. We ensure that the budget is transparent, clear, and adjusted to your needs, considering materials, manufacturing time, and installation."
+        "title": "Estimation and Budget",
+        "description": "Based on the initial consultation, we provide you with a detailed estimate and a personalized budget. We ensure the budget is transparent, clear, and tailored to your needs, considering materials, manufacturing time, and installation."
       },
       {
         "id": 3,
         "title": "Custom Design",
-        "description": "Our design team creates custom plans and designs based on your requirements. We use advanced drawing and rendering tools so you can visualize the final design and make any adjustments before proceeding with production."
+        "description": "Our design team creates customized plans and designs based on your requirements. We use advanced drawing and rendering tools so you can visualize the final design and make any adjustments before proceeding with production."
       },
       {
         "id": 4,
         "title": "Material Selection",
-        "description": "We work with you to choose the most suitable materials for your project, whether with high-quality local wood or our exclusive imported line from Europe. We ensure that the selected materials meet your aesthetic and durability expectations."
+        "description": "We work with you to choose the most suitable materials for your project, whether with high-quality local wood or our exclusive line imported from Europe. We ensure that the selected materials meet your aesthetic and durability expectations."
       },
       {
         "id": 5,
         "title": "Manufacturing",
-        "description": "Once the design and materials are approved, we begin manufacturing. Our team of expert carpenters brings each piece to life with precision, taking care of every detail to ensure the highest quality and finish."
+        "description": "Once the design and materials are approved, we begin manufacturing. Our team of expert carpenters brings each piece to life with precision, paying attention to every detail to guarantee the highest quality and finish."
       },
       {
         "id": 6,
         "title": "Installation",
-        "description": "The final step is installation. Our team handles delivery and installation on-site, ensuring that everything fits perfectly and meets the highest quality standards."
+        "description": "The final step is installation. Our team handles delivery and installation on-site, ensuring everything fits perfectly and meets the highest quality standards."
       },
       {
         "id": 7,
-        "title": "Post-Sales Support",
-        "description": "After installation, we remain committed to your satisfaction. We offer post-sales support to address any concerns or additional needs."
+        "title": "Post-Sale Support",
+        "description": "After installation, we remain committed to your satisfaction. We offer post-sale support to address any concerns or additional needs."
       }
     ]
   },
   "home_section5": {
     "title": "At Archiwood,",
-    "paragraph": "we take pride in offering custom carpentry solutions that not only meet but exceed our clients' expectations, creating extraordinary spaces with every project.",
+    "paragraph": "We take pride in offering custom carpentry solutions that not only meet our clients' expectations but exceed them, creating extraordinary spaces with every project.",
     "buttonText": "Talk to an Expert"
   },
   "home_section6": {
@@ -114,9 +116,9 @@
         "id": 1,
         "principalTitle": "Our Showroom",
         "img": "/images/10_nuestro_Showroom_1.png",
-        "title": "Discover our exclusive space",
-        "description_1": "At Archiwood, we offer a unique experience in our showroom, located in Miami, where you can explore our custom carpentry solutions, both locally made and imported from Europe.",
-        "description_2": "Here, you'll discover how quality, design, and functionality come together to offer you the best products and services. Whether you are an architect, designer, or homeowner, you'll find everything you need for your next project."
+        "title": "Discover Our Exclusive Space",
+        "description_1": "At Archiwood, we offer a unique experience at our showroom in Miami, where you can explore our custom carpentry solutions, both local and imported from Europe.",
+        "description_2": "Here, you will discover how quality, design, and functionality combine to offer you the best products and services. Whether you are an architect, designer, or homeowner, you will find everything you need for your next project."
       },
       {
         "id": 2,
@@ -130,15 +132,15 @@
         "id": 3,
         "principalTitle": "Our Showroom",
         "img": "/images/10_nuestro_Showroom_1.png",
-        "title": "Expert advice at your disposal",
-        "description_1": "We have a team of designers and technical experts ready to offer you personalized guidance, supporting you at every step of the process. From design to material selection and project management, we ensure you get the best solution for your space with the efficiency and quality that define us.",
+        "title": "Expert Advice at Your Disposal",
+        "description_1": "We have a team of designers and technical experts ready to offer you personalized advice, supporting you at every step of the process. From design to material selection and project management, we ensure that you get the best solution for your space, with the efficiency and quality that defines us.",
         "description_2": ""
       },
       {
         "id": 4,
         "principalTitle": "Our Showroom",
         "img": "/images/10_nuestro_Showroom_2.png",
-        "title": "Visit us and start your project",
+        "title": "Visit Us and Start Your Project",
         "description_1": "PENDING",
         "description_2": "PENDING"
       }
@@ -149,37 +151,60 @@
       {
         "id": 1,
         "title": "News",
-        "buttonText": "Explore the latest in Archiwood",
-        "text_1": "Welcome to our news space, where we share the latest about Archiwood. Here you will find exclusive videos, podcasts, collaborations, launches, and our participation in exhibitions and industry events.",
+        "buttonText": "Explore the latest at Archiwood",
+        "text_1": "Welcome to our news space, where we share the latest updates about Archiwood. Here you'll find exclusive videos, podcasts, collaborations, launches, and our participation in industry exhibitions and events.",
         "text_2": "Stay up to date with innovations in carpentry, design, and architecture that are transforming spaces. Explore our content and be part of our community.",
-        "text_3": "Dive into the world of Archiwood and discover our latest updates!"
+        "text_3": "Dive into the world of Archiwood and discover our latest news!"
       }
     ]
   },
   "home_section8": {
     "title": "Products",
-    "text_1": "At Archiwood, we offer customized carpentry solutions that combine functionality, design, and exceptional quality. Our range of products includes kitchens, closets, doors, screens, vanities, countertops, plaster coatings, plumbing, wall units, and decorative art, tailored to each project.",
-    "text_2": "We work with premium materials, both locally sourced and imported from Europe, ensuring impeccable finishes and durability. Whether you're an architect, designer, or builder, we help bring your ideas to life with innovation and precision.",
+    "more_options": "See More Products",
+    "text_1": "At Archiwood, we offer custom carpentry solutions that combine functionality, design, and exceptional quality. Our range of products includes kitchens, closets, doors, screens, vanities, countertops, plaster finishes, plumbing, wall units, and decorative art, all tailored to each project.",
+    "text_2": "We work with premium materials, both local and imported from Europe, ensuring flawless finishes and durability. Whether you're an architect, designer, or contractor, we help bring your ideas to life with innovation and precision.",
     "subTitle": "Contact us and discover how to transform your spaces!",
-    "buttonText": "Transform your space with Archiwood!",
+    "buttonText": "Transform Your Space with Archiwood!",
     "subTitle3": "Contact us today and discover custom carpentry solutions for your project.",
     "items": [
       {
         "id": 1,
         "img": "/images/14_Prodcutos_Kitchen.png",
-        "title": "Kitchen",
-        "buttonText": "Explore our products",
-        "text_1": "At Archiwood, we create kitchens that combine sophisticated design with maximum functionality. Each project is customized, ensuring that every detail fits your style and needs. We work with high-quality materials, both locally sourced and imported, to offer impeccable finishes and exceptional durability.",
-        "text_2": "From modern and minimalist kitchens to classic and elegant designs, our team transforms your space into a practical and harmonious environment. Discover the difference of a custom-made kitchen with Archiwood.",
+        "title": "Kitchens",
+        "buttonText": "Explore Our Products",
+        "text_1": "At Archiwood, we create kitchens that combine sophisticated design with maximum functionality. Each project is personalized, ensuring that every detail suits your style and needs. We work with high-quality materials, both local and imported, to offer flawless finishes and exceptional durability.",
+        "text_2": "From modern, minimalist kitchens to classic, elegant designs, our team transforms your space into a practical and harmonious environment. Discover the difference of a custom-made kitchen with Archiwood.",
+        "imgSection": "/images/18_Sección_Productos_Kitchen.png",
         "items": [
           {
             "id": 11,
-            "title": "Minimalist Contemporary",
-            "text_1": "Archiwood's 'Minimalist Contemporary' kitchen combines clean lines, high-end materials, and a functional design that maximizes space. Featuring white marble countertops, handle-free natural wood cabinets, and state-of-the-art integrated appliances, this kitchen offers a modern and elegant aesthetic.",
-            "text_2": "Floating shelves and smart storage units ensure a tidy and practical environment. Perfect for those seeking simplicity without sacrificing sophistication and efficiency.",
+            "title": "Contemporary Minimalist",
+            "text_1": "Archiwood's 'Contemporary Minimalist' kitchen combines clean lines, high-end materials, and a functional design that maximizes space. With white marble countertops, handle-less natural wood cabinets, and integrated state-of-the-art appliances, this kitchen offers a modern and elegant aesthetic.",
+            "text_2": "Floating shelves and smart storage units ensure an organized and practical environment. Perfect for those who seek simplicity without sacrificing sophistication and efficiency.",
             "text_3": "",
             "subTitle": "Make your kitchen a center of style and functionality.",
-            "img": "/images/18_Sección_Productos_Kitchen.png"
+            "img": "/images/18_Sección_Productos_Kitchen_1.png",
+            "imgFull": "/images/18_Sección_Productos_Kitchen_1_full.png"
+          },
+          {
+            "id": 12,
+            "title": "Contemporary Minimalist 2",
+            "text_1": "Archiwood's 'Contemporary Minimalist' kitchen combines clean lines, high-end materials, and a functional design that maximizes space. With white marble countertops, handle-less natural wood cabinets, and integrated state-of-the-art appliances, this kitchen offers a modern and elegant aesthetic.",
+            "text_2": "Floating shelves and smart storage units ensure an organized and practical environment. Perfect for those who seek simplicity without sacrificing sophistication and efficiency.",
+            "text_3": "",
+            "subTitle": "Make your kitchen a center of style and functionality.",
+            "img": "/images/18_Sección_Productos_Kitchen_2.png",
+            "imgFull": "/images/18_Sección_Productos_Kitchen_1_full.png"
+          },
+          {
+            "id": 13,
+            "title": "Contemporary Minimalist 3",
+            "text_1": "Archiwood's 'Contemporary Minimalist' kitchen combines clean lines, high-end materials, and a functional design that maximizes space. With white marble countertops, handle-less natural wood cabinets, and integrated state-of-the-art appliances, this kitchen offers a modern and elegant aesthetic.",
+            "text_2": "Floating shelves and smart storage units ensure an organized and practical environment. Perfect for those who seek simplicity without sacrificing sophistication and efficiency.",
+            "text_3": "",
+            "subTitle": "Make your kitchen a center of style and functionality.",
+            "img": "/images/18_Sección_Productos_Kitchen_3.png",
+            "imgFull": "/images/18_Sección_Productos_Kitchen_1_full.png"
           }
         ]
       },
@@ -187,9 +212,10 @@
         "id": 2,
         "img": "/images/14_Prodcutos_Closets.png",
         "title": "Closets",
-        "buttonText": "Explore our products",
+        "buttonText": "Explore Our Products",
         "text_1": "",
         "text_2": "",
+        "imgSection": "",
         "items": [
           {
             "id": 12,
@@ -197,7 +223,9 @@
             "text_1": "",
             "text_2": "",
             "text_3": "",
-            "subTitle": ""
+            "subTitle": "",
+            "img": "",
+            "imgFull": ""
           }
         ]
       },
@@ -205,9 +233,10 @@
         "id": 3,
         "img": "/images/14_Prodcutos_Doors.png",
         "title": "Doors",
-        "buttonText": "Explore our products",
+        "buttonText": "Explore Our Products",
         "text_1": "",
         "text_2": "",
+        "imgSection": "",
         "items": [
           {
             "id": 13,
@@ -215,7 +244,9 @@
             "text_1": "",
             "text_2": "",
             "text_3": "",
-            "subTitle": ""
+            "subTitle": "",
+            "img": "",
+            "imgFull": ""
           }
         ]
       },
@@ -223,9 +254,10 @@
         "id": 4,
         "img": "/images/14_Prodcutos_Screens.png",
         "title": "Screens",
-        "buttonText": "Explore our products",
+        "buttonText": "Explore Our Products",
         "text_1": "",
         "text_2": "",
+        "imgSection": "",
         "items": [
           {
             "id": 14,
@@ -233,7 +265,9 @@
             "text_1": "",
             "text_2": "",
             "text_3": "",
-            "subTitle": ""
+            "subTitle": "",
+            "img": "",
+            "imgFull": ""
           }
         ]
       },
@@ -241,9 +275,10 @@
         "id": 5,
         "img": "/images/14_Prodcutos_Vanities.png",
         "title": "Vanities",
-        "buttonText": "Explore our products",
+        "buttonText": "Explore Our Products",
         "text_1": "",
         "text_2": "",
+        "imgSection": "",
         "items": [
           {
             "id": 15,
@@ -251,17 +286,20 @@
             "text_1": "",
             "text_2": "",
             "text_3": "",
-            "subTitle": ""
+            "subTitle": "",
+            "img": "",
+            "imgFull": ""
           }
         ]
       },
       {
         "id": 6,
         "img": "/images/14_Prodcutos_Countertop.png",
-        "title": "Countertop",
-        "buttonText": "Explore our products",
+        "title": "Countertops",
+        "buttonText": "Explore Our Products",
         "text_1": "",
         "text_2": "",
+        "imgSection": "",
         "items": [
           {
             "id": 16,
@@ -269,17 +307,20 @@
             "text_1": "",
             "text_2": "",
             "text_3": "",
-            "subTitle": ""
+            "subTitle": "",
+            "img": "",
+            "imgFull": ""
           }
         ]
       },
       {
         "id": 7,
         "img": "/images/14_Prodcutos_Plasters.png",
-        "title": "Plasters",
-        "buttonText": "Explore our products",
+        "title": "Plaster",
+        "buttonText": "Explore Our Products",
         "text_1": "",
         "text_2": "",
+        "imgSection": "",
         "items": [
           {
             "id": 17,
@@ -287,7 +328,9 @@
             "text_1": "",
             "text_2": "",
             "text_3": "",
-            "subTitle": ""
+            "subTitle": "",
+            "img": "",
+            "imgFull": ""
           }
         ]
       },
@@ -295,9 +338,10 @@
         "id": 8,
         "img": "/images/14_Prodcutos_Plumbing.png",
         "title": "Plumbing",
-        "buttonText": "Explore our products",
+        "buttonText": "Explore Our Products",
         "text_1": "",
         "text_2": "",
+        "imgSection": "",
         "items": [
           {
             "id": 18,
@@ -305,17 +349,20 @@
             "text_1": "",
             "text_2": "",
             "text_3": "",
-            "subTitle": ""
+            "subTitle": "",
+            "img": "",
+            "imgFull": ""
           }
         ]
       },
       {
         "id": 9,
         "img": "/images/14_Prodcutos_WallUnit.png",
-        "title": "Wall Unit",
-        "buttonText": "Explore our products",
+        "title": "Wall Units",
+        "buttonText": "Explore Our Products",
         "text_1": "",
         "text_2": "",
+        "imgSection": "",
         "items": [
           {
             "id": 19,
@@ -323,7 +370,9 @@
             "text_1": "",
             "text_2": "",
             "text_3": "",
-            "subTitle": ""
+            "subTitle": "",
+            "img": "",
+            "imgFull": ""
           }
         ]
       },
@@ -331,9 +380,10 @@
         "id": 10,
         "img": "/images/14_Prodcutos_Art.png",
         "title": "Art",
-        "buttonText": "Explore our products",
+        "buttonText": "Explore Our Products",
         "text_1": "",
         "text_2": "",
+        "imgSection": "",
         "items": [
           {
             "id": 110,
@@ -341,9 +391,71 @@
             "text_1": "",
             "text_2": "",
             "text_3": "",
-            "subTitle": ""
+            "subTitle": "",
+            "img": "",
+            "imgFull": ""
           }
         ]
+      }
+    ]
+  },
+  "home_section9": {
+    "category_1": {
+      "title": "Projects",
+      "subTitle": "Turning ideas into reality",
+      "text": "Every project we undertake is a combination of innovation, quality, and precision. At Archiwood, we work closely with architects, designers, and builders to create unique spaces, using high-end materials and custom carpentry."
+    },
+    "category_2": {
+      "text": "Discover some of our latest projects and get inspired by the quality and design of Archiwood.",
+      "actionText": "Schedule a consultation and start your project today!",
+      "btnText": "Contact us!"
+    },
+    "category_3": {
+      "text": "Turn your inspiration into a real project.",
+      "actionText": "Let us guide you through every detail.",
+      "btnText": "Let's talk about your project!"
+    }
+  },
+  "news": {
+    "banner": "/images/News.png",
+    "texts": {
+      "title": "News",
+      "welcomeMessage": "Welcome to our news section!",
+      "subTitle": "Categories",
+      "recentNews": "Recent News",
+      "follow": "Follow us",
+      "btnText": "View news",
+      "home": "Back to Home"
+    },
+    "categories": [
+      { "id": 1, "name": "All categories" },
+      { "id": 2, "name": "Podcast" },
+      { "id": 3, "name": "Collaborations" },
+      { "id": 4, "name": "News" },
+      { "id": 5, "name": "Events" },
+      { "id": 6, "name": "Exhibitions" }
+    ],
+    "news": [
+      {
+        "id": 11,
+        "title": "Andreina Orta | Creative Talks",
+        "date": "January 17, 2024",
+        "categoryId": 2,
+        "category": "Podcast",
+        "image": "",
+        "video": "https://www.youtube.com/embed/Jr63T9E4cw8?si=RJo2OaKbVNb3qfUz",
+        "content": "Andreina Orta from Archidesart is a talented Venezuelan architect and interior designer, with many years of experience working with developers to create stunning spec homes. She spent her early years working in Venezuela in her family’s construction company, as an architect and designer.\n\nSince arriving in Miami, she ventured into carpentry, specializing in this field, which led her to create her own custom furniture company. Archidesart, in addition to developing her own projects, collaborates with other designers and architects to create unique pieces with excellent detail and finishes.\n\nToday we will talk about her next milestone, as she is about to open her boutique carpentry design showroom in Doral."
+      },
+      {
+        "id": 12,
+        "title": "Andreina Orta | Ejemplo Colaboraciones",
+        "initDate": "January 19, 2024",
+        "date": "January 19, 2024",
+        "categoryId": 3,
+        "category": "Collaborations",
+        "image": "/images/14_Prodcutos_Art.png",
+        "video": "",
+        "content": "Andreina Orta from Archidesart is a talented Venezuelan architect and interior designer, with many years of experience working with developers to create stunning spec homes. She spent her early years working in Venezuela in her family’s construction company, as an architect and designer.\n\nSince arriving in Miami, she ventured into carpentry, specializing in this field, which led her to create her own custom furniture company. Archidesart, in addition to developing her own projects, collaborates with other designers and architects to create unique pieces with excellent detail and finishes.\n\nToday we will talk about her next milestone, as she is about to open her boutique carpentry design showroom in Doral."
       }
     ]
   }
