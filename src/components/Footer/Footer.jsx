@@ -26,13 +26,12 @@ const Footer = () => {
         <Img img={banner} w='100%' h='100%' />
       </div>
       <div className='footer__content'>
-        <p>All Rights Reserved &#174; {year()}</p>
-        <p>Powered by</p>
         <Img
           img={logo}
           w={width <= 936 ? '90px' : '110px'}
           action={() => navigate('/')}
         />
+        <p>Powered by Archiwood. All Rights Reserved &#174; {year()}</p>
       </div>
     </div>
   )

@@ -10,6 +10,7 @@ const Nav = React.lazy(() => import('../components/Nav/Nav'))
 const Layout = () => {
   const location = useLocation()
   const { showContact, SCROLL, topRef } = useContext(ScrollContext)
+  
   useEffect(() => {
     SCROLL(topRef)
   }, [location])
@@ -18,9 +19,9 @@ const Layout = () => {
     <>
       <Nav />
       {showContact && (
-        <section className='section__contact fadeIn'>
+        <div className='section__contact fadeIn'>
           <Contact bannerImg={false} />
-        </section>
+        </div>
       )}
       <div ref={topRef} className='layout__section fadeIn'>
         <Outlet />

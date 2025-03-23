@@ -65,16 +65,20 @@ const Nav = () => {
 
   useEffect(() => {
     let lastScrollY = window.scrollY
-
     const handleScroll = () => {
       const currentScrollY = window.scrollY
 
-      if (
-        !openSubMenu &&
-        currentScrollY > lastScrollY &&
-        currentScrollY > 100
-      ) {
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
         setIsHidden(true)
+        if (
+          openSubMenu !== '' ||
+          openSubMenu !== false ||
+          openSubMenu !== undefined
+        ) {
+          setTimeout(() => {
+            toggleSubMenu()
+          }, 500)
+        }
       } else {
         setIsHidden(false)
       }
@@ -121,9 +125,9 @@ const Nav = () => {
                       </button>
                       {openSubMenu === link.id && (
                         <ul className='nav__content-submenu fadeIn'>
-                          {link.options.map((subItem, index) => (
+                          {link.options.map((subItem) => (
                             <li key={subItem.id}>
-                              {index !== 0 && '·'}
+                              ·
                               {subItem.ref ? (
                                 <button
                                   className={`nav__submenu `}

@@ -43,12 +43,6 @@ const Product = () => {
     if (currentProduct.product.id && item.id === currentProduct.product.id) {
       return
     }
-
-    /* setCurrentProduct((prev) => ({
-      ...prev,
-      show: false
-    })) */
-
     setTimeout(() => {
       setCurrentProduct({
         show: true,

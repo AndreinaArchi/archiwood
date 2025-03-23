@@ -11,17 +11,21 @@
 }
 
 .footer__content {
-  padding: 120px;
+  padding: 90px 120px 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
+  align-items: start;
+  gap: 50px;
+}
+
+.footer__content > p {
+  font-size: var(--aw-font-size-m);
 }
 
 @media (max-width: 936px) {
   .footer__content {
-    padding: 120px 70px;
+    padding: 90px 70px 60px;
   }
 }
 @media (max-width: 546px) {
@@ -30,7 +34,7 @@
   }
 
   .footer__content {
-    padding: 120px 30px;
+    padding: 80px 30px 60px;
   }
   .footer__content-banner {
     height: 350px;

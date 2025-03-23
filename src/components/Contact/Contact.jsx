@@ -38,13 +38,13 @@ const Contact = ({ bannerImg = true }) => {
     const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAW}&su=Contacto%20de%20${encodeURIComponent(
       nameLastname
     )}&body=${encodeURIComponent(
-      `Name: ${nameLastname}\nEmail: ${email}\nPhone: ${phone}\nMBody: ${message}\n\n\n\n\n\n***Archiwood***`
+      `Name: ${nameLastname}\nEmail: ${email}\nPhone: ${phone}\n\n\nMessage: ${message}\n\n\n\n\n\n`
     )}`
 
     const mailtoLinkMobile = `mailto:${emailAW}?subject=Contacto%20de%20${encodeURIComponent(
       nameLastname
     )}&body=${encodeURIComponent(
-      `Name: ${nameLastname}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}\n\n\n\n\n\n***Archiwood***`
+      `Name: ${nameLastname}\nEmail: ${email}\nPhone: ${phone}\n\n\nMessage: ${message}\n\n\n\n\n\n`
     )}`
 
     console.log(width);
