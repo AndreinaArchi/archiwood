@@ -422,7 +422,8 @@
       "welcomeMessage": "¡Te damos la bienvenida a nuestro espacio de noticias!",
       "subTitle": "Categorías",
       "recentNews": "Noticia reciente",
-      "follow": "Siguenos"
+      "follow": "Siguenos",
+      "btnText":"Ver noticia"
     },
     "categories": [
       { "id": 1, "name": "Todas las categorias" },
