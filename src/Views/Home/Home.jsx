@@ -314,7 +314,7 @@ const Home = () => {
 
       <div
         className='footer__content-banner'
-        style={{ maxHeight: width <= 950 ? '350px' : '550px' }}
+        style={{ height: width <= 950 ? '320px' : '550px' }}
       >
         <Img img={banner} w='100%' h='100%' />
       </div>
