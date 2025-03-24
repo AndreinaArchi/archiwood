@@ -104,7 +104,7 @@ const News = () => {
                     {newsT.news[currentIndex]?.video && (
                       <iframe
                         width='100%'
-                        height='500px'
+                        height='720px'
                         src={newsT.news[currentIndex].video}
                         title='YouTube video player'
                         frameBorder='0'
@@ -117,7 +117,7 @@ const News = () => {
                       <Img
                         img={newsT.news[currentIndex].image}
                         w='100%'
-                        h='550px'
+                        h='720px'
                         ofit='contain'
                       />
                     )}
