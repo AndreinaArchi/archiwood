@@ -51,7 +51,7 @@
 }
 
 .process__btn-action {
-  margin-top: 120px;
+  margin-top: 20px;
   background: none;
   border: 1px solid var(--aw-bg-thir);
   padding: 5px 10px;
@@ -98,7 +98,7 @@
 
 @media (max-width: 546px) {
   .process__container {
-    padding: 150px 30px;
+    padding: 100px 30px;
   }
 
   .process__content-description {

@@ -141,6 +141,7 @@
 
   .showroom__content-options {
     max-width: 650px;
+    padding: 100px 70px 30px;
   }
 
   .showroom__content-title > h2 {
@@ -161,7 +162,7 @@
     font-size: var(--aw-font-size-xxl) !important;
   }
   .showroom__content-options {
-    padding: 100px 30px;
+    padding: 80px 70px 30px;
     width: 100%;
   }
   .showrrom__children {

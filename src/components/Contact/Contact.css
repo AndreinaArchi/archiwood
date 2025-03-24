@@ -8,10 +8,11 @@
 }
 
 .contact__container > h2 {
-  font-size: var(--aw-font-size-xxl);
+  font-size: var(--aw-font-size-xl);
   border-bottom: 1px solid var(--aw-bg-thir);
   padding: 0 70px 20px;
   margin-bottom: 50px;
+  font-family: 'TT0003M', sans-serif;;
 }
 
 .contact__content-banner {

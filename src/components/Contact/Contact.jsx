@@ -68,7 +68,7 @@ const Contact = ({ bannerImg = true }) => {
           <Img img={banner} w='100%' h='100%' />
         </div>
       )}
-      <h2 style={{ marginTop: bannerImg ? '160px' : '50px' }}>
+      <h2 style={{ marginTop: bannerImg ? '100px' : '50px' }}>
         {textContent.title}
       </h2>
       <div className='contact__content-info'>

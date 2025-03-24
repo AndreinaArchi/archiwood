@@ -162,7 +162,7 @@
     width: 100%;
   }
   .carousel-text__container-section2 {
-    padding: 150px 30px 120px;
+    padding: 100px 30px 120px;
   }
   .carousel-text__buttons {
     padding-bottom: 120px;
@@ -170,6 +170,7 @@
 }
 
 @media (max-width: 546px) {
+
   .carousel-text-content-p {
     padding: 0 0px;
   }

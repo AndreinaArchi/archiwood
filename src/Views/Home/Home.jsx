@@ -185,6 +185,7 @@ const Home = () => {
           </div>
         </Showroom>
       </section>
+      {/**NEWS */}
       <section>
         <Carousel
           images={width > 546 ? useSliderSection7 : useSliderSection7Mobile}
@@ -220,6 +221,7 @@ const Home = () => {
           ))}
         </Carousel>
       </section>
+      {/* PRODUCTS */}
       <section ref={productsRef}>
         <Products arrayText={arrayText8}>
           <div className='products__array-cards'>
@@ -287,7 +289,6 @@ const Home = () => {
             <Proyects arrayImage={useSliderSectionProyects} />
           </div>
           <div className='proyects__category_3'>
-            <hr style={{ width: '300px' }} />
             <div className='proyects__category_3-text'>
               <p>{arrayText9.category_3.text}</p>
               <h3>{arrayText9.category_3.actionText}</h3>
