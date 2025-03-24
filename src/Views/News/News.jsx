@@ -146,7 +146,7 @@ const News = () => {
                         <div className='news__list-news-content'>
                           {item.video && (
                             <iframe
-                              width={width >= 1179 ? '550px' : '100%'}
+                              width={width >= 650 ? '220px' : '100%'}
                               height='170px'
                               src={item.video}
                               title='YouTube video player'
@@ -159,7 +159,8 @@ const News = () => {
                           {item.image && (
                             <Img
                               img={item.image}
-                              w={width >= 1179 ? '550px' : '100%'}
+                              ofit='contain'
+                              w={width >= 650 ? '220px' : '100%'}
                               h='170px'
                             />
                           )}
