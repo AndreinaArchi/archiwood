@@ -438,7 +438,8 @@
       {
         "id": 11,
         "title": "Andreina Orta | Creative Talks",
-        "date": "Enero 17, 2024",
+        "initDate": "October 08, 2024",
+        "date": "Octubre 08, 2024",
         "categoryId": 2,
         "category": "Podcast",
         "image": "",
@@ -447,14 +448,14 @@
       },
       {
         "id": 12,
-        "title": "Andreina Orta | Ejemplo Colaboraciones",
-        "initDate": "January 19, 2024",
-        "date": "Enero 19, 2024",
+        "title": "Sesión de aprendizaje sobre carpintería con Archidesart",
+        "initDate": "January 17, 2024",
+        "date": "Enero 17, 2024",
         "categoryId": 3,
         "category": "Colaboraciones",
-        "image": "/images/14_Prodcutos_Art.png",
+        "image": "/images/13_Foto_Learning_session.png",
         "video": "",
-        "content": "Andreina Orta de Archidesart es una talentosa arquitecta y diseñadora de interiores venezolana, con muchos años de experiencia trabajando con desarrolladores en la creación de spec homes maravillosas. Sus primeros años los dedicó a trabajar en Venezuela, en la constructora de su familia, como arquitecta y diseñadora.\n\nDesde que llegó a Miami, incursionó en el mundo de la carpintería, especializándose en este campo, lo que la llevó a crear su propia empresa de muebles a medida. Archidesart, además de desarrollar sus propios proyectos, colabora con otras diseñadoras y arquitectas para crear piezas únicas, con un nivel de detalle y acabados de excelencia.\n\nHoy hablaremos de su próximo hito, ya que está por inaugurar su boutique showroom de diseño de carpintería en Doral."
+        "content": "Este día marcó un momento crucial para la comunidad de diseñadoras de interiores Collab Girls, ya que nos sumergimos en el primer taller de 2024: una fascinante exploración en el mundo de la carpintería arquitectónica, organizado por @bluebycindy y dirigido por Andreina Orta de @archidesart.usa, quien nos reveló la maestría de la carpintería en una sinfonía de diseño. El taller fue un verdadero testimonio de la unidad que nos une como creadoras. A través de ejercicios colaborativos y enriquecedoras discusiones, descubrimos nuevas perspectivas y enfoques para integrar la carpintería arquitectónica de manera fluida en nuestras narrativas de diseño. El ambiente vibraba con creatividad y colaboración, mientras apasionadas diseñadoras se reunían para desentrañar el arte detallado que define nuestro oficio. Un sincero agradecimiento a Intercoverings por su hospitalidad y por hacernos sentir como en casa. Patrocinadores: Archidesart, Architectural Authority Magazine"
       }
     ]
   }
