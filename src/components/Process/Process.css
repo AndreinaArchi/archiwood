@@ -20,6 +20,7 @@
 
 .process__content-title > h2 {
   text-transform: capitalize;
+  font-family: 'TT0003M', sans-serif;
 }
 
 .process__content-description {
@@ -125,7 +126,7 @@
     gap: 15px;
   }
   .process__container-article {
-    gap:70px;
-    margin-top:0px;
+    gap: 70px;
+    margin-top: 0px;
   }
 }

@@ -27,7 +27,9 @@ import {
   useTranslateSection9
 } from './translate'
 import './Home.css'
+import banner from '/images/footer.png'
 
+const Img = React.lazy(() => import('../../components/Img/Img'))
 const Button = React.lazy(() => import('../../components/Button/Button'))
 const Contact = React.lazy(() => import('../../components/Contact/Contact'))
 const Proyects = React.lazy(() => import('../../components/Proyects/Proyects'))
@@ -62,6 +64,7 @@ const Home = () => {
     processRef,
     productsRef,
     proyectsRef,
+    contactRef
   } = useContext(ScrollContext)
 
   const handleNavigateToNews = () => {
@@ -304,9 +307,16 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section ref={contactRef}>
         <Contact />
       </section>
+
+      <div
+        className='footer__content-banner'
+        style={{ maxHeight: width <= 950 ? '350px' : '550px' }}
+      >
+        <Img img={banner} w='100%' h='100%' />
+      </div>
     </Fragment>
   )
 }

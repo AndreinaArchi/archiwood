@@ -13,7 +13,6 @@ const Address = React.lazy(() => import('../SocialChannel/Address'))
 
 const Contact = ({ bannerImg = true }) => {
   const width = useWidth()
-  const {contactRef} = useContext(ScrollContext)
   const { setShowContact } = useContext(ScrollContext)
   const textContent = useTranslate()
   const [formData, setFormData] = useState({
@@ -47,9 +46,8 @@ const Contact = ({ bannerImg = true }) => {
       `Name: ${nameLastname}\nEmail: ${email}\nPhone: ${phone}\n\n\nMessage: ${message}\n\n\n\n\n\n`
     )}`
 
-    console.log(width);
+    console.log(width)
     if (width >= 546) {
-      
       window.open(mailtoLink, '_blank')
     } else {
       window.location.href = mailtoLinkMobile
@@ -70,7 +68,7 @@ const Contact = ({ bannerImg = true }) => {
           <Img img={banner} w='100%' h='100%' />
         </div>
       )}
-      <h2 ref={contactRef} style={{ marginTop: bannerImg ? '160px' : '50px' }}>
+      <h2 style={{ marginTop: bannerImg ? '160px' : '50px' }}>
         {textContent.title}
       </h2>
       <div className='contact__content-info'>
@@ -97,7 +95,7 @@ const Contact = ({ bannerImg = true }) => {
                 value={formData.nameLastname}
                 onChange={handleChange}
                 required
-                autoComplete="off"
+                autoComplete='off'
               />
             </div>
             <div>
@@ -108,7 +106,7 @@ const Contact = ({ bannerImg = true }) => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                autoComplete="off"
+                autoComplete='off'
               />
             </div>
             <div>
@@ -119,7 +117,7 @@ const Contact = ({ bannerImg = true }) => {
                 value={formData.phone}
                 onChange={handleChange}
                 required
-                autoComplete="off"
+                autoComplete='off'
               />
             </div>
             <textarea
@@ -138,20 +136,22 @@ const Contact = ({ bannerImg = true }) => {
               br='20px'
               fs='14px'
             />
-            {!bannerImg && (
-              <Button
-                action={() => setShowContact(false)}
-                value={textContent.btnClose}
-                bgColor='var(--aw-bg-btn)'
-                txtColor='var(--aw-text-btn)'
-                p='10px 25px'
-                br='20px'
-                fs='14px'
-              />
-            )}
           </div>
         </div>
       </div>
+      {!bannerImg && (
+        <div style={{marginTop: '50px'}}>
+          <Button
+            action={() => setShowContact(false)}
+            value={textContent.btnClose}
+            bgColor='var(--aw-bg-btn)'
+            txtColor='var(--aw-text-btn)'
+            p='10px 25px'
+            br='20px'
+            fs='14px'
+          />
+        </div>
+      )}
     </div>
   )
 }

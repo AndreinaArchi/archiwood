@@ -104,7 +104,7 @@ const News = () => {
                     {newsT.news[currentIndex]?.video && (
                       <iframe
                         width='100%'
-                        height='720px'
+                        height='520px'
                         src={newsT.news[currentIndex].video}
                         title='YouTube video player'
                         frameBorder='0'
@@ -117,7 +117,7 @@ const News = () => {
                       <Img
                         img={newsT.news[currentIndex].image}
                         w='100%'
-                        h='720px'
+                        h='auto'
                         ofit='cover'
                       />
                     )}
@@ -159,7 +159,7 @@ const News = () => {
                           {item.image && (
                             <Img
                               img={item.image}
-                              ofit='contain'
+                              ofit='cover'
                               w={width >= 650 ? '220px' : '100%'}
                               h='170px'
                             />
@@ -281,7 +281,6 @@ const News = () => {
                         </div>
                       ))}
                     </div>
-                    {width <= 956 && <hr style={{ marginTop: '30px' }} />}
                   </div>
                 </div>
               </>

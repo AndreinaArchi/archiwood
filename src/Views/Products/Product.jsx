@@ -14,7 +14,7 @@ const Img = React.lazy(() => import('../../components/Img/Img'))
 const Product = () => {
   const width = useWidth()
   const arrayObjetct = useTranslateSection8()
-  const { SCROLL, productDescriptionRef } = useContext(ScrollContext)
+  const { SCROLL, productDescriptionRef, setShowContact, showContact } = useContext(ScrollContext)
 
   const location = useLocation()
   const idProducts = location.pathname.split('/')[2]
@@ -189,7 +189,7 @@ const Product = () => {
       <div className='product__content-action'>
         <Button
           value={arrayObjetct.buttonText}
-          action={() => alert('Action')}
+          action={() => setShowContact(!showContact)}
           bgColor='var(--aw-bg-btn)'
           txtColor='var(--aw-text-btn)'
           p='10px 25px'
