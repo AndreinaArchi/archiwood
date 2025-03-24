@@ -118,7 +118,7 @@ const News = () => {
                         img={newsT.news[currentIndex].image}
                         w='100%'
                         h='720px'
-                        ofit='contain'
+                        ofit='cover'
                       />
                     )}
                     <div className='news__section-news-title'>
