@@ -67,15 +67,15 @@ const Proyects = ({ arrayImage }) => {
       <div className='proyects__content-btn-actions'>
         <Img
           img={arrow_left}
-          w='40px'
-          h='40px'
+          w='30px'
+          h='30px'
           action={prevImage}
           alt='prev'
         />
         <Img
           img={arrow_right}
-          w='40px'
-          h='40px'
+          w='30px'
+          h='30px'
           action={nextImage}
           alt='next'
         />
